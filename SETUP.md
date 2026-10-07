@@ -19,6 +19,22 @@
 
 Everything runs on **CPU**. A GPU is optional.
 
+### NOT included in this repo (you must create or download these, ~8 GB total)
+They are too large or machine-specific for GitHub. The steps below create every one of them.
+| Missing item | Size | Created by |
+|---|---|---|
+| `_engine/venv/` (Python environment + packages) | ~1.7 GB | Step 2 |
+| Whisper **large-v3** model (main transcription) | ~3 GB | Step 3 |
+| Whisper **medium** model (fast fallback) | ~1.5 GB | Step 3 |
+| rembg `u2net_human_seg` (person cut-out) | ~170 MB | Step 3 |
+| RobustVideoMatting (video person matte, via torch.hub) | ~15 MB | Step 3 |
+| Demucs `htdemucs` (voice/music separation) | ~80 MB | Step 3 (or downloads on first use) |
+| CLAP `laion/clap-htsat-unfused` (sound-effect search) | ~600 MB | Step 3 (or downloads on first use) |
+| `_engine/reel/node_modules/` (Remotion) | ~830 MB | Step 4 |
+| Remotion headless Chrome | ~150 MB | Step 4 |
+| `_engine/reel/public/` (per-job media) | varies | filled by the agents during each job |
+| `Raw Videos/`, `Edited Videos/` | — | Step 5 (you create them) |
+
 ---
 
 ## 1. Install the base tools
@@ -61,8 +77,13 @@ venv\Scripts\python -c "import faster_whisper, mediapipe, cv2, rembg, librosa, t
 Run from `_engine`:
 ```
 venv\Scripts\python -c "from faster_whisper import WhisperModel; WhisperModel('large-v3', device='cpu', compute_type='int8')"
+venv\Scripts\python -c "from faster_whisper import WhisperModel; WhisperModel('medium', device='cpu', compute_type='int8')"
 venv\Scripts\python -c "from rembg import new_session; new_session('u2net_human_seg')"
+venv\Scripts\python -c "import torch; torch.hub.set_dir('models/torch/hub'); torch.hub.load('PeterL1n/RobustVideoMatting','mobilenetv3', trust_repo=True)"
+venv\Scripts\python -c "from demucs.pretrained import get_model; get_model('htdemucs')"
+venv\Scripts\python -c "from transformers import ClapModel, ClapProcessor; ClapModel.from_pretrained('laion/clap-htsat-unfused'); ClapProcessor.from_pretrained('laion/clap-htsat-unfused')"
 ```
+Check: models are cached in `~/.cache/huggingface/hub` (Whisper, CLAP), `~/.u2net` (rembg) and `_engine/models/torch/hub` (RVM).
 - Whisper large-v3 handles Bangla and English transcription and word timings.
 - rembg / mediapipe handle the person cut-out (text and logos behind the head) and face/hand tracking.
 - Demucs and CLAP models download automatically the first time they are used.
