@@ -1,0 +1,16 @@
+[
+ {
+  "t": 0.12,
+  "type": "sub bass drop",
+  "conf": 0.53,
+  "rms_db": -25.4,
+  "clip": "E08_000.12_sub_bass_drop.wav"
+ },
+ {
+  "t": 8.37,
+  "type": "heartbeat",
+  "conf": 0.35,
+  "rms_db": -27.2,
+  "clip": "E08_008.37_heartbeat.wav"
+ }
+]

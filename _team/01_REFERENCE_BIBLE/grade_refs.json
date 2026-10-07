@@ -1,0 +1,146 @@
+{
+ "E02 - Talking Head - Serif Captions Red ": {
+  "black_p2": 0.8,
+  "q1": 7.8,
+  "mid_p50": 36.5,
+  "q3": 52.5,
+  "white_p98": 73.7,
+  "contrast_iqr": 44.7,
+  "sat_mean": 0.483,
+  "skin_hue_deg": 19.1,
+  "skin_sat": 0.572,
+  "skin_L": 38.5,
+  "highlight_cast_a_b": [
+   12.2,
+   21.7
+  ]
+ },
+ "E05 - Talking Head plus Kinetic Typograp": {
+  "black_p2": 0.0,
+  "q1": 13.7,
+  "mid_p50": 89.0,
+  "q3": 89.0,
+  "white_p98": 89.0,
+  "contrast_iqr": 75.3,
+  "sat_mean": 0.384,
+  "skin_hue_deg": 144.4,
+  "skin_sat": 0.564,
+  "skin_L": 23.8,
+  "highlight_cast_a_b": [
+   10.5,
+   9.3
+  ]
+ },
+ "E06 - YouTube Edu - Yellow Captions UI P": {
+  "black_p2": 0.0,
+  "q1": 7.8,
+  "mid_p50": 18.0,
+  "q3": 51.0,
+  "white_p98": 99.6,
+  "contrast_iqr": 43.1,
+  "sat_mean": 0.292,
+  "skin_hue_deg": 30.5,
+  "skin_sat": 0.494,
+  "skin_L": 52.4,
+  "highlight_cast_a_b": [
+   -4.2,
+   15.1
+  ]
+ },
+ "E10 - Podcast plus Editorial Inserts - B": {
+  "black_p2": 4.3,
+  "q1": 28.6,
+  "mid_p50": 71.0,
+  "q3": 86.3,
+  "white_p98": 97.3,
+  "contrast_iqr": 57.6,
+  "sat_mean": 0.099,
+  "skin_hue_deg": 20.6,
+  "skin_sat": 0.367,
+  "skin_L": 43.0,
+  "highlight_cast_a_b": [
+   -0.4,
+   -0.4
+  ]
+ },
+ "E11 - Cinematic Talking Head - Jewelry C": {
+  "black_p2": 0.0,
+  "q1": 7.1,
+  "mid_p50": 26.3,
+  "q3": 54.9,
+  "white_p98": 99.2,
+  "contrast_iqr": 47.8,
+  "sat_mean": 0.531,
+  "skin_hue_deg": 23.8,
+  "skin_sat": 0.407,
+  "skin_L": 47.5,
+  "highlight_cast_a_b": [
+   3.6,
+   20.2
+  ]
+ },
+ "E12 - Real Estate Presenter - Floating C": {
+  "black_p2": 4.7,
+  "q1": 46.7,
+  "mid_p50": 70.6,
+  "q3": 85.5,
+  "white_p98": 98.8,
+  "contrast_iqr": 38.8,
+  "sat_mean": 0.232,
+  "skin_hue_deg": 22.5,
+  "skin_sat": 0.571,
+  "skin_L": 53.3,
+  "highlight_cast_a_b": [
+   -1.6,
+   2.4
+  ]
+ },
+ "E16 - with face video editing referene.m": {
+  "black_p2": 4.7,
+  "q1": 33.7,
+  "mid_p50": 59.2,
+  "q3": 79.2,
+  "white_p98": 91.8,
+  "contrast_iqr": 45.5,
+  "sat_mean": 0.324,
+  "skin_hue_deg": 56.5,
+  "skin_sat": 0.559,
+  "skin_L": 49.6,
+  "highlight_cast_a_b": [
+   -1.8,
+   -1.1
+  ]
+ },
+ "E03 - Cinematic Tech - Lens Flare HUD.mp": {
+  "black_p2": 0.0,
+  "q1": 3.5,
+  "mid_p50": 14.1,
+  "q3": 29.0,
+  "white_p98": 99.2,
+  "contrast_iqr": 25.5,
+  "sat_mean": 0.3,
+  "skin_hue_deg": 59.5,
+  "skin_sat": 0.419,
+  "skin_L": 51.0,
+  "highlight_cast_a_b": [
+   3.4,
+   6.5
+  ]
+ },
+ "E15 - the edited version is the main thi": {
+  "black_p2": 0.8,
+  "q1": 3.5,
+  "mid_p50": 10.6,
+  "q3": 31.4,
+  "white_p98": 87.5,
+  "contrast_iqr": 27.8,
+  "sat_mean": 0.665,
+  "skin_hue_deg": 166.8,
+  "skin_sat": 0.357,
+  "skin_L": 43.7,
+  "highlight_cast_a_b": [
+   1.6,
+   6.1
+  ]
+ }
+}

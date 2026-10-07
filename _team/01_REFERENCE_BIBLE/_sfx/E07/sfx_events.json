@@ -1,0 +1,107 @@
+[
+ {
+  "t": 2.28,
+  "type": "mouse click",
+  "conf": 0.33,
+  "rms_db": -37.0,
+  "clip": "E07_002.28_mouse_click.wav"
+ },
+ {
+  "t": 7.46,
+  "type": "heartbeat",
+  "conf": 0.29,
+  "rms_db": -15.5,
+  "clip": "E07_007.46_heartbeat.wav"
+ },
+ {
+  "t": 9.55,
+  "type": "swipe ui",
+  "conf": 0.35,
+  "rms_db": -36.5,
+  "clip": "E07_009.55_swipe_ui.wav"
+ },
+ {
+  "t": 13.72,
+  "type": "heartbeat",
+  "conf": 0.36,
+  "rms_db": -36.6,
+  "clip": "E07_013.72_heartbeat.wav"
+ },
+ {
+  "t": 15.29,
+  "type": "heartbeat",
+  "conf": 0.48,
+  "rms_db": -36.2,
+  "clip": "E07_015.29_heartbeat.wav"
+ },
+ {
+  "t": 23.52,
+  "type": "heartbeat",
+  "conf": 0.43,
+  "rms_db": -37.0,
+  "clip": "E07_023.52_heartbeat.wav"
+ },
+ {
+  "t": 24.15,
+  "type": "heartbeat",
+  "conf": 0.32,
+  "rms_db": -37.4,
+  "clip": "E07_024.15_heartbeat.wav"
+ },
+ {
+  "t": 27.81,
+  "type": "heartbeat",
+  "conf": 0.34,
+  "rms_db": -35.6,
+  "clip": "E07_027.81_heartbeat.wav"
+ },
+ {
+  "t": 30.93,
+  "type": "swoosh",
+  "conf": 0.26,
+  "rms_db": -25.7,
+  "clip": "E07_030.93_swoosh.wav"
+ },
+ {
+  "t": 35.63,
+  "type": "heartbeat",
+  "conf": 0.41,
+  "rms_db": -38.2,
+  "clip": "E07_035.63_heartbeat.wav"
+ },
+ {
+  "t": 37.72,
+  "type": "heartbeat",
+  "conf": 0.43,
+  "rms_db": -36.2,
+  "clip": "E07_037.72_heartbeat.wav"
+ },
+ {
+  "t": 38.24,
+  "type": "heartbeat",
+  "conf": 0.5,
+  "rms_db": -36.4,
+  "clip": "E07_038.24_heartbeat.wav"
+ },
+ {
+  "t": 43.46,
+  "type": "heartbeat",
+  "conf": 0.37,
+  "rms_db": -21.2,
+  "clip": "E07_043.46_heartbeat.wav"
+ },
+ {
+  "t": 43.98,
+  "type": "heartbeat",
+  "conf": 0.58,
+  "rms_db": -21.2,
+  "clip": "E07_043.98_heartbeat.wav"
+ },
+ {
+  "t": 49.19,
+  "type": "heartbeat",
+  "conf": 0.86,
+  "rms_db": -28.4,
+  "clip": "E07_049.19_heartbeat.wav"
+ }
+]

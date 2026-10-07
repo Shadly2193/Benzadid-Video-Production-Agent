@@ -1,0 +1,5197 @@
+{
+ "profiles": {
+  "calm": {
+   "formats": "F1, F5, F8 (talking head, podcast, case study)",
+   "rule": "-3 dB vs default; skip CAP ticks except keywords; whooshes low-passed 6 kHz"
+  },
+  "energetic": {
+   "formats": "F6, F7 (cold open, agency promo)",
+   "rule": "default levels; allow layered swish+thump; up to 2 SFX/s"
+  },
+  "faceless": {
+   "formats": "F4, F2 cards (motion graphic)",
+   "rule": "default; every object entrance gets its sound; pops pitched to music key if possible"
+  },
+  "signature": {
+   "formats": "F3, F9 (walking, curved typography)",
+   "rule": "-2 dB; prefer air/shimmer over clicks; impacts only on title slams"
+  }
+ },
+ "rows": [
+  {
+   "id": "CAP-001",
+   "cat": "CAP",
+   "trigger": "Small connector word appears (C1/C2 tiny italic)",
+   "sound": "none, or ultra-soft tick only if nothing else plays in 0.5s",
+   "query": "ui tick soft",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-002",
+   "cat": "CAP",
+   "trigger": "Keyword appears big (C1 top tier / C2 headline)",
+   "sound": "soft pop or tick, single",
+   "query": "ui pop soft",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-003",
+   "cat": "CAP",
+   "trigger": "Keyword SLAM (scale overshoot, heavy caps)",
+   "sound": "short swish + low thump layered",
+   "query": "swish punch",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-004",
+   "cat": "CAP",
+   "trigger": "Typed headline, per character (C2 E14 style)",
+   "sound": "soft typewriter/keyboard ticks, 1 per 2–3 chars, not every char",
+   "query": "typewriter soft key",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-005",
+   "cat": "CAP",
+   "trigger": "Typed sentence on dark HUD (E03)",
+   "sound": "digital ticks + faint data chirps",
+   "query": "digital typing hud",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-006",
+   "cat": "CAP",
+   "trigger": "Karaoke: word lights up (C4)",
+   "sound": "nothing per word; music carries it",
+   "query": "-",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-007",
+   "cat": "CAP",
+   "trigger": "Karaoke: highlighted brand-colour word",
+   "sound": "tiny tick on that word only",
+   "query": "ui tick",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-008",
+   "cat": "CAP",
+   "trigger": "Heavy italic caps line appears (C3)",
+   "sound": "punchy swish",
+   "query": "swish fast",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-009",
+   "cat": "CAP",
+   "trigger": "Number word in yellow (C3)",
+   "sound": "bright tick + mini ding tail",
+   "query": "ui ding small",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-010",
+   "cat": "CAP",
+   "trigger": "Negative word in red (C3: 'WRONG', 'NEVER', 'MISTAKE')",
+   "sound": "low dull thud or error buzz",
+   "query": "error buzz soft",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-011",
+   "cat": "CAP",
+   "trigger": "Question line ('WHY?')",
+   "sound": "short rising whoosh into the word, stop on word",
+   "query": "whoosh rise short",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-012",
+   "cat": "CAP",
+   "trigger": "Two-tier lockup builds (small + big)",
+   "sound": "tick on small, pop on big",
+   "query": "ui tick + pop",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-013",
+   "cat": "CAP",
+   "trigger": "Keyword behind head (C6) emerges from behind",
+   "sound": "soft air swell",
+   "query": "air whoosh soft",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-014",
+   "cat": "CAP",
+   "trigger": "Word on body path / rotated (C7)",
+   "sound": "quick swish following direction",
+   "query": "swish pass",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-015",
+   "cat": "CAP",
+   "trigger": "Silhouette flash then text (H7)",
+   "sound": "camera flash pop + reverse hit",
+   "query": "camera flash pop",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-016",
+   "cat": "CAP",
+   "trigger": "Highlight bar wipes behind word",
+   "sound": "marker swipe",
+   "query": "marker swipe",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-017",
+   "cat": "CAP",
+   "trigger": "Underline / oval drawn around word",
+   "sound": "pen scribble short",
+   "query": "pen scribble",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-018",
+   "cat": "CAP",
+   "trigger": "Strike-through on wrong word",
+   "sound": "pen scratch + error tick",
+   "query": "pen scratch",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-019",
+   "cat": "CAP",
+   "trigger": "Hand-drawn arrow points at object",
+   "sound": "quick marker stroke",
+   "query": "marker stroke",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-020",
+   "cat": "CAP",
+   "trigger": "Sticker/label pops ('FREE', 'NEW')",
+   "sound": "bubbly pop",
+   "query": "pop bubbly",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-021",
+   "cat": "CAP",
+   "trigger": "Emoji 3D pops",
+   "sound": "cartoon boing small",
+   "query": "cartoon pop",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-022",
+   "cat": "CAP",
+   "trigger": "Quote marks appear",
+   "sound": "paper tap",
+   "query": "paper tap",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-023",
+   "cat": "CAP",
+   "trigger": "Text glitch in (RGB split)",
+   "sound": "digital glitch 0.15s",
+   "query": "glitch short",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-024",
+   "cat": "CAP",
+   "trigger": "Text pixel-assemble",
+   "sound": "digital blip arpeggio",
+   "query": "digital blip",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-025",
+   "cat": "CAP",
+   "trigger": "Text blur-in with glow (E03)",
+   "sound": "soft shimmer",
+   "query": "shimmer soft",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-026",
+   "cat": "CAP",
+   "trigger": "Big title fills screen (F2 card)",
+   "sound": "deep whoosh + sub hit",
+   "query": "whoosh hit",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-027",
+   "cat": "CAP",
+   "trigger": "Vertical word scrolls through frame (E05 REFERENCES)",
+   "sound": "long air pass",
+   "query": "air pass long",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-028",
+   "cat": "CAP",
+   "trigger": "List bullet 1/2/3 lands",
+   "sound": "pops rising in pitch per item",
+   "query": "pop ascending",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-029",
+   "cat": "CAP",
+   "trigger": "Numbered badge pops (① ② ③)",
+   "sound": "button click",
+   "query": "button click",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-030",
+   "cat": "CAP",
+   "trigger": "Previous bullet dims as next lands",
+   "sound": "none",
+   "query": "-",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-031",
+   "cat": "CAP",
+   "trigger": "Text clears on shot change",
+   "sound": "none (the transition sound covers it)",
+   "query": "-",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-032",
+   "cat": "CAP",
+   "trigger": "Subtitle line replaces itself (running subtitle)",
+   "sound": "none",
+   "query": "-",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-033",
+   "cat": "CAP",
+   "trigger": "Keyword in money colour (৳ / $)",
+   "sound": "coin tick",
+   "query": "coin single",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-034",
+   "cat": "CAP",
+   "trigger": "Keyword 'FREE'",
+   "sound": "sparkle",
+   "query": "sparkle short",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-035",
+   "cat": "CAP",
+   "trigger": "Keyword 'SECRET'",
+   "sound": "whisper swish / lock click",
+   "query": "lock click",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-036",
+   "cat": "CAP",
+   "trigger": "Keyword 'FAST / QUICK'",
+   "sound": "zip",
+   "query": "zip fast",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-037",
+   "cat": "CAP",
+   "trigger": "Keyword 'SLOW'",
+   "sound": "low stretched whoosh",
+   "query": "slow whoosh",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-038",
+   "cat": "CAP",
+   "trigger": "Keyword 'STOP'",
+   "sound": "brake/record stop",
+   "query": "tape stop",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-039",
+   "cat": "CAP",
+   "trigger": "Keyword 'BOOM / EXPLODE'",
+   "sound": "impact",
+   "query": "impact",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-040",
+   "cat": "CAP",
+   "trigger": "Keyword 'LOVE / HEART'",
+   "sound": "soft heartbeat single",
+   "query": "heartbeat single",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-041",
+   "cat": "CAP",
+   "trigger": "Keyword 'TRUST / SAFE'",
+   "sound": "soft chime",
+   "query": "chime soft",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-042",
+   "cat": "CAP",
+   "trigger": "Keyword 'WIN / SUCCESS / BEST'",
+   "sound": "positive notification",
+   "query": "success chime",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-043",
+   "cat": "CAP",
+   "trigger": "Keyword 'FAIL / LOSE'",
+   "sound": "descending tone",
+   "query": "fail tone",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-044",
+   "cat": "CAP",
+   "trigger": "Keyword 'GROW / INCREASE'",
+   "sound": "rising pluck",
+   "query": "rise pluck",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-045",
+   "cat": "CAP",
+   "trigger": "Keyword 'DROP / DECREASE'",
+   "sound": "falling tone",
+   "query": "fall tone",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-046",
+   "cat": "CAP",
+   "trigger": "Keyword 'WORLD / GLOBAL / INTERNATIONAL'",
+   "sound": "airy pad swell",
+   "query": "air swell",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-047",
+   "cat": "CAP",
+   "trigger": "Keyword 'PREMIUM / LUXURY'",
+   "sound": "glass ting",
+   "query": "glass ting",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-048",
+   "cat": "CAP",
+   "trigger": "Keyword 'INNOVATIVE / IDEA'",
+   "sound": "light bulb click + ding",
+   "query": "light switch ding",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-049",
+   "cat": "CAP",
+   "trigger": "Keyword 'AI'",
+   "sound": "digital chirp",
+   "query": "digital chirp",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-050",
+   "cat": "CAP",
+   "trigger": "Keyword 'DOCTOR' / name title",
+   "sound": "soft page chime",
+   "query": "page chime",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-051",
+   "cat": "CAP",
+   "trigger": "Name lower-third (Dr. Shadly)",
+   "sound": "soft swish + chime",
+   "query": "lower third swish",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-052",
+   "cat": "CAP",
+   "trigger": "CTA 'Comment X' / 'DM me'",
+   "sound": "notification ping",
+   "query": "notification ping",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-053",
+   "cat": "CAP",
+   "trigger": "CTA 'Follow'",
+   "sound": "button click + pop",
+   "query": "button click",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-054",
+   "cat": "CAP",
+   "trigger": "Timer/countdown text ticks (H8)",
+   "sound": "clock tick each second",
+   "query": "clock tick",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-055",
+   "cat": "CAP",
+   "trigger": "Big number counts up",
+   "sound": "tick train, speed follows count, end ding",
+   "query": "counter ticks",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-056",
+   "cat": "CAP",
+   "trigger": "Percent bar fills",
+   "sound": "rising sweep",
+   "query": "rise sweep",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-057",
+   "cat": "CAP",
+   "trigger": "Price tag appears",
+   "sound": "cash register small",
+   "query": "cash register",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-058",
+   "cat": "CAP",
+   "trigger": "Date / year appears (1915, 2025)",
+   "sound": "typewriter clack",
+   "query": "typewriter single",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-059",
+   "cat": "CAP",
+   "trigger": "Bangla keyword slam",
+   "sound": "same as English rules; never extra",
+   "query": "-",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "CAP-060",
+   "cat": "CAP",
+   "trigger": "Caption on top of busy music drop",
+   "sound": "skip SFX, let drop speak",
+   "query": "-",
+   "level_db": -12,
+   "timing": "on first frame of the text animation"
+  },
+  {
+   "id": "TRN-001",
+   "cat": "TRN",
+   "trigger": "Hard cut, same location",
+   "sound": "none",
+   "query": "-",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-002",
+   "cat": "TRN",
+   "trigger": "Hard cut, new location (F3/E16)",
+   "sound": "soft air whoosh into cut",
+   "query": "air whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-003",
+   "cat": "TRN",
+   "trigger": "Whip pan / tilt with blur (T2)",
+   "sound": "fast whoosh matching direction",
+   "query": "whip whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-004",
+   "cat": "TRN",
+   "trigger": "Light-leak / gradient flash (T3)",
+   "sound": "airy shimmer swell",
+   "query": "flash shimmer",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-005",
+   "cat": "TRN",
+   "trigger": "White flash",
+   "sound": "camera flash / soft hit",
+   "query": "flash hit",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-006",
+   "cat": "TRN",
+   "trigger": "Colour state change to B&W (T4)",
+   "sound": "low thump + filter-down",
+   "query": "low thump",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-007",
+   "cat": "TRN",
+   "trigger": "Red mono emphasis (T4)",
+   "sound": "tension hit",
+   "query": "tension hit",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-008",
+   "cat": "TRN",
+   "trigger": "Back to colour from B&W",
+   "sound": "reverse swell",
+   "query": "reverse swell",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-009",
+   "cat": "TRN",
+   "trigger": "Pixel dissolve on object (T5)",
+   "sound": "digital blip arpeggio",
+   "query": "digital blip",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-010",
+   "cat": "TRN",
+   "trigger": "Spotlight iris open/close (T6)",
+   "sound": "deep whoosh + low hum",
+   "query": "iris whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-011",
+   "cat": "TRN",
+   "trigger": "Keyhole / door wipe",
+   "sound": "door creak short + whoosh",
+   "query": "door whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-012",
+   "cat": "TRN",
+   "trigger": "Ink blot spread wipe",
+   "sound": "liquid swell",
+   "query": "ink splash",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-013",
+   "cat": "TRN",
+   "trigger": "Continuous camera through world (T7)",
+   "sound": "one long soft wind, no per-object hits",
+   "query": "wind long",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-014",
+   "cat": "TRN",
+   "trigger": "Zoom through object into next scene",
+   "sound": "rising whoosh, cut at peak",
+   "query": "zoom whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-015",
+   "cat": "TRN",
+   "trigger": "Card shrink to corner (PiP)",
+   "sound": "swish small",
+   "query": "swish small",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-016",
+   "cat": "TRN",
+   "trigger": "Page turn / paper slide",
+   "sound": "page flip",
+   "query": "page flip",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-017",
+   "cat": "TRN",
+   "trigger": "Slide-in from edge with shadow (E04)",
+   "sound": "paper swish",
+   "query": "paper swish",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-018",
+   "cat": "TRN",
+   "trigger": "Glitch transition",
+   "sound": "glitch burst",
+   "query": "glitch burst",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-019",
+   "cat": "TRN",
+   "trigger": "Defocus flash (T8)",
+   "sound": "subtle air puff",
+   "query": "air puff",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-020",
+   "cat": "TRN",
+   "trigger": "Palette inversion dark↔light (E13)",
+   "sound": "click + whoosh",
+   "query": "invert click",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-021",
+   "cat": "TRN",
+   "trigger": "Smear / letter stretch transition (E07)",
+   "sound": "stretched whoosh",
+   "query": "stretch whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-022",
+   "cat": "TRN",
+   "trigger": "Match cut on motion",
+   "sound": "none or continued motion sound",
+   "query": "-",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-023",
+   "cat": "TRN",
+   "trigger": "Cut to black 'breath' scene",
+   "sound": "music drops out, room tone only",
+   "query": "-",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-024",
+   "cat": "TRN",
+   "trigger": "Black to reveal",
+   "sound": "riser into impact",
+   "query": "riser impact",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-025",
+   "cat": "TRN",
+   "trigger": "Section change (step 1→2)",
+   "sound": "whoosh + pop",
+   "query": "whoosh pop",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-026",
+   "cat": "TRN",
+   "trigger": "Chapter change (new location / outfit)",
+   "sound": "music phrase change + air whoosh",
+   "query": "air whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-027",
+   "cat": "TRN",
+   "trigger": "Intro to talking head after cold open (F6)",
+   "sound": "impact + sub",
+   "query": "impact sub",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-028",
+   "cat": "TRN",
+   "trigger": "Return from explainer to face (F5)",
+   "sound": "reverse swell",
+   "query": "reverse swell",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-029",
+   "cat": "TRN",
+   "trigger": "Split-screen opens",
+   "sound": "double swish",
+   "query": "swish double",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-030",
+   "cat": "TRN",
+   "trigger": "Split-screen closes",
+   "sound": "single swish reverse",
+   "query": "swish reverse",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-031",
+   "cat": "TRN",
+   "trigger": "Grid of cards folds",
+   "sound": "multiple soft clicks",
+   "query": "click multi",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-032",
+   "cat": "TRN",
+   "trigger": "Phone-UI overlay slides on",
+   "sound": "phone swipe",
+   "query": "phone swipe",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-033",
+   "cat": "TRN",
+   "trigger": "Before/after slider wipe",
+   "sound": "slider swish",
+   "query": "slider",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-034",
+   "cat": "TRN",
+   "trigger": "Rewind effect",
+   "sound": "tape rewind",
+   "query": "tape rewind",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-035",
+   "cat": "TRN",
+   "trigger": "Freeze frame",
+   "sound": "camera shutter + tape stop",
+   "query": "freeze shutter",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-036",
+   "cat": "TRN",
+   "trigger": "Speed ramp up",
+   "sound": "rising whoosh",
+   "query": "speed up whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-037",
+   "cat": "TRN",
+   "trigger": "Speed ramp down / slow-mo",
+   "sound": "deep slowed whoosh",
+   "query": "slow mo",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-038",
+   "cat": "TRN",
+   "trigger": "Shake / impact zoom",
+   "sound": "impact",
+   "query": "impact",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-039",
+   "cat": "TRN",
+   "trigger": "Fade to end card",
+   "sound": "music resolves, soft chime",
+   "query": "end chime",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "TRN-040",
+   "cat": "TRN",
+   "trigger": "Loop back to start (seamless reel)",
+   "sound": "reverse whoosh into frame 1",
+   "query": "reverse whoosh",
+   "level_db": -9,
+   "timing": "peak of the sound on the cut frame; whoosh starts 0.15–0.3s before"
+  },
+  {
+   "id": "CAM-001",
+   "cat": "CAM",
+   "trigger": "Punch-in 100→115% on sentence (T1)",
+   "sound": "none (most of the time) / very soft air",
+   "query": "-",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-002",
+   "cat": "CAM",
+   "trigger": "Punch-in on punchline",
+   "sound": "soft thump",
+   "query": "soft thump",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-003",
+   "cat": "CAM",
+   "trigger": "Focus zoom to detail (scalpel / screen)",
+   "sound": "soft wind (Shadly preference)",
+   "query": "wind soft",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-004",
+   "cat": "CAM",
+   "trigger": "Slow push-in for emotion",
+   "sound": "low pad swell",
+   "query": "pad swell",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-005",
+   "cat": "CAM",
+   "trigger": "Dolly back reveal",
+   "sound": "air swell reverse",
+   "query": "air reveal",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-006",
+   "cat": "CAM",
+   "trigger": "Track down a website",
+   "sound": "soft scroll + air",
+   "query": "scroll soft",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-007",
+   "cat": "CAM",
+   "trigger": "Lateral glide past cards",
+   "sound": "single long wind, no per-card hits",
+   "query": "wind long",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-008",
+   "cat": "CAM",
+   "trigger": "Camera shake",
+   "sound": "rumble short",
+   "query": "rumble",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-009",
+   "cat": "CAM",
+   "trigger": "Rack focus blur→sharp",
+   "sound": "soft shimmer",
+   "query": "focus shimmer",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-010",
+   "cat": "CAM",
+   "trigger": "Orbit around 3D object",
+   "sound": "slow circular whoosh",
+   "query": "orbit whoosh",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-011",
+   "cat": "CAM",
+   "trigger": "Drone top-down",
+   "sound": "wind high",
+   "query": "wind high",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-012",
+   "cat": "CAM",
+   "trigger": "Tilt up to sky",
+   "sound": "air rise",
+   "query": "air rise",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-013",
+   "cat": "CAM",
+   "trigger": "Crash zoom",
+   "sound": "whoosh hit",
+   "query": "crash zoom",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-014",
+   "cat": "CAM",
+   "trigger": "Parallax drift (constant)",
+   "sound": "none",
+   "query": "-",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-015",
+   "cat": "CAM",
+   "trigger": "Reframe to make room for text (E08)",
+   "sound": "none",
+   "query": "-",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-016",
+   "cat": "CAM",
+   "trigger": "Zoom out to show grid of all work",
+   "sound": "swell + soft chime",
+   "query": "swell chime",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-017",
+   "cat": "CAM",
+   "trigger": "Push into laptop screen",
+   "sound": "air whoosh + faint fan hum",
+   "query": "laptop push",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-018",
+   "cat": "CAM",
+   "trigger": "Zoom into phone screen",
+   "sound": "whoosh + phone tap",
+   "query": "phone zoom",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-019",
+   "cat": "CAM",
+   "trigger": "Handheld follow (walking)",
+   "sound": "none (natural ambience)",
+   "query": "-",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "CAM-020",
+   "cat": "CAM",
+   "trigger": "Snap zoom on face (reaction)",
+   "sound": "comedic zip",
+   "query": "zoom zip",
+   "level_db": -14,
+   "timing": "sound starts with the move, peak at the move's midpoint"
+  },
+  {
+   "id": "UI-001",
+   "cat": "UI",
+   "trigger": "Mouse cursor moves",
+   "sound": "none",
+   "query": "-",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-002",
+   "cat": "UI",
+   "trigger": "Mouse click",
+   "sound": "mouse click",
+   "query": "mouse click",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-003",
+   "cat": "UI",
+   "trigger": "Double click",
+   "sound": "double click",
+   "query": "double click",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-004",
+   "cat": "UI",
+   "trigger": "Button press on site",
+   "sound": "UI button click",
+   "query": "ui button",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-005",
+   "cat": "UI",
+   "trigger": "Hover glow on button",
+   "sound": "tiny tick",
+   "query": "ui hover",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-006",
+   "cat": "UI",
+   "trigger": "Page scroll",
+   "sound": "soft scroll wheel",
+   "query": "scroll wheel",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-007",
+   "cat": "UI",
+   "trigger": "Fast scroll",
+   "sound": "scroll whoosh",
+   "query": "scroll fast",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-008",
+   "cat": "UI",
+   "trigger": "Page load",
+   "sound": "subtle digital whoosh",
+   "query": "page load",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-009",
+   "cat": "UI",
+   "trigger": "Loading spinner",
+   "sound": "soft loop blips",
+   "query": "loading blip",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-010",
+   "cat": "UI",
+   "trigger": "Form field typing",
+   "sound": "keyboard typing light",
+   "query": "keyboard typing",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-011",
+   "cat": "UI",
+   "trigger": "Form submit success",
+   "sound": "success chime",
+   "query": "success",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-012",
+   "cat": "UI",
+   "trigger": "Error message",
+   "sound": "error buzz",
+   "query": "error",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-013",
+   "cat": "UI",
+   "trigger": "Notification banner",
+   "sound": "notification",
+   "query": "notification",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-014",
+   "cat": "UI",
+   "trigger": "Phone tap",
+   "sound": "phone tap",
+   "query": "phone tap",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-015",
+   "cat": "UI",
+   "trigger": "Phone swipe",
+   "sound": "swipe",
+   "query": "phone swipe",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-016",
+   "cat": "UI",
+   "trigger": "Phone unlock",
+   "sound": "unlock click",
+   "query": "unlock",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-017",
+   "cat": "UI",
+   "trigger": "Message sent (WhatsApp)",
+   "sound": "message whoosh",
+   "query": "message sent",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-018",
+   "cat": "UI",
+   "trigger": "Message received",
+   "sound": "message pop",
+   "query": "message received",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-019",
+   "cat": "UI",
+   "trigger": "Like / heart tap",
+   "sound": "pop + sparkle",
+   "query": "like pop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-020",
+   "cat": "UI",
+   "trigger": "Comment appears",
+   "sound": "bubble pop",
+   "query": "comment pop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-021",
+   "cat": "UI",
+   "trigger": "Follower count rises",
+   "sound": "tick train + ding",
+   "query": "counter ticks",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-022",
+   "cat": "UI",
+   "trigger": "Appointment booked",
+   "sound": "calendar ding",
+   "query": "booking chime",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-023",
+   "cat": "UI",
+   "trigger": "Google search typed",
+   "sound": "typing + search click",
+   "query": "search typing",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-024",
+   "cat": "UI",
+   "trigger": "Search results appear",
+   "sound": "soft whoosh",
+   "query": "results whoosh",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-025",
+   "cat": "UI",
+   "trigger": "Google Maps pin drop",
+   "sound": "pin drop",
+   "query": "pin drop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-026",
+   "cat": "UI",
+   "trigger": "Star rating fills 1–5",
+   "sound": "5 ascending ticks",
+   "query": "star rating",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-027",
+   "cat": "UI",
+   "trigger": "Review card appears",
+   "sound": "card pop",
+   "query": "card pop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-028",
+   "cat": "UI",
+   "trigger": "Website hero reveal",
+   "sound": "soft swell + click",
+   "query": "hero reveal",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-029",
+   "cat": "UI",
+   "trigger": "Mobile view toggle",
+   "sound": "switch click",
+   "query": "switch",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-030",
+   "cat": "UI",
+   "trigger": "Dark mode toggle",
+   "sound": "switch click + whoosh",
+   "query": "toggle",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-031",
+   "cat": "UI",
+   "trigger": "Code being written",
+   "sound": "fast keyboard",
+   "query": "keyboard fast",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-032",
+   "cat": "UI",
+   "trigger": "Code compiles / build success",
+   "sound": "success blip",
+   "query": "build success",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-033",
+   "cat": "UI",
+   "trigger": "Website goes live",
+   "sound": "launch whoosh + chime",
+   "query": "launch",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-034",
+   "cat": "UI",
+   "trigger": "Domain / URL typed",
+   "sound": "typing",
+   "query": "typing",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-035",
+   "cat": "UI",
+   "trigger": "Admin panel edit saved",
+   "sound": "save click",
+   "query": "save",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-036",
+   "cat": "UI",
+   "trigger": "Drag & drop",
+   "sound": "drag swish + drop tap",
+   "query": "drag drop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-037",
+   "cat": "UI",
+   "trigger": "Popup modal opens",
+   "sound": "pop",
+   "query": "modal pop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-038",
+   "cat": "UI",
+   "trigger": "Popup closes",
+   "sound": "reverse pop",
+   "query": "modal close",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-039",
+   "cat": "UI",
+   "trigger": "Video play button",
+   "sound": "play click",
+   "query": "play click",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-040",
+   "cat": "UI",
+   "trigger": "Screenshot taken",
+   "sound": "camera shutter",
+   "query": "screenshot",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-041",
+   "cat": "UI",
+   "trigger": "Chat AI answer streams",
+   "sound": "soft digital typing",
+   "query": "ai typing",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-042",
+   "cat": "UI",
+   "trigger": "AI generates image",
+   "sound": "magic shimmer",
+   "query": "magic",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-043",
+   "cat": "UI",
+   "trigger": "Analytics chart rises",
+   "sound": "rising pluck",
+   "query": "chart rise",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-044",
+   "cat": "UI",
+   "trigger": "Analytics chart falls",
+   "sound": "falling tone",
+   "query": "chart fall",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-045",
+   "cat": "UI",
+   "trigger": "Laptop open",
+   "sound": "laptop open",
+   "query": "laptop open",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-046",
+   "cat": "UI",
+   "trigger": "Laptop close",
+   "sound": "laptop close",
+   "query": "laptop close",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-047",
+   "cat": "UI",
+   "trigger": "Phone vibrate",
+   "sound": "vibration",
+   "query": "phone vibrate",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-048",
+   "cat": "UI",
+   "trigger": "Email sent",
+   "sound": "email whoosh",
+   "query": "email sent",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-049",
+   "cat": "UI",
+   "trigger": "Instagram story swipe",
+   "sound": "swipe",
+   "query": "swipe",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-050",
+   "cat": "UI",
+   "trigger": "Facebook ad shown",
+   "sound": "notification soft",
+   "query": "notification",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-051",
+   "cat": "UI",
+   "trigger": "QR code scan",
+   "sound": "scanner beep",
+   "query": "scan beep",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-052",
+   "cat": "UI",
+   "trigger": "Payment success (bKash/card)",
+   "sound": "payment success",
+   "query": "payment success",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-053",
+   "cat": "UI",
+   "trigger": "Website speed test score",
+   "sound": "counter ticks + ding",
+   "query": "score",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-054",
+   "cat": "UI",
+   "trigger": "SEO rank climbs",
+   "sound": "rising arpeggio",
+   "query": "rank up",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-055",
+   "cat": "UI",
+   "trigger": "Broken old website shown",
+   "sound": "glitch + error",
+   "query": "broken glitch",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-056",
+   "cat": "UI",
+   "trigger": "Website before → after",
+   "sound": "slider swish + chime",
+   "query": "before after",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-057",
+   "cat": "UI",
+   "trigger": "Multiple websites grid",
+   "sound": "soft click per card (max 4)",
+   "query": "grid click",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "UI-058",
+   "cat": "UI",
+   "trigger": "Browser tab opens",
+   "sound": "tab pop",
+   "query": "tab pop",
+   "level_db": -14,
+   "timing": "on the visual action frame"
+  },
+  {
+   "id": "MONEY-001",
+   "cat": "MONEY",
+   "trigger": "Taka notes appear",
+   "sound": "paper money rustle",
+   "query": "money rustle",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-002",
+   "cat": "MONEY",
+   "trigger": "Coins fall",
+   "sound": "coins drop",
+   "query": "coins drop",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-003",
+   "cat": "MONEY",
+   "trigger": "Single coin",
+   "sound": "coin ting",
+   "query": "coin",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-004",
+   "cat": "MONEY",
+   "trigger": "Money rain",
+   "sound": "money shower",
+   "query": "money rain",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-005",
+   "cat": "MONEY",
+   "trigger": "Cash register / sale",
+   "sound": "cash register",
+   "query": "cash register",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-006",
+   "cat": "MONEY",
+   "trigger": "Wallet opens",
+   "sound": "zipper / leather",
+   "query": "wallet",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-007",
+   "cat": "MONEY",
+   "trigger": "Money lost / wasted",
+   "sound": "coin falling down drain + low tone",
+   "query": "money lose",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-008",
+   "cat": "MONEY",
+   "trigger": "Money saved",
+   "sound": "piggy bank coin + ding",
+   "query": "piggy bank",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-009",
+   "cat": "MONEY",
+   "trigger": "Price drop",
+   "sound": "falling tone + tick",
+   "query": "price drop",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-010",
+   "cat": "MONEY",
+   "trigger": "Profit rises",
+   "sound": "rising arpeggio",
+   "query": "profit",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-011",
+   "cat": "MONEY",
+   "trigger": "Invoice / bill",
+   "sound": "paper + stamp",
+   "query": "stamp",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-012",
+   "cat": "MONEY",
+   "trigger": "Contract signed",
+   "sound": "pen sign",
+   "query": "pen sign",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-013",
+   "cat": "MONEY",
+   "trigger": "Handshake deal",
+   "sound": "soft clap/hand",
+   "query": "handshake",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-014",
+   "cat": "MONEY",
+   "trigger": "Calculator",
+   "sound": "calculator keys",
+   "query": "calculator",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-015",
+   "cat": "MONEY",
+   "trigger": "Bank transfer",
+   "sound": "digital whoosh + ding",
+   "query": "transfer",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-016",
+   "cat": "MONEY",
+   "trigger": "Credit card swipe",
+   "sound": "card swipe",
+   "query": "card swipe",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-017",
+   "cat": "MONEY",
+   "trigger": "Gold / premium",
+   "sound": "glass ting",
+   "query": "ting",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-018",
+   "cat": "MONEY",
+   "trigger": "Discount %",
+   "sound": "pop + sparkle",
+   "query": "discount",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-019",
+   "cat": "MONEY",
+   "trigger": "Expensive!",
+   "sound": "cash register + gasp-free sting",
+   "query": "sting",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-020",
+   "cat": "MONEY",
+   "trigger": "Free!",
+   "sound": "sparkle",
+   "query": "sparkle",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-021",
+   "cat": "MONEY",
+   "trigger": "Budget chart",
+   "sound": "pencil + tick",
+   "query": "chart",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-022",
+   "cat": "MONEY",
+   "trigger": "Stock market down",
+   "sound": "falling synth",
+   "query": "market down",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-023",
+   "cat": "MONEY",
+   "trigger": "Stock up",
+   "sound": "rising synth",
+   "query": "market up",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-024",
+   "cat": "MONEY",
+   "trigger": "ROI / results reveal",
+   "sound": "drum hit + chime",
+   "query": "reveal hit",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-025",
+   "cat": "MONEY",
+   "trigger": "Clients count up",
+   "sound": "tick train",
+   "query": "counter",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-026",
+   "cat": "MONEY",
+   "trigger": "Package tiers ($550/$800)",
+   "sound": "card pop each",
+   "query": "card pop",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-027",
+   "cat": "MONEY",
+   "trigger": "Add-on +$200",
+   "sound": "plus pop",
+   "query": "plus pop",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-028",
+   "cat": "MONEY",
+   "trigger": "Money flying away",
+   "sound": "wind + paper",
+   "query": "paper wind",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-029",
+   "cat": "MONEY",
+   "trigger": "Bag of money drops",
+   "sound": "heavy thud",
+   "query": "money bag",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MONEY-030",
+   "cat": "MONEY",
+   "trigger": "Hourly rate / time is money",
+   "sound": "clock tick + coin",
+   "query": "clock coin",
+   "level_db": -11,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-001",
+   "cat": "TIME",
+   "trigger": "Clock appears",
+   "sound": "clock tick",
+   "query": "clock tick",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-002",
+   "cat": "TIME",
+   "trigger": "Clock spins fast",
+   "sound": "fast ticking",
+   "query": "fast clock",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-003",
+   "cat": "TIME",
+   "trigger": "Alarm 2AM",
+   "sound": "alarm short",
+   "query": "alarm",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-004",
+   "cat": "TIME",
+   "trigger": "Calendar pages flip",
+   "sound": "page flips fast",
+   "query": "calendar flip",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-005",
+   "cat": "TIME",
+   "trigger": "Hourglass",
+   "sound": "sand trickle",
+   "query": "sand",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-006",
+   "cat": "TIME",
+   "trigger": "Deadline",
+   "sound": "tension tick + hit",
+   "query": "deadline",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-007",
+   "cat": "TIME",
+   "trigger": "Years pass",
+   "sound": "time whoosh reverse",
+   "query": "time pass",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-008",
+   "cat": "TIME",
+   "trigger": "Stopwatch start",
+   "sound": "stopwatch click",
+   "query": "stopwatch",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-009",
+   "cat": "TIME",
+   "trigger": "Countdown 3-2-1",
+   "sound": "beeps",
+   "query": "countdown beep",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-010",
+   "cat": "TIME",
+   "trigger": "Late / missed",
+   "sound": "descending tone",
+   "query": "missed",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-011",
+   "cat": "TIME",
+   "trigger": "Instant / seconds",
+   "sound": "zip",
+   "query": "zip",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-012",
+   "cat": "TIME",
+   "trigger": "Waiting room",
+   "sound": "soft clock + room tone",
+   "query": "waiting room",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-013",
+   "cat": "TIME",
+   "trigger": "Morning",
+   "sound": "birds light",
+   "query": "birds",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-014",
+   "cat": "TIME",
+   "trigger": "Night",
+   "sound": "crickets light",
+   "query": "crickets",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TIME-015",
+   "cat": "TIME",
+   "trigger": "Weekend",
+   "sound": "light chime",
+   "query": "chime",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "MED-001",
+   "cat": "MED",
+   "trigger": "Scalpel shown",
+   "sound": "metal glint (dagger shing, soft)",
+   "query": "metal shing",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-002",
+   "cat": "MED",
+   "trigger": "Incision line drawn",
+   "sound": "fine slice",
+   "query": "slice soft",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-003",
+   "cat": "MED",
+   "trigger": "Surgical instruments tray",
+   "sound": "metal clink",
+   "query": "metal clink",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-004",
+   "cat": "MED",
+   "trigger": "Suture / stitch lands",
+   "sound": "soft tick per stitch",
+   "query": "stitch tick",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-005",
+   "cat": "MED",
+   "trigger": "Heartbeat / ECG",
+   "sound": "heartbeat + monitor beep",
+   "query": "ecg beep",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-006",
+   "cat": "MED",
+   "trigger": "Flatline (danger)",
+   "sound": "monitor flat tone (short, careful)",
+   "query": "flatline",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-007",
+   "cat": "MED",
+   "trigger": "Stethoscope",
+   "sound": "soft heartbeat muffled",
+   "query": "stethoscope",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-008",
+   "cat": "MED",
+   "trigger": "Syringe",
+   "sound": "syringe squirt soft",
+   "query": "syringe",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-009",
+   "cat": "MED",
+   "trigger": "Pills",
+   "sound": "pill bottle rattle",
+   "query": "pills",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-010",
+   "cat": "MED",
+   "trigger": "X-ray / scan",
+   "sound": "scanner hum",
+   "query": "scanner",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-011",
+   "cat": "MED",
+   "trigger": "MRI",
+   "sound": "low mechanical hum",
+   "query": "mri",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-012",
+   "cat": "MED",
+   "trigger": "Lab test tube",
+   "sound": "glass clink",
+   "query": "test tube",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-013",
+   "cat": "MED",
+   "trigger": "Dental drill",
+   "sound": "short drill whir (very brief)",
+   "query": "dental drill",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-014",
+   "cat": "MED",
+   "trigger": "Tooth sparkle (clean)",
+   "sound": "sparkle ting",
+   "query": "tooth sparkle",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-015",
+   "cat": "MED",
+   "trigger": "Dental chair recline",
+   "sound": "hydraulic",
+   "query": "chair hydraulic",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-016",
+   "cat": "MED",
+   "trigger": "Braces / aligner click",
+   "sound": "plastic click",
+   "query": "plastic click",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-017",
+   "cat": "MED",
+   "trigger": "Eye / retina",
+   "sound": "soft whoosh + focus",
+   "query": "eye focus",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-018",
+   "cat": "MED",
+   "trigger": "Brain",
+   "sound": "neural shimmer",
+   "query": "neural",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-019",
+   "cat": "MED",
+   "trigger": "Bone / ortho",
+   "sound": "soft knock",
+   "query": "bone knock",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-020",
+   "cat": "MED",
+   "trigger": "Ambulance",
+   "sound": "siren distant short",
+   "query": "siren",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-021",
+   "cat": "MED",
+   "trigger": "Hospital corridor",
+   "sound": "room tone + footsteps",
+   "query": "hospital ambience",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-022",
+   "cat": "MED",
+   "trigger": "Doctor's chamber door",
+   "sound": "door open",
+   "query": "door",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-023",
+   "cat": "MED",
+   "trigger": "Patient waiting room",
+   "sound": "murmur soft",
+   "query": "murmur",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-024",
+   "cat": "MED",
+   "trigger": "Prescription written",
+   "sound": "pen writing",
+   "query": "pen write",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-025",
+   "cat": "MED",
+   "trigger": "Medical report printed",
+   "sound": "printer",
+   "query": "printer",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-026",
+   "cat": "MED",
+   "trigger": "Hand wash / sanitizer",
+   "sound": "water/squirt",
+   "query": "sanitizer",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-027",
+   "cat": "MED",
+   "trigger": "Gloves snap",
+   "sound": "glove snap",
+   "query": "glove snap",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-028",
+   "cat": "MED",
+   "trigger": "Mask on",
+   "sound": "fabric rustle",
+   "query": "fabric",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-029",
+   "cat": "MED",
+   "trigger": "Diagnosis reveal",
+   "sound": "soft chime",
+   "query": "chime",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-030",
+   "cat": "MED",
+   "trigger": "Recovery / healthy",
+   "sound": "warm swell",
+   "query": "warm swell",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-031",
+   "cat": "MED",
+   "trigger": "Pain / problem",
+   "sound": "low tension tone",
+   "query": "tension",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-032",
+   "cat": "MED",
+   "trigger": "Medical certificate / degree",
+   "sound": "paper + stamp",
+   "query": "stamp",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-033",
+   "cat": "MED",
+   "trigger": "Award / trophy",
+   "sound": "trophy ting + applause short",
+   "query": "trophy",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-034",
+   "cat": "MED",
+   "trigger": "Appointment phone call",
+   "sound": "phone ring short",
+   "query": "phone ring",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-035",
+   "cat": "MED",
+   "trigger": "Telemedicine call connects",
+   "sound": "video call connect",
+   "query": "call connect",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-036",
+   "cat": "MED",
+   "trigger": "Health app notification",
+   "sound": "notification",
+   "query": "notification",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-037",
+   "cat": "MED",
+   "trigger": "Microscope",
+   "sound": "focus click",
+   "query": "microscope",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-038",
+   "cat": "MED",
+   "trigger": "Laparoscopy screen",
+   "sound": "monitor beep soft",
+   "query": "monitor",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-039",
+   "cat": "MED",
+   "trigger": "Operation theatre lights on",
+   "sound": "light switch heavy + hum",
+   "query": "ot light",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-040",
+   "cat": "MED",
+   "trigger": "Blood pressure cuff",
+   "sound": "pump squeeze",
+   "query": "bp pump",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-041",
+   "cat": "MED",
+   "trigger": "Thermometer beep",
+   "sound": "beep",
+   "query": "thermometer",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-042",
+   "cat": "MED",
+   "trigger": "Wheelchair",
+   "sound": "wheel roll",
+   "query": "wheel",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-043",
+   "cat": "MED",
+   "trigger": "Baby / pediatric",
+   "sound": "soft rattle",
+   "query": "rattle",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-044",
+   "cat": "MED",
+   "trigger": "Skin / derma",
+   "sound": "soft shimmer",
+   "query": "shimmer",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "MED-045",
+   "cat": "MED",
+   "trigger": "Heart (cardiology icon)",
+   "sound": "single heartbeat",
+   "query": "heartbeat",
+   "level_db": -12,
+   "timing": "on the visual frame; keep realistic and gentle, never gory"
+  },
+  {
+   "id": "TECH-001",
+   "cat": "TECH",
+   "trigger": "AI robot appears",
+   "sound": "robot chirp",
+   "query": "robot chirp",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-002",
+   "cat": "TECH",
+   "trigger": "Neural network lines",
+   "sound": "data shimmer",
+   "query": "data",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-003",
+   "cat": "TECH",
+   "trigger": "Chip / processor",
+   "sound": "electric zap soft",
+   "query": "zap",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-004",
+   "cat": "TECH",
+   "trigger": "Server / cloud",
+   "sound": "server hum + whoosh",
+   "query": "server",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-005",
+   "cat": "TECH",
+   "trigger": "Data flowing",
+   "sound": "digital stream",
+   "query": "data stream",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-006",
+   "cat": "TECH",
+   "trigger": "Hologram UI",
+   "sound": "hologram shimmer",
+   "query": "hologram",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-007",
+   "cat": "TECH",
+   "trigger": "Scan line",
+   "sound": "scanner sweep",
+   "query": "scan",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-008",
+   "cat": "TECH",
+   "trigger": "Lock / security",
+   "sound": "lock click",
+   "query": "lock",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-009",
+   "cat": "TECH",
+   "trigger": "Unlock",
+   "sound": "unlock",
+   "query": "unlock",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-010",
+   "cat": "TECH",
+   "trigger": "Hack / glitch",
+   "sound": "glitch",
+   "query": "glitch",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-011",
+   "cat": "TECH",
+   "trigger": "WiFi / signal",
+   "sound": "signal blips",
+   "query": "signal",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-012",
+   "cat": "TECH",
+   "trigger": "Battery charge",
+   "sound": "charge rise",
+   "query": "charge",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-013",
+   "cat": "TECH",
+   "trigger": "Power on",
+   "sound": "power up",
+   "query": "power up",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-014",
+   "cat": "TECH",
+   "trigger": "Power off",
+   "sound": "power down",
+   "query": "power down",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-015",
+   "cat": "TECH",
+   "trigger": "Camera recording (REC)",
+   "sound": "beep start",
+   "query": "rec beep",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-016",
+   "cat": "TECH",
+   "trigger": "Microphone",
+   "sound": "mic tap",
+   "query": "mic tap",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-017",
+   "cat": "TECH",
+   "trigger": "Headphones",
+   "sound": "soft click",
+   "query": "click",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-018",
+   "cat": "TECH",
+   "trigger": "3D printer",
+   "sound": "mechanical whir",
+   "query": "printer 3d",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-019",
+   "cat": "TECH",
+   "trigger": "Satellite / globe digital",
+   "sound": "space swell",
+   "query": "space",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-020",
+   "cat": "TECH",
+   "trigger": "Rocket launch (growth)",
+   "sound": "rocket whoosh",
+   "query": "rocket",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-021",
+   "cat": "TECH",
+   "trigger": "Light bulb idea",
+   "sound": "bulb click + ding",
+   "query": "bulb",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-022",
+   "cat": "TECH",
+   "trigger": "Gear / process",
+   "sound": "mechanical gear",
+   "query": "gear",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-023",
+   "cat": "TECH",
+   "trigger": "Magnet",
+   "sound": "magnet hum",
+   "query": "magnet",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-024",
+   "cat": "TECH",
+   "trigger": "Laser",
+   "sound": "laser zap",
+   "query": "laser",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-025",
+   "cat": "TECH",
+   "trigger": "Pixel art",
+   "sound": "8-bit blip",
+   "query": "8bit",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-026",
+   "cat": "TECH",
+   "trigger": "Game / level up",
+   "sound": "level up",
+   "query": "level up",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-027",
+   "cat": "TECH",
+   "trigger": "Download",
+   "sound": "download whoosh",
+   "query": "download",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-028",
+   "cat": "TECH",
+   "trigger": "Upload",
+   "sound": "upload rise",
+   "query": "upload",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-029",
+   "cat": "TECH",
+   "trigger": "Sync",
+   "sound": "sync chime",
+   "query": "sync",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "TECH-030",
+   "cat": "TECH",
+   "trigger": "Delete",
+   "sound": "trash crumple",
+   "query": "trash",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-001",
+   "cat": "OBJ",
+   "trigger": "Book opens",
+   "sound": "book open",
+   "query": "book",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-002",
+   "cat": "OBJ",
+   "trigger": "Pages flip",
+   "sound": "page flip",
+   "query": "page",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-003",
+   "cat": "OBJ",
+   "trigger": "Pen writes",
+   "sound": "pen write",
+   "query": "pen",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-004",
+   "cat": "OBJ",
+   "trigger": "Pencil sketch",
+   "sound": "pencil",
+   "query": "pencil",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-005",
+   "cat": "OBJ",
+   "trigger": "Paper crumple (bad idea)",
+   "sound": "crumple",
+   "query": "crumple",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-006",
+   "cat": "OBJ",
+   "trigger": "Paper tear",
+   "sound": "tear",
+   "query": "paper tear",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-007",
+   "cat": "OBJ",
+   "trigger": "Sticky note",
+   "sound": "paper slap",
+   "query": "sticky",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-008",
+   "cat": "OBJ",
+   "trigger": "Stamp approved",
+   "sound": "stamp",
+   "query": "stamp",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-009",
+   "cat": "OBJ",
+   "trigger": "Envelope / letter",
+   "sound": "paper slide",
+   "query": "envelope",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-010",
+   "cat": "OBJ",
+   "trigger": "Box / package",
+   "sound": "cardboard",
+   "query": "box",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-011",
+   "cat": "OBJ",
+   "trigger": "Gift opened",
+   "sound": "ribbon + sparkle",
+   "query": "gift",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-012",
+   "cat": "OBJ",
+   "trigger": "Key / unlock success",
+   "sound": "key jingle",
+   "query": "keys",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-013",
+   "cat": "OBJ",
+   "trigger": "Door opens (opportunity)",
+   "sound": "door open",
+   "query": "door",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-014",
+   "cat": "OBJ",
+   "trigger": "Door closes",
+   "sound": "door close",
+   "query": "door close",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-015",
+   "cat": "OBJ",
+   "trigger": "Light switch",
+   "sound": "switch",
+   "query": "switch",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-016",
+   "cat": "OBJ",
+   "trigger": "Candle",
+   "sound": "match strike",
+   "query": "match",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-017",
+   "cat": "OBJ",
+   "trigger": "Fire (passion)",
+   "sound": "fire whoosh",
+   "query": "fire",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-018",
+   "cat": "OBJ",
+   "trigger": "Water drop",
+   "sound": "drop",
+   "query": "drop",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-019",
+   "cat": "OBJ",
+   "trigger": "Glass breaks (shock)",
+   "sound": "glass break short",
+   "query": "glass break",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-020",
+   "cat": "OBJ",
+   "trigger": "Balloon pop",
+   "sound": "pop",
+   "query": "balloon",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-021",
+   "cat": "OBJ",
+   "trigger": "Bell",
+   "sound": "bell",
+   "query": "bell",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-022",
+   "cat": "OBJ",
+   "trigger": "Whistle",
+   "sound": "whistle",
+   "query": "whistle",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-023",
+   "cat": "OBJ",
+   "trigger": "Magnifying glass (search)",
+   "sound": "zoom shimmer",
+   "query": "magnify",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-024",
+   "cat": "OBJ",
+   "trigger": "Puzzle piece fits",
+   "sound": "click fit",
+   "query": "puzzle",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-025",
+   "cat": "OBJ",
+   "trigger": "Lego / building blocks",
+   "sound": "plastic clicks",
+   "query": "lego",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-026",
+   "cat": "OBJ",
+   "trigger": "Hammer / building",
+   "sound": "hammer",
+   "query": "hammer",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-027",
+   "cat": "OBJ",
+   "trigger": "Brick wall (obstacle)",
+   "sound": "thud",
+   "query": "thud",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-028",
+   "cat": "OBJ",
+   "trigger": "Ladder climb",
+   "sound": "steps",
+   "query": "climb",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-029",
+   "cat": "OBJ",
+   "trigger": "Stairs / growth steps",
+   "sound": "ascending taps",
+   "query": "steps up",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-030",
+   "cat": "OBJ",
+   "trigger": "Trophy",
+   "sound": "ting",
+   "query": "trophy",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-031",
+   "cat": "OBJ",
+   "trigger": "Medal",
+   "sound": "medal clink",
+   "query": "medal",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-032",
+   "cat": "OBJ",
+   "trigger": "Crown",
+   "sound": "regal shimmer",
+   "query": "crown",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-033",
+   "cat": "OBJ",
+   "trigger": "Diamond",
+   "sound": "diamond sparkle",
+   "query": "diamond",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-034",
+   "cat": "OBJ",
+   "trigger": "Globe spins",
+   "sound": "air whoosh",
+   "query": "globe",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-035",
+   "cat": "OBJ",
+   "trigger": "Map pin",
+   "sound": "pin drop",
+   "query": "pin",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-036",
+   "cat": "OBJ",
+   "trigger": "Compass",
+   "sound": "click",
+   "query": "compass",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-037",
+   "cat": "OBJ",
+   "trigger": "Rocket",
+   "sound": "rocket",
+   "query": "rocket",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-038",
+   "cat": "OBJ",
+   "trigger": "Car (speed)",
+   "sound": "car pass",
+   "query": "car pass",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-039",
+   "cat": "OBJ",
+   "trigger": "Motorbike",
+   "sound": "engine rev short",
+   "query": "engine",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-040",
+   "cat": "OBJ",
+   "trigger": "Running person",
+   "sound": "footsteps fast",
+   "query": "running",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-041",
+   "cat": "OBJ",
+   "trigger": "Shoes lace up",
+   "sound": "lace",
+   "query": "lace",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-042",
+   "cat": "OBJ",
+   "trigger": "Plane",
+   "sound": "plane pass",
+   "query": "plane",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-043",
+   "cat": "OBJ",
+   "trigger": "Train",
+   "sound": "train pass",
+   "query": "train",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-044",
+   "cat": "OBJ",
+   "trigger": "Fishing hook drops",
+   "sound": "hook plop",
+   "query": "plop",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-045",
+   "cat": "OBJ",
+   "trigger": "Arrow hits target",
+   "sound": "arrow thunk",
+   "query": "arrow",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-046",
+   "cat": "OBJ",
+   "trigger": "Dart",
+   "sound": "dart",
+   "query": "dart",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-047",
+   "cat": "OBJ",
+   "trigger": "Chess move (strategy)",
+   "sound": "chess piece tap",
+   "query": "chess",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-048",
+   "cat": "OBJ",
+   "trigger": "Dice",
+   "sound": "dice roll",
+   "query": "dice",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-049",
+   "cat": "OBJ",
+   "trigger": "Camera photo",
+   "sound": "shutter",
+   "query": "shutter",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-050",
+   "cat": "OBJ",
+   "trigger": "Polaroid print",
+   "sound": "polaroid eject",
+   "query": "polaroid",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-051",
+   "cat": "OBJ",
+   "trigger": "Film reel",
+   "sound": "projector",
+   "query": "projector",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-052",
+   "cat": "OBJ",
+   "trigger": "Mirror (self)",
+   "sound": "shimmer",
+   "query": "shimmer",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-053",
+   "cat": "OBJ",
+   "trigger": "Umbrella (protection)",
+   "sound": "umbrella open",
+   "query": "umbrella",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-054",
+   "cat": "OBJ",
+   "trigger": "Shield",
+   "sound": "metal block",
+   "query": "shield",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-055",
+   "cat": "OBJ",
+   "trigger": "Parachute",
+   "sound": "fabric whoosh",
+   "query": "parachute",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-056",
+   "cat": "OBJ",
+   "trigger": "Crutches (weakness)",
+   "sound": "wood knock",
+   "query": "wood",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-057",
+   "cat": "OBJ",
+   "trigger": "Bubble",
+   "sound": "bubble",
+   "query": "bubble",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-058",
+   "cat": "OBJ",
+   "trigger": "Spring / bounce",
+   "sound": "boing",
+   "query": "boing",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-059",
+   "cat": "OBJ",
+   "trigger": "Brain thinking",
+   "sound": "soft neural",
+   "query": "neural",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-060",
+   "cat": "OBJ",
+   "trigger": "Eye blink",
+   "sound": "blink tick",
+   "query": "blink",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-061",
+   "cat": "OBJ",
+   "trigger": "Ear / listen",
+   "sound": "air muffle",
+   "query": "muffle",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-062",
+   "cat": "OBJ",
+   "trigger": "Megaphone (announce)",
+   "sound": "megaphone",
+   "query": "megaphone",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-063",
+   "cat": "OBJ",
+   "trigger": "Loudspeaker",
+   "sound": "mic feedback very short",
+   "query": "feedback",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-064",
+   "cat": "OBJ",
+   "trigger": "Microphone podcast",
+   "sound": "mic tap",
+   "query": "mic",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-065",
+   "cat": "OBJ",
+   "trigger": "Coffee cup",
+   "sound": "cup clink + pour",
+   "query": "coffee",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "OBJ-066",
+   "cat": "OBJ",
+   "trigger": "Tea Bangla cha",
+   "sound": "pour + clink",
+   "query": "tea",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "NAT-001",
+   "cat": "NAT",
+   "trigger": "Sunrise / new start",
+   "sound": "birds + warm pad",
+   "query": "morning birds",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-002",
+   "cat": "NAT",
+   "trigger": "Rain (sad/calm)",
+   "sound": "rain soft",
+   "query": "rain",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-003",
+   "cat": "NAT",
+   "trigger": "Thunder (problem)",
+   "sound": "thunder distant",
+   "query": "thunder",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-004",
+   "cat": "NAT",
+   "trigger": "Wind (change)",
+   "sound": "wind",
+   "query": "wind",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-005",
+   "cat": "NAT",
+   "trigger": "Ocean / calm",
+   "sound": "waves",
+   "query": "waves",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-006",
+   "cat": "NAT",
+   "trigger": "Forest",
+   "sound": "forest ambience",
+   "query": "forest",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-007",
+   "cat": "NAT",
+   "trigger": "City busy",
+   "sound": "city ambience",
+   "query": "city",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-008",
+   "cat": "NAT",
+   "trigger": "Dhaka traffic",
+   "sound": "traffic horns soft",
+   "query": "traffic",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-009",
+   "cat": "NAT",
+   "trigger": "Crowd / audience",
+   "sound": "crowd murmur",
+   "query": "crowd",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-010",
+   "cat": "NAT",
+   "trigger": "Applause (achievement)",
+   "sound": "applause short",
+   "query": "applause",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-011",
+   "cat": "NAT",
+   "trigger": "Laugh (light humour)",
+   "sound": "light laugh",
+   "query": "laugh",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-012",
+   "cat": "NAT",
+   "trigger": "Gasp-worthy moment",
+   "sound": "orchestral sting short",
+   "query": "sting",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-013",
+   "cat": "NAT",
+   "trigger": "Suspense",
+   "sound": "low drone",
+   "query": "drone",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-014",
+   "cat": "NAT",
+   "trigger": "Calm / trust",
+   "sound": "soft pad",
+   "query": "pad",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-015",
+   "cat": "NAT",
+   "trigger": "Victory",
+   "sound": "rising brass short",
+   "query": "victory",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-016",
+   "cat": "NAT",
+   "trigger": "Mistake / oops",
+   "sound": "comedic boing",
+   "query": "oops",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-017",
+   "cat": "NAT",
+   "trigger": "Shock",
+   "sound": "impact + reverse",
+   "query": "shock",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-018",
+   "cat": "NAT",
+   "trigger": "Sad",
+   "sound": "low piano note",
+   "query": "piano low",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-019",
+   "cat": "NAT",
+   "trigger": "Happy",
+   "sound": "pluck melody short",
+   "query": "happy pluck",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "NAT-020",
+   "cat": "NAT",
+   "trigger": "Curiosity",
+   "sound": "music box tick",
+   "query": "curious",
+   "level_db": -16,
+   "timing": "bed under the scene, fade in 0.3s"
+  },
+  {
+   "id": "PEOPLE-001",
+   "cat": "PEOPLE",
+   "trigger": "Footsteps walking in",
+   "sound": "footsteps",
+   "query": "footsteps",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-002",
+   "cat": "PEOPLE",
+   "trigger": "Sit down",
+   "sound": "chair",
+   "query": "chair",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-003",
+   "cat": "PEOPLE",
+   "trigger": "Clap",
+   "sound": "single clap",
+   "query": "clap",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-004",
+   "cat": "PEOPLE",
+   "trigger": "Snap fingers (instant)",
+   "sound": "snap",
+   "query": "snap",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-005",
+   "cat": "PEOPLE",
+   "trigger": "Thumbs up",
+   "sound": "pop",
+   "query": "pop",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-006",
+   "cat": "PEOPLE",
+   "trigger": "Point at screen",
+   "sound": "tick",
+   "query": "tick",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-007",
+   "cat": "PEOPLE",
+   "trigger": "Hand wave",
+   "sound": "air swish",
+   "query": "swish",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-008",
+   "cat": "PEOPLE",
+   "trigger": "High five",
+   "sound": "slap",
+   "query": "high five",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-009",
+   "cat": "PEOPLE",
+   "trigger": "Phone pick up",
+   "sound": "pick up",
+   "query": "phone pick",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-010",
+   "cat": "PEOPLE",
+   "trigger": "Typing on laptop",
+   "sound": "keyboard",
+   "query": "keyboard",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-011",
+   "cat": "PEOPLE",
+   "trigger": "Writing notes",
+   "sound": "pen",
+   "query": "pen",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-012",
+   "cat": "PEOPLE",
+   "trigger": "Heartbeat nervous",
+   "sound": "heartbeat",
+   "query": "heartbeat",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-013",
+   "cat": "PEOPLE",
+   "trigger": "Breath / relief",
+   "sound": "exhale (non-vocal synth)",
+   "query": "breath",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-014",
+   "cat": "PEOPLE",
+   "trigger": "Doorbell / visitor",
+   "sound": "doorbell",
+   "query": "doorbell",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-015",
+   "cat": "PEOPLE",
+   "trigger": "Patient smiling",
+   "sound": "warm chime",
+   "query": "chime",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-016",
+   "cat": "PEOPLE",
+   "trigger": "Team working",
+   "sound": "office ambience",
+   "query": "office",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-017",
+   "cat": "PEOPLE",
+   "trigger": "Meeting",
+   "sound": "room tone + paper",
+   "query": "meeting",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-018",
+   "cat": "PEOPLE",
+   "trigger": "Video call",
+   "sound": "call connect",
+   "query": "call",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-019",
+   "cat": "PEOPLE",
+   "trigger": "Presenting on stage",
+   "sound": "applause soft",
+   "query": "applause",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-020",
+   "cat": "PEOPLE",
+   "trigger": "Lecture / classroom",
+   "sound": "chalk",
+   "query": "chalk",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-021",
+   "cat": "PEOPLE",
+   "trigger": "Student learning",
+   "sound": "page flip",
+   "query": "page",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-022",
+   "cat": "PEOPLE",
+   "trigger": "Hand holds object (palm prop H9)",
+   "sound": "soft pop",
+   "query": "pop",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-023",
+   "cat": "PEOPLE",
+   "trigger": "Hand pinches tiny person (E14)",
+   "sound": "cartoon pinch squeak (subtle)",
+   "query": "squeak",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-024",
+   "cat": "PEOPLE",
+   "trigger": "Falling person",
+   "sound": "falling whoosh",
+   "query": "fall whoosh",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "PEOPLE-025",
+   "cat": "PEOPLE",
+   "trigger": "Jump",
+   "sound": "jump whoosh",
+   "query": "jump",
+   "level_db": -14,
+   "timing": "on the action frame"
+  },
+  {
+   "id": "MUSIC-001",
+   "cat": "MUSIC",
+   "trigger": "First frame",
+   "sound": "music already playing (no fade-in from silence)",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-002",
+   "cat": "MUSIC",
+   "trigger": "Hook ends (3s)",
+   "sound": "music phrase / drum fill lands",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-003",
+   "cat": "MUSIC",
+   "trigger": "Key claim line",
+   "sound": "music drops out 0.5–1.5s (one per video)",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-004",
+   "cat": "MUSIC",
+   "trigger": "After the drop",
+   "sound": "beat returns with impact",
+   "query": "impact",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-005",
+   "cat": "MUSIC",
+   "trigger": "Voice speaking",
+   "sound": "music ducked −10 to −14 dB via sidechain",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-006",
+   "cat": "MUSIC",
+   "trigger": "No voice gap > 0.5s",
+   "sound": "music rises back",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-007",
+   "cat": "MUSIC",
+   "trigger": "Ending CTA",
+   "sound": "music resolves on last bar, short tail",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-008",
+   "cat": "MUSIC",
+   "trigger": "Clip with its own dialogue (ending clip)",
+   "sound": "music −6 dB more, clip normalised",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-009",
+   "cat": "MUSIC",
+   "trigger": "Talking-head premium (F1/F8)",
+   "sound": "lo-fi / soft piano bed",
+   "query": "lofi",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-010",
+   "cat": "MUSIC",
+   "trigger": "Energetic promo (F6/F7)",
+   "sound": "trap/808 ~100–120 BPM",
+   "query": "trap",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-011",
+   "cat": "MUSIC",
+   "trigger": "Faceless education (F4)",
+   "sound": "minimal electronic ~120 BPM",
+   "query": "minimal electronic",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-012",
+   "cat": "MUSIC",
+   "trigger": "Emotional story",
+   "sound": "piano + strings",
+   "query": "piano",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-013",
+   "cat": "MUSIC",
+   "trigger": "Podcast reel (F5)",
+   "sound": "ambient pad, very low",
+   "query": "ambient",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-014",
+   "cat": "MUSIC",
+   "trigger": "Signature typography (F9)",
+   "sound": "dark cinematic pulse",
+   "query": "cinematic pulse",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-015",
+   "cat": "MUSIC",
+   "trigger": "Cuts on beat",
+   "sound": "allowed for montage only (portfolio grid); SFX still on visuals",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-016",
+   "cat": "MUSIC",
+   "trigger": "SFX bus",
+   "sound": "high-pass 150 Hz, low-pass 9 kHz, shared short reverb",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-017",
+   "cat": "MUSIC",
+   "trigger": "Loudness",
+   "sound": "final −14 LUFS, true peak ≤ −1.5 dB",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-018",
+   "cat": "MUSIC",
+   "trigger": "Too many SFX in 1s",
+   "sound": "keep max 2 overlapping; drop the lower-priority one",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-019",
+   "cat": "MUSIC",
+   "trigger": "Bangla voice sibilance",
+   "sound": "de-esser before mix",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "MUSIC-020",
+   "cat": "MUSIC",
+   "trigger": "Room noise",
+   "sound": "afftdn gentle; never change voice character",
+   "query": "-",
+   "level_db": 0,
+   "timing": "music edit points"
+  },
+  {
+   "id": "GFX-001",
+   "cat": "GFX",
+   "trigger": "Line draws on (SVG stroke)",
+   "sound": "pen stroke / thin swish",
+   "query": "line draw",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-002",
+   "cat": "GFX",
+   "trigger": "Curved line / bezier draws (E03)",
+   "sound": "long thin whoosh",
+   "query": "line whoosh",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-003",
+   "cat": "GFX",
+   "trigger": "Circle draws around object",
+   "sound": "marker circle",
+   "query": "marker circle",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-004",
+   "cat": "GFX",
+   "trigger": "Check mark appears",
+   "sound": "positive tick",
+   "query": "check",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-005",
+   "cat": "GFX",
+   "trigger": "Cross mark appears",
+   "sound": "error tick",
+   "query": "cross",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-006",
+   "cat": "GFX",
+   "trigger": "Plus sign appears",
+   "sound": "pop",
+   "query": "plus",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-007",
+   "cat": "GFX",
+   "trigger": "Minus sign appears",
+   "sound": "low tick",
+   "query": "minus",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-008",
+   "cat": "GFX",
+   "trigger": "Equals / result",
+   "sound": "chime",
+   "query": "result",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-009",
+   "cat": "GFX",
+   "trigger": "Arrow grows",
+   "sound": "stretch swish",
+   "query": "arrow grow",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-010",
+   "cat": "GFX",
+   "trigger": "Dots pop in arc (E06 1-7)",
+   "sound": "ascending pops",
+   "query": "dots pop",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-011",
+   "cat": "GFX",
+   "trigger": "Grid lines appear",
+   "sound": "soft digital sweep",
+   "query": "grid",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-012",
+   "cat": "GFX",
+   "trigger": "Ruler / HUD ticks",
+   "sound": "tiny ticks",
+   "query": "hud ticks",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-013",
+   "cat": "GFX",
+   "trigger": "Orbit ellipse draws",
+   "sound": "airy circle whoosh",
+   "query": "orbit",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-014",
+   "cat": "GFX",
+   "trigger": "Concentric rings pulse",
+   "sound": "sonar ping",
+   "query": "sonar",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-015",
+   "cat": "GFX",
+   "trigger": "Ring pulse behind object (POUNDED)",
+   "sound": "soft impact + ring",
+   "query": "ring impact",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-016",
+   "cat": "GFX",
+   "trigger": "Glow flash on element",
+   "sound": "shimmer",
+   "query": "glow",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-017",
+   "cat": "GFX",
+   "trigger": "Particles burst",
+   "sound": "sparkle burst",
+   "query": "particles",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-018",
+   "cat": "GFX",
+   "trigger": "Dust/particle text assembly (E10)",
+   "sound": "granular shimmer",
+   "query": "granular",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-019",
+   "cat": "GFX",
+   "trigger": "Confetti",
+   "sound": "confetti pop",
+   "query": "confetti",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-020",
+   "cat": "GFX",
+   "trigger": "Sparks from word (E15)",
+   "sound": "spark crackle",
+   "query": "sparks",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-021",
+   "cat": "GFX",
+   "trigger": "Brush stroke under word",
+   "sound": "brush swish",
+   "query": "brush",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-022",
+   "cat": "GFX",
+   "trigger": "Torn paper collage piece",
+   "sound": "paper tear",
+   "query": "tear",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-023",
+   "cat": "GFX",
+   "trigger": "Polaroid drops in",
+   "sound": "paper flap",
+   "query": "polaroid",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-024",
+   "cat": "GFX",
+   "trigger": "Push-pin card flies in (E12)",
+   "sound": "card whoosh + pin tap",
+   "query": "pin tap",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-025",
+   "cat": "GFX",
+   "trigger": "Card flips",
+   "sound": "card flip",
+   "query": "card flip",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-026",
+   "cat": "GFX",
+   "trigger": "Card stack fans out",
+   "sound": "card riffle",
+   "query": "riffle",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-027",
+   "cat": "GFX",
+   "trigger": "Glass HUD panel slides",
+   "sound": "glass swish",
+   "query": "glass",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-028",
+   "cat": "GFX",
+   "trigger": "3D icon tile floats in",
+   "sound": "soft whoosh",
+   "query": "float",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-029",
+   "cat": "GFX",
+   "trigger": "Object falls and lands",
+   "sound": "fall whoosh + soft land",
+   "query": "fall land",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-030",
+   "cat": "GFX",
+   "trigger": "Object bounces",
+   "sound": "boing soft",
+   "query": "boing",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-031",
+   "cat": "GFX",
+   "trigger": "Object swings on rope (E04)",
+   "sound": "rope creak",
+   "query": "rope",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-032",
+   "cat": "GFX",
+   "trigger": "Object rotates",
+   "sound": "rotation whoosh",
+   "query": "rotate",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-033",
+   "cat": "GFX",
+   "trigger": "Object scales up big",
+   "sound": "swell",
+   "query": "swell",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-034",
+   "cat": "GFX",
+   "trigger": "Object shrinks away",
+   "sound": "reverse swell",
+   "query": "shrink",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-035",
+   "cat": "GFX",
+   "trigger": "Object slides off screen",
+   "sound": "swish out",
+   "query": "swish out",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-036",
+   "cat": "GFX",
+   "trigger": "Object replaces letter (E08)",
+   "sound": "pop",
+   "query": "pop",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-037",
+   "cat": "GFX",
+   "trigger": "Duotone object pixel-assembles",
+   "sound": "digital blip",
+   "query": "digital blip",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-038",
+   "cat": "GFX",
+   "trigger": "Spotlight turns on",
+   "sound": "stage light clunk",
+   "query": "spotlight",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-039",
+   "cat": "GFX",
+   "trigger": "Curtain / reveal",
+   "sound": "curtain swish",
+   "query": "curtain",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-040",
+   "cat": "GFX",
+   "trigger": "Shape morph",
+   "sound": "liquid morph",
+   "query": "morph",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-041",
+   "cat": "GFX",
+   "trigger": "Liquid fill in text (E07)",
+   "sound": "water swell",
+   "query": "water",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-042",
+   "cat": "GFX",
+   "trigger": "Gradient background shift",
+   "sound": "none",
+   "query": "-",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-043",
+   "cat": "GFX",
+   "trigger": "Doodle squiggle wiggles",
+   "sound": "none (too busy)",
+   "query": "-",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-044",
+   "cat": "GFX",
+   "trigger": "Speed lines stamp (E11 SECRET)",
+   "sound": "zip stamp",
+   "query": "stamp zip",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-045",
+   "cat": "GFX",
+   "trigger": "Shock lines !!! (E15)",
+   "sound": "cartoon alert",
+   "query": "alert",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-046",
+   "cat": "GFX",
+   "trigger": "AI orb pulses (E07)",
+   "sound": "airy tonal hum",
+   "query": "orb",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-047",
+   "cat": "GFX",
+   "trigger": "Audio wave strip reacts",
+   "sound": "none (visual of voice)",
+   "query": "-",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-048",
+   "cat": "GFX",
+   "trigger": "Countdown ring (E06)",
+   "sound": "tick per second",
+   "query": "tick",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-049",
+   "cat": "GFX",
+   "trigger": "Progress underline fills (E11)",
+   "sound": "rise sweep",
+   "query": "progress",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "GFX-050",
+   "cat": "GFX",
+   "trigger": "Map card floats (E16)",
+   "sound": "soft pop",
+   "query": "pop",
+   "level_db": -14,
+   "timing": "on the animation frame"
+  },
+  {
+   "id": "DATA-001",
+   "cat": "DATA",
+   "trigger": "Bar grows",
+   "sound": "rising tone per bar",
+   "query": "bar rise",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-002",
+   "cat": "DATA",
+   "trigger": "Bars grow in sequence",
+   "sound": "ascending plucks",
+   "query": "plucks",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-003",
+   "cat": "DATA",
+   "trigger": "Line chart draws upward",
+   "sound": "rising sweep",
+   "query": "rise",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-004",
+   "cat": "DATA",
+   "trigger": "Line chart crashes (E13)",
+   "sound": "falling zig-zag tone",
+   "query": "fall",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-005",
+   "cat": "DATA",
+   "trigger": "Pie slices pop",
+   "sound": "pop per slice",
+   "query": "pop",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-006",
+   "cat": "DATA",
+   "trigger": "Percentage counts",
+   "sound": "tick train",
+   "query": "ticks",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-007",
+   "cat": "DATA",
+   "trigger": "Before vs after numbers",
+   "sound": "low tone then bright ding",
+   "query": "before after",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-008",
+   "cat": "DATA",
+   "trigger": "Stat card appears",
+   "sound": "card pop",
+   "query": "card",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-009",
+   "cat": "DATA",
+   "trigger": "Big statistic reveal",
+   "sound": "hit + shimmer",
+   "query": "stat hit",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-010",
+   "cat": "DATA",
+   "trigger": "Source citation / article card (E09)",
+   "sound": "paper slide + tick",
+   "query": "article",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-011",
+   "cat": "DATA",
+   "trigger": "Table rows fill",
+   "sound": "soft ticks",
+   "query": "ticks",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-012",
+   "cat": "DATA",
+   "trigger": "Comparison VS",
+   "sound": "versus hit",
+   "query": "versus",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-013",
+   "cat": "DATA",
+   "trigger": "Ranking #1 to #5 (E13)",
+   "sound": "pop per number",
+   "query": "rank pop",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-014",
+   "cat": "DATA",
+   "trigger": "Survey result",
+   "sound": "chime",
+   "query": "chime",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DATA-015",
+   "cat": "DATA",
+   "trigger": "Google rating 4.9",
+   "sound": "star ticks + ding",
+   "query": "stars",
+   "level_db": -13,
+   "timing": "on the data event"
+  },
+  {
+   "id": "DENT-001",
+   "cat": "DENT",
+   "trigger": "Tooth icon appears",
+   "sound": "tooth ting",
+   "query": "tooth ting",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-002",
+   "cat": "DENT",
+   "trigger": "Smile reveal",
+   "sound": "sparkle",
+   "query": "sparkle",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-003",
+   "cat": "DENT",
+   "trigger": "Dental implant screw",
+   "sound": "ratchet click soft",
+   "query": "ratchet",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-004",
+   "cat": "DENT",
+   "trigger": "Root canal file",
+   "sound": "fine metallic",
+   "query": "metal fine",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-005",
+   "cat": "DENT",
+   "trigger": "Whitening before/after",
+   "sound": "sparkle sweep",
+   "query": "sparkle sweep",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-006",
+   "cat": "DENT",
+   "trigger": "Dental X-ray (OPG)",
+   "sound": "scanner sweep",
+   "query": "scanner",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-007",
+   "cat": "DENT",
+   "trigger": "Intraoral scanner",
+   "sound": "electronic beep",
+   "query": "beep",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-008",
+   "cat": "DENT",
+   "trigger": "Autoclave",
+   "sound": "steam hiss short",
+   "query": "steam",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-009",
+   "cat": "DENT",
+   "trigger": "RVG sensor",
+   "sound": "click + beep",
+   "query": "beep",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-010",
+   "cat": "DENT",
+   "trigger": "Chamber signboard",
+   "sound": "neon buzz / light on",
+   "query": "neon",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-011",
+   "cat": "DENT",
+   "trigger": "Doctor's website hero",
+   "sound": "soft swell + click",
+   "query": "hero",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-012",
+   "cat": "DENT",
+   "trigger": "Doctor profile photo",
+   "sound": "camera shutter soft",
+   "query": "shutter",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-013",
+   "cat": "DENT",
+   "trigger": "Degrees and credentials list",
+   "sound": "paper + ticks",
+   "query": "credentials",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-014",
+   "cat": "DENT",
+   "trigger": "Patient testimonial card",
+   "sound": "card pop + warm chime",
+   "query": "testimonial",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-015",
+   "cat": "DENT",
+   "trigger": "Book appointment button",
+   "sound": "button click + success",
+   "query": "booking",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-016",
+   "cat": "DENT",
+   "trigger": "WhatsApp chat button",
+   "sound": "message pop",
+   "query": "whatsapp",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-017",
+   "cat": "DENT",
+   "trigger": "Google Business profile",
+   "sound": "pin + ding",
+   "query": "gbp",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-018",
+   "cat": "DENT",
+   "trigger": "Clinic location map",
+   "sound": "pin drop",
+   "query": "pin",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-019",
+   "cat": "DENT",
+   "trigger": "Services carousel",
+   "sound": "soft swipe per slide",
+   "query": "carousel",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-020",
+   "cat": "DENT",
+   "trigger": "Before website: outdated",
+   "sound": "glitch + dusty",
+   "query": "old",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-021",
+   "cat": "DENT",
+   "trigger": "After website: modern",
+   "sound": "shimmer + chime",
+   "query": "modern",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-022",
+   "cat": "DENT",
+   "trigger": "Bilingual toggle EN/BN",
+   "sound": "switch click",
+   "query": "switch",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-023",
+   "cat": "DENT",
+   "trigger": "Admin panel login",
+   "sound": "lock unlock",
+   "query": "unlock",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-024",
+   "cat": "DENT",
+   "trigger": "Blog post published",
+   "sound": "publish whoosh",
+   "query": "publish",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-025",
+   "cat": "DENT",
+   "trigger": "Video library on site",
+   "sound": "play click",
+   "query": "play",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-026",
+   "cat": "DENT",
+   "trigger": "Symptom checker",
+   "sound": "digital tick",
+   "query": "tick",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-027",
+   "cat": "DENT",
+   "trigger": "Online payment",
+   "sound": "payment success",
+   "query": "payment",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-028",
+   "cat": "DENT",
+   "trigger": "Mobile responsive demo (phone rotates)",
+   "sound": "rotate whoosh",
+   "query": "rotate",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-029",
+   "cat": "DENT",
+   "trigger": "Speed score 100",
+   "sound": "ticks + ding",
+   "query": "score",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-030",
+   "cat": "DENT",
+   "trigger": "Patients finding doctor on Google",
+   "sound": "search typing + results",
+   "query": "search",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-031",
+   "cat": "DENT",
+   "trigger": "Competitor clinic",
+   "sound": "neutral tick",
+   "query": "tick",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-032",
+   "cat": "DENT",
+   "trigger": "Doctor's specialty icon (eye/heart/bone)",
+   "sound": "matching medical sound",
+   "query": "medical",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-033",
+   "cat": "DENT",
+   "trigger": "Portfolio card (Sikdar/ClientB/ClientD/Client-A)",
+   "sound": "soft click per card",
+   "query": "click",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-034",
+   "cat": "DENT",
+   "trigger": "Benzadid logo",
+   "sound": "brand sting soft",
+   "query": "logo sting",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "DENT-035",
+   "cat": "DENT",
+   "trigger": "Price/package card",
+   "sound": "card pop",
+   "query": "card",
+   "level_db": -12,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-001",
+   "cat": "SOCIAL",
+   "trigger": "Reel play",
+   "sound": "play click",
+   "query": "play",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-002",
+   "cat": "SOCIAL",
+   "trigger": "Views counter",
+   "sound": "tick train",
+   "query": "ticks",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-003",
+   "cat": "SOCIAL",
+   "trigger": "Viral / explode",
+   "sound": "whoosh + impact",
+   "query": "viral",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-004",
+   "cat": "SOCIAL",
+   "trigger": "Algorithm",
+   "sound": "digital chirp",
+   "query": "chirp",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-005",
+   "cat": "SOCIAL",
+   "trigger": "Followers grow",
+   "sound": "rising arpeggio",
+   "query": "grow",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-006",
+   "cat": "SOCIAL",
+   "trigger": "Comment section",
+   "sound": "multiple pops",
+   "query": "pops",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-007",
+   "cat": "SOCIAL",
+   "trigger": "Share button",
+   "sound": "whoosh",
+   "query": "share",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-008",
+   "cat": "SOCIAL",
+   "trigger": "Save bookmark",
+   "sound": "click",
+   "query": "save",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-009",
+   "cat": "SOCIAL",
+   "trigger": "DM inbox",
+   "sound": "message pings",
+   "query": "pings",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-010",
+   "cat": "SOCIAL",
+   "trigger": "Story ring",
+   "sound": "tap",
+   "query": "tap",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-011",
+   "cat": "SOCIAL",
+   "trigger": "Live badge",
+   "sound": "beep",
+   "query": "live",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-012",
+   "cat": "SOCIAL",
+   "trigger": "Hashtag",
+   "sound": "tick",
+   "query": "tick",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-013",
+   "cat": "SOCIAL",
+   "trigger": "Ad campaign launch",
+   "sound": "launch",
+   "query": "launch",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-014",
+   "cat": "SOCIAL",
+   "trigger": "Boost post",
+   "sound": "rise",
+   "query": "rise",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-015",
+   "cat": "SOCIAL",
+   "trigger": "Engagement chart",
+   "sound": "rise",
+   "query": "rise",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-016",
+   "cat": "SOCIAL",
+   "trigger": "Unfollow / drop",
+   "sound": "fall",
+   "query": "fall",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "SOCIAL-017",
+   "cat": "SOCIAL",
+   "trigger": "Trending",
+   "sound": "fire whoosh",
+   "query": "fire",
+   "level_db": -13,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-001",
+   "cat": "EDU",
+   "trigger": "Step 1 / 2 / 3 title",
+   "sound": "whoosh + numbered pop",
+   "query": "step",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-002",
+   "cat": "EDU",
+   "trigger": "Tip / pro tip label",
+   "sound": "ding small",
+   "query": "tip",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-003",
+   "cat": "EDU",
+   "trigger": "Mistake #N",
+   "sound": "error tick + low thud",
+   "query": "mistake",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-004",
+   "cat": "EDU",
+   "trigger": "Myth vs fact",
+   "sound": "buzzer then ding",
+   "query": "myth fact",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-005",
+   "cat": "EDU",
+   "trigger": "Correct answer",
+   "sound": "ding",
+   "query": "correct",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-006",
+   "cat": "EDU",
+   "trigger": "Wrong answer",
+   "sound": "buzzer soft",
+   "query": "wrong",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-007",
+   "cat": "EDU",
+   "trigger": "Definition card",
+   "sound": "page chime",
+   "query": "definition",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-008",
+   "cat": "EDU",
+   "trigger": "Quote from expert",
+   "sound": "paper + soft chime",
+   "query": "quote",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-009",
+   "cat": "EDU",
+   "trigger": "Example box",
+   "sound": "card pop",
+   "query": "card",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-010",
+   "cat": "EDU",
+   "trigger": "Summary checklist",
+   "sound": "tick per item",
+   "query": "checklist",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-011",
+   "cat": "EDU",
+   "trigger": "Warning sign",
+   "sound": "alert tone soft",
+   "query": "warning",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-012",
+   "cat": "EDU",
+   "trigger": "Did you know?",
+   "sound": "curious music box",
+   "query": "curious",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-013",
+   "cat": "EDU",
+   "trigger": "Formula E=mc2 (E14)",
+   "sound": "8-bit blip + fire whoosh",
+   "query": "8bit fire",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-014",
+   "cat": "EDU",
+   "trigger": "Diagram labels pop",
+   "sound": "tiny ticks",
+   "query": "ticks",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "EDU-015",
+   "cat": "EDU",
+   "trigger": "Zoom into diagram part",
+   "sound": "soft wind",
+   "query": "wind",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-001",
+   "cat": "BD",
+   "trigger": "Dhaka skyline",
+   "sound": "city ambience light",
+   "query": "city",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-002",
+   "cat": "BD",
+   "trigger": "Rickshaw",
+   "sound": "rickshaw bell",
+   "query": "rickshaw bell",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-003",
+   "cat": "BD",
+   "trigger": "Bus / traffic jam",
+   "sound": "horns distant",
+   "query": "horns",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-004",
+   "cat": "BD",
+   "trigger": "Chamber at night",
+   "sound": "crickets + tube light hum",
+   "query": "night",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-005",
+   "cat": "BD",
+   "trigger": "Rain monsoon",
+   "sound": "rain",
+   "query": "rain",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-006",
+   "cat": "BD",
+   "trigger": "Tea stall",
+   "sound": "cup clink",
+   "query": "tea",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-007",
+   "cat": "BD",
+   "trigger": "bKash payment",
+   "sound": "payment success",
+   "query": "payment",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-008",
+   "cat": "BD",
+   "trigger": "Taka coins",
+   "sound": "coin",
+   "query": "coin",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-009",
+   "cat": "BD",
+   "trigger": "Prayer time context",
+   "sound": "avoid religious audio; use soft ambience",
+   "query": "-",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-010",
+   "cat": "BD",
+   "trigger": "Village / rural patient",
+   "sound": "birds + wind",
+   "query": "rural",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-011",
+   "cat": "BD",
+   "trigger": "Hospital crowd BD",
+   "sound": "murmur",
+   "query": "murmur",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-012",
+   "cat": "BD",
+   "trigger": "Pharmacy",
+   "sound": "pill rattle",
+   "query": "pills",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-013",
+   "cat": "BD",
+   "trigger": "Mobile phone in hand",
+   "sound": "tap",
+   "query": "tap",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  },
+  {
+   "id": "BD-014",
+   "cat": "BD",
+   "trigger": "Facebook page (BD clinics)",
+   "sound": "notification",
+   "query": "notification",
+   "level_db": -14,
+   "timing": "on the visual frame"
+  }
+ ]
+}

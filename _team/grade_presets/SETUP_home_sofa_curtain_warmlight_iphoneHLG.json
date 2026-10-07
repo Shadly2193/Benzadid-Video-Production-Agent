@@ -1,0 +1,6 @@
+{
+ "PHONE (natural ref)": "libplacebo=tonemapping=bt.2390:colorspace=bt709:color_primaries=bt709:color_trc=bt709:range=tv:format=yuv420p",
+ "1 Natural calm": "libplacebo=tonemapping=bt.2390:colorspace=bt709:color_primaries=bt709:color_trc=bt709:range=tv:format=yuv420p,eq=contrast=1.06:saturation=0.90,colorbalance=rs=-0.03:bs=0.03:rm=-0.02:bm=0.01,vignette=angle=PI/5,unsharp=5:5:0.35",
+ "2 Calm cinematic": "zscale=t=linear:npl=600,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,eq=contrast=1.06:saturation=0.90,colorbalance=rs=-0.03:bs=0.03:rm=-0.02:bm=0.01,vignette=angle=PI/5,unsharp=5:5:0.35",
+ "3 Dark cinematic": "zscale=t=linear:npl=1000,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,eq=brightness=0.02:gamma=1.05,eq=contrast=1.06:saturation=0.90,colorbalance=rs=-0.03:bs=0.03:rm=-0.02:bm=0.01,vignette=angle=PI/5,unsharp=5:5:0.35"
+}

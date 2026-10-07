@@ -1,0 +1,16 @@
+# heavy / machine-specific
+_engine/venv/
+_engine/models/
+_engine/work/
+_engine/reel/node_modules/
+_engine/reel/public/
+_engine/reel/out/
+**/__pycache__/
+# job outputs and private
+**/_job/
+Raw Videos/
+Edited Videos/
+.env
+.env.*
+.claude/settings.local.json
+*.log

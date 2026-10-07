@@ -1,0 +1,86 @@
+[
+ {
+  "t": 1.23,
+  "type": "heartbeat",
+  "conf": 0.32,
+  "rms_db": -33.9,
+  "clip": "E01_001.23_heartbeat.wav"
+ },
+ {
+  "t": 4.9,
+  "type": "heartbeat",
+  "conf": 0.5,
+  "rms_db": -32.2,
+  "clip": "E01_004.90_heartbeat.wav"
+ },
+ {
+  "t": 11.93,
+  "type": "heartbeat",
+  "conf": 0.34,
+  "rms_db": -34.4,
+  "clip": "E01_011.93_heartbeat.wav"
+ },
+ {
+  "t": 17.48,
+  "type": "heartbeat",
+  "conf": 0.29,
+  "rms_db": -25.6,
+  "clip": "E01_017.48_heartbeat.wav"
+ },
+ {
+  "t": 19.35,
+  "type": "heartbeat",
+  "conf": 0.47,
+  "rms_db": -25.6,
+  "clip": "E01_019.35_heartbeat.wav"
+ },
+ {
+  "t": 19.58,
+  "type": "heartbeat",
+  "conf": 0.58,
+  "rms_db": -24.4,
+  "clip": "E01_019.58_heartbeat.wav"
+ },
+ {
+  "t": 20.28,
+  "type": "heartbeat",
+  "conf": 0.65,
+  "rms_db": -25.4,
+  "clip": "E01_020.28_heartbeat.wav"
+ },
+ {
+  "t": 20.51,
+  "type": "heartbeat",
+  "conf": 0.6,
+  "rms_db": -24.1,
+  "clip": "E01_020.51_heartbeat.wav"
+ },
+ {
+  "t": 22.37,
+  "type": "heartbeat",
+  "conf": 0.32,
+  "rms_db": -24.0,
+  "clip": "E01_022.37_heartbeat.wav"
+ },
+ {
+  "t": 22.6,
+  "type": "heartbeat",
+  "conf": 0.38,
+  "rms_db": -25.3,
+  "clip": "E01_022.60_heartbeat.wav"
+ },
+ {
+  "t": 27.49,
+  "type": "heartbeat",
+  "conf": 0.52,
+  "rms_db": -24.7,
+  "clip": "E01_027.49_heartbeat.wav"
+ },
+ {
+  "t": 27.72,
+  "type": "heartbeat",
+  "conf": 0.57,
+  "rms_db": -28.6,
+  "clip": "E01_027.72_heartbeat.wav"
+ }
+]

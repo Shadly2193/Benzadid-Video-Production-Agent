@@ -1,0 +1,2931 @@
+{
+ "job": "TEST-001 Client-A doctor case study",
+ "agent": "caption-specialist (P6)",
+ "date": "2026-10-06",
+ "status": "v1 for build (GATE 1)",
+ "timeline": "OUTPUT seconds after EDL cuts at 1.05x (same clock as 05_visual_plan). Word t = glossary-corrected words aligned char-proportionally onto ASR word starts (accuracy ~+-0.1 s) -> re-check against rendered VO; spoken_t kept per word.",
+ "canvas": "1080x1920",
+ "safe_zone": "all text inside x 90-990 (x<=900 when y>900, TikTok rail) and y 285-1540 (4:5 crop top + TikTok bottom 380 px; YT/IG 320 px implied)",
+ "fonts": {
+  "bangla_big": "Hind Siliguri Bold (_team/fonts/HindSiliguri-Bold.ttf)",
+  "bangla_small": "Hind Siliguri SemiBold (_team/fonts/HindSiliguri-SemiBold.ttf)",
+  "english_keyword": "Anton Regular, uppercase (_team/fonts/Anton-Regular.ttf)",
+  "note": "Bangla never italic (synthetic oblique breaks matras/conjuncts); Anton has NO Bengali glyphs - never set a Bangla word in Anton"
+ },
+ "colours": {
+  "default": "#FFFFFF",
+  "accent": "#E10600 - max one accent word per line; new/after/positive features",
+  "before_old": "#B8B8B8 - old-site items, never red"
+ },
+ "rules_applied": [
+  "word appears at spoken time; clamped up to ~2 frames early only where the 0.35 s pre-cut rule required it (see log)",
+  "every unit clears on shot change; only exception C01 holds across the 01->02 whip (same laptop, screen swap)",
+  "last word >=0.35 s before every cut",
+  "no per-letter typing: 0.032 s/char does not fit 0.6-1.0 s shots -> word-level pops"
+ ],
+ "units": [
+  {
+   "id": "C01",
+   "shots": [
+    "01",
+    "02"
+   ],
+   "sentence": 8,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "পুরো ওয়েবসাইট",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "পুরো",
+       "t": 0.019,
+       "spoken_t": 0.019,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "ওয়েবসাইট",
+       "t": 0.362,
+       "spoken_t": 0.362,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 0.019,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "H2 lockup part 1 holds through the whip (same laptop, screen swap) - deliberate exception to clear-on-cut",
+   "t_out": 0.74,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C02",
+   "shots": [
+    "03"
+   ],
+   "sentence": 8,
+   "zone": "headline",
+   "box": [
+    90,
+    300,
+    900,
+    230
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "নতুনভাবে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "নতুনভাবে",
+       "t": 0.743,
+       "spoken_t": 0.743,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ডিজাইন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 120,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ডিজাইন",
+       "t": 1.067,
+       "spoken_t": 1.067,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 0.743,
+   "sfx_cue": true,
+   "sfx_t": 1.067,
+   "note": "H2 slam: ডিজাইন pops at spoken time; করলাম not shown (spoken after cut-0.35)",
+   "t_out": 1.49,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C03",
+   "shots": [
+    "04"
+   ],
+   "sentence": 1,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "একজন ডক্টরের এক",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "একজন",
+       "t": 1.49,
+       "spoken_t": 1.486,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "ডক্টরের",
+       "t": 2.457,
+       "spoken_t": 2.457,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "এক",
+       "t": 2.762,
+       "spoken_t": 2.762,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ওয়েবসাইটের",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ওয়েবসাইটের",
+       "t": 2.981,
+       "spoken_t": 2.981,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 1.49,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 3.2,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C04",
+   "shots": [
+    "04"
+   ],
+   "sentence": 1,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "কেস স্টাডি",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "কেস",
+       "t": 3.2,
+       "spoken_t": 3.2,
+       "colour": "#E10600"
+      },
+      {
+       "w": "স্টাডি",
+       "t": 3.391,
+       "spoken_t": 3.391,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 3.2,
+   "sfx_cue": true,
+   "sfx_t": 3.2,
+   "note": "echoes the CASE STUDY stamp (3.2); দেখাই not shown (after cut-0.35)",
+   "t_out": 3.79,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C05",
+   "shots": [
+    "05"
+   ],
+   "sentence": 2,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ডক্টর",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ডক্টর",
+       "t": 3.79,
+       "spoken_t": 3.79,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "আরিফ",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "আরিফ",
+       "t": 4.114,
+       "spoken_t": 4.114,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 3.79,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "name",
+   "t_out": 4.324,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C06",
+   "shots": [
+    "05"
+   ],
+   "sentence": 2,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "একজন",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "একজন",
+       "t": 4.324,
+       "spoken_t": 4.324,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "এন্ডোভাসকুলার সার্জন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 73,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "এন্ডোভাসকুলার",
+       "t": 4.762,
+       "spoken_t": 4.762,
+       "colour": "#E10600"
+      },
+      {
+       "w": "সার্জন",
+       "t": 5.238,
+       "spoken_t": 5.238,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 4.324,
+   "sfx_cue": true,
+   "sfx_t": 4.762,
+   "note": "medical term, glossary spelling",
+   "t_out": 5.448,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C07",
+   "shots": [
+    "05"
+   ],
+   "sentence": 2,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "আমার",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "আমার",
+       "t": 5.448,
+       "spoken_t": 5.448,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "মেন্টর",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "মেন্টর",
+       "t": 5.92,
+       "spoken_t": 5.943,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 5.448,
+   "sfx_cue": true,
+   "sfx_t": 5.92,
+   "note": "with MY MENTOR badge pop",
+   "t_out": 6.27,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C08",
+   "shots": [
+    "06"
+   ],
+   "sentence": 3,
+   "zone": "headline",
+   "box": [
+    90,
+    300,
+    900,
+    230
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যারের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যারের",
+       "t": 6.27,
+       "spoken_t": 6.267,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "আগের",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "আগের",
+       "t": 6.667,
+       "spoken_t": 6.667,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 6.27,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "motion's question lockup moved: kemon chhilo is spoken at 7.12 (after cut 7.07)",
+   "t_out": 7.07,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C09",
+   "shots": [
+    "07"
+   ],
+   "sentence": 3,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ওয়েবসাইট",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ওয়েবসাইট",
+       "t": 7.07,
+       "spoken_t": 6.895,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "কেমন ছিল?",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "কেমন",
+       "t": 7.124,
+       "spoken_t": 7.124,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "ছিল?",
+       "t": 7.295,
+       "spoken_t": 7.295,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 7.07,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "question lockup lands here",
+   "t_out": 7.505,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C10",
+   "shots": [
+    "07"
+   ],
+   "sentence": 3,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "এই রকম",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "এই",
+       "t": 7.505,
+       "spoken_t": 7.505,
+       "colour": "#B8B8B8"
+      },
+      {
+       "w": "রকম",
+       "t": 7.69,
+       "spoken_t": 7.714,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 7.505,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 8.04,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C11",
+   "shots": [
+    "08"
+   ],
+   "sentence": 4,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "শুধু একটা",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "শুধু",
+       "t": 8.095,
+       "spoken_t": 8.095,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "একটা",
+       "t": 8.267,
+       "spoken_t": 8.267,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big_en",
+     "text": "LANDING PAGE",
+     "font": "Anton Regular",
+     "size_px": 108,
+     "line_height": 1.1,
+     "words": [
+      {
+       "w": "LANDING",
+       "t": 8.457,
+       "spoken_t": 8.457,
+       "colour": "#B8B8B8"
+      },
+      {
+       "w": "PAGE",
+       "t": 8.552,
+       "spoken_t": 8.552,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 8.095,
+   "sfx_cue": true,
+   "sfx_t": 8.457,
+   "note": "list item 1 (chip pops same time)",
+   "t_out": 8.95,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C12",
+   "shots": [
+    "09"
+   ],
+   "sentence": 4,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "big_en",
+     "text": "STATIC DESIGN",
+     "font": "Anton Regular",
+     "size_px": 108,
+     "line_height": 1.1,
+     "words": [
+      {
+       "w": "STATIC",
+       "t": 8.952,
+       "spoken_t": 8.952,
+       "colour": "#B8B8B8"
+      },
+      {
+       "w": "DESIGN",
+       "t": 9.219,
+       "spoken_t": 9.219,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 8.952,
+   "sfx_cue": true,
+   "sfx_t": 8.952,
+   "note": "list item 2",
+   "t_out": 10.02,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C13",
+   "shots": [
+    "10"
+   ],
+   "sentence": 4,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যারের হালকা",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যারের",
+       "t": 10.02,
+       "spoken_t": 9.695,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "হালকা",
+       "t": 10.02,
+       "spoken_t": 10.019,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "বিবরণ",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "বিবরণ",
+       "t": 10.32,
+       "spoken_t": 10.362,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 10.02,
+   "sfx_cue": true,
+   "sfx_t": 10.32,
+   "note": "list item 3; first word spoken 9.70 in shot 09 tail -> shown at 10.02",
+   "t_out": 10.67,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C14",
+   "shots": [
+    "11"
+   ],
+   "sentence": 4,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "চেম্বারের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "চেম্বারের",
+       "t": 10.67,
+       "spoken_t": 10.667,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big_en",
+     "text": "LOCATION",
+     "font": "Anton Regular",
+     "size_px": 108,
+     "line_height": 1.1,
+     "words": [
+      {
+       "w": "LOCATION",
+       "t": 11.23,
+       "spoken_t": 11.257,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 10.67,
+   "sfx_cue": true,
+   "sfx_t": 11.23,
+   "note": "list item 4",
+   "t_out": 11.58,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C15",
+   "shots": [
+    "12"
+   ],
+   "sentence": 4,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "big_en",
+     "text": "CONTACT INFORMATION",
+     "font": "Anton Regular",
+     "size_px": 89,
+     "line_height": 1.1,
+     "words": [
+      {
+       "w": "CONTACT",
+       "t": 11.581,
+       "spoken_t": 11.581,
+       "colour": "#B8B8B8"
+      },
+      {
+       "w": "INFORMATION",
+       "t": 11.771,
+       "spoken_t": 11.771,
+       "colour": "#B8B8B8"
+      }
+     ]
+    }
+   ],
+   "t_in": 11.581,
+   "sfx_cue": true,
+   "sfx_t": 11.581,
+   "note": "list item 5",
+   "t_out": 12.15,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C16",
+   "shots": [
+    "13"
+   ],
+   "sentence": 6,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যার আমার",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যার",
+       "t": 12.21,
+       "spoken_t": 12.21,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "আমার",
+       "t": 12.381,
+       "spoken_t": 12.381,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "সাপোর্ট নিলেন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "সাপোর্ট",
+       "t": 12.933,
+       "spoken_t": 12.933,
+       "colour": "#E10600"
+      },
+      {
+       "w": "নিলেন",
+       "t": 13.04,
+       "spoken_t": 13.105,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 12.21,
+   "sfx_cue": true,
+   "sfx_t": 12.933,
+   "note": "",
+   "t_out": 13.39,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C17",
+   "shots": [
+    "14"
+   ],
+   "sentence": 9,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ফ্রন্ট এন্ডে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ফ্রন্ট",
+       "t": 13.39,
+       "spoken_t": 13.39,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "এন্ডে",
+       "t": 13.829,
+       "spoken_t": 13.829,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "কী কী আছে?",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "কী",
+       "t": 13.981,
+       "spoken_t": 13.981,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "কী",
+       "t": 14.133,
+       "spoken_t": 14.133,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "আছে?",
+       "t": 14.22,
+       "spoken_t": 14.229,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 13.39,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "FRONT-END headline (motion) sits in top zone",
+   "t_out": 14.57,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C18",
+   "shots": [
+    "15"
+   ],
+   "sentence": 10,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ইন্ট্রোডাক্টরি ভিডিও সহ",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ইন্ট্রোডাক্টরি",
+       "t": 14.629,
+       "spoken_t": 14.629,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "ভিডিও",
+       "t": 15.124,
+       "spoken_t": 15.124,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "সহ",
+       "t": 15.314,
+       "spoken_t": 15.314,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "হিরো সেকশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "হিরো",
+       "t": 15.524,
+       "spoken_t": 15.524,
+       "colour": "#E10600"
+      },
+      {
+       "w": "সেকশন",
+       "t": 15.65,
+       "spoken_t": 15.714,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 14.629,
+   "sfx_cue": true,
+   "sfx_t": 15.524,
+   "note": "",
+   "t_out": 16.0,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C19",
+   "shots": [
+    "16"
+   ],
+   "sentence": 11,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "দুই ভাষার",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "দুই",
+       "t": 16.0,
+       "spoken_t": 16.0,
+       "colour": "#E10600"
+      },
+      {
+       "w": "ভাষার",
+       "t": 16.229,
+       "spoken_t": 16.229,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "ওয়েবসাইট",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ওয়েবসাইট",
+       "t": 16.476,
+       "spoken_t": 16.476,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 16.0,
+   "sfx_cue": true,
+   "sfx_t": 16.0,
+   "note": "number = accent",
+   "t_out": 16.838,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C20",
+   "shots": [
+    "16"
+   ],
+   "sentence": 11,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "বাংলায়",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "বাংলায়",
+       "t": 16.838,
+       "spoken_t": 16.838,
+       "colour": "#E10600"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "ক্লিক করলে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ক্লিক",
+       "t": 17.314,
+       "spoken_t": 17.314,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "করলে",
+       "t": 17.448,
+       "spoken_t": 17.448,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 16.838,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "cursor click sfx owned by motion/sound at 17.31",
+   "t_out": 17.657,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C21",
+   "shots": [
+    "16"
+   ],
+   "sentence": 11,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ওয়েবসাইট",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ওয়েবসাইট",
+       "t": 17.657,
+       "spoken_t": 17.657,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "বাংলায় দেখাবে",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "বাংলায়",
+       "t": 18.019,
+       "spoken_t": 18.019,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "দেখাবে",
+       "t": 18.324,
+       "spoken_t": 18.324,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 17.657,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 18.61,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C22",
+   "shots": [
+    "16"
+   ],
+   "sentence": 11,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ইংলিশে করলে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ইংলিশে",
+       "t": 18.61,
+       "spoken_t": 18.61,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "করলে",
+       "t": 19.048,
+       "spoken_t": 19.048,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ইংলিশে",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ইংলিশে",
+       "t": 19.429,
+       "spoken_t": 19.429,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 18.61,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "EN click 18.61",
+   "t_out": 19.9,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C23",
+   "shots": [
+    "17"
+   ],
+   "sentence": 12,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "পেশেন্টের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "পেশেন্টের",
+       "t": 19.905,
+       "spoken_t": 19.905,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "পেইন পয়েন্ট",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "পেইন",
+       "t": 20.381,
+       "spoken_t": 20.381,
+       "colour": "#E10600"
+      },
+      {
+       "w": "পয়েন্ট",
+       "t": 20.61,
+       "spoken_t": 20.61,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 19.905,
+   "sfx_cue": true,
+   "sfx_t": 20.381,
+   "note": "",
+   "t_out": 20.838,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C24",
+   "shots": [
+    "17"
+   ],
+   "sentence": 12,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ভিত্তিক",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ভিত্তিক",
+       "t": 20.838,
+       "spoken_t": 20.838,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "হুকিং কপি",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "হুকিং",
+       "t": 21.086,
+       "spoken_t": 21.086,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "কপি",
+       "t": 21.25,
+       "spoken_t": 21.314,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 20.838,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 21.6,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C25",
+   "shots": [
+    "18"
+   ],
+   "sentence": 13,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যারের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যারের",
+       "t": 21.638,
+       "spoken_t": 21.638,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "পরিচয় সেকশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "পরিচয়",
+       "t": 21.924,
+       "spoken_t": 21.924,
+       "colour": "#E10600"
+      },
+      {
+       "w": "সেকশন",
+       "t": 22.3,
+       "spoken_t": 22.305,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 21.638,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 22.65,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C26",
+   "shots": [
+    "19"
+   ],
+   "sentence": 14,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "সিম্পটম চেকার",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "সিম্পটম",
+       "t": 22.705,
+       "spoken_t": 22.705,
+       "colour": "#E10600"
+      },
+      {
+       "w": "চেকার",
+       "t": 23.086,
+       "spoken_t": 23.086,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 22.705,
+   "sfx_cue": true,
+   "sfx_t": 22.705,
+   "note": "",
+   "t_out": 23.41,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C27",
+   "shots": [
+    "19"
+   ],
+   "sentence": 14,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "যাতে রোগী",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "যাতে",
+       "t": 23.41,
+       "spoken_t": 23.41,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "রোগী",
+       "t": 23.657,
+       "spoken_t": 23.657,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "নিজের সিম্পটম",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "নিজের",
+       "t": 23.867,
+       "spoken_t": 23.867,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "সিম্পটম",
+       "t": 24.171,
+       "spoken_t": 24.171,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 23.41,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 24.4,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C28",
+   "shots": [
+    "19"
+   ],
+   "sentence": 14,
+   "zone": "bleed",
+   "box": [
+    90,
+    1340,
+    810,
+    200
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "বুঝে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "বুঝে",
+       "t": 24.4,
+       "spoken_t": 24.4,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "পরামর্শ নেন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "পরামর্শ",
+       "t": 24.552,
+       "spoken_t": 24.552,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "নেন",
+       "t": 24.75,
+       "spoken_t": 24.852,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 24.4,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 25.1,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C29",
+   "shots": [
+    "20"
+   ],
+   "sentence": 15,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "কেন করেছি?",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "কেন",
+       "t": 25.143,
+       "spoken_t": 25.143,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "করেছি?",
+       "t": 25.486,
+       "spoken_t": 25.486,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 25.143,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 25.924,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C30",
+   "shots": [
+    "20"
+   ],
+   "sentence": 15,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "কনভার্শনের",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "কনভার্শনের",
+       "t": 25.924,
+       "spoken_t": 25.924,
+       "colour": "#E10600"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "জন্য",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "জন্য",
+       "t": 26.457,
+       "spoken_t": 26.457,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 25.924,
+   "sfx_cue": true,
+   "sfx_t": 25.924,
+   "note": "Call Now tap 26.27 is motion/sound",
+   "t_out": 26.82,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C31",
+   "shots": [
+    "21"
+   ],
+   "sentence": 17,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ছবি সহ",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ছবি",
+       "t": 26.876,
+       "spoken_t": 26.876,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "সহ",
+       "t": 27.219,
+       "spoken_t": 27.219,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ডিজিজ সেকশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ডিজিজ",
+       "t": 27.438,
+       "spoken_t": 27.438,
+       "colour": "#E10600"
+      },
+      {
+       "w": "সেকশন",
+       "t": 27.657,
+       "spoken_t": 27.657,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 26.876,
+   "sfx_cue": true,
+   "sfx_t": 27.438,
+   "note": "list item",
+   "t_out": 28.1,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C32",
+   "shots": [
+    "22"
+   ],
+   "sentence": 17,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যারের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যারের",
+       "t": 28.1,
+       "spoken_t": 28.057,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "জার্নাল পাবলিকেশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 89,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "জার্নাল",
+       "t": 28.457,
+       "spoken_t": 28.457,
+       "colour": "#E10600"
+      },
+      {
+       "w": "পাবলিকেশন",
+       "t": 28.762,
+       "spoken_t": 28.762,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 28.1,
+   "sfx_cue": true,
+   "sfx_t": 28.457,
+   "note": "first word spoken ~27.9, shown at 28.10",
+   "t_out": 29.24,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C33",
+   "shots": [
+    "23"
+   ],
+   "sentence": 17,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যারের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যারের",
+       "t": 29.24,
+       "spoken_t": 29.238,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ব্লগ আর্টিকেল",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ব্লগ",
+       "t": 29.6,
+       "spoken_t": 29.6,
+       "colour": "#E10600"
+      },
+      {
+       "w": "আর্টিকেল",
+       "t": 29.76,
+       "spoken_t": 29.771,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 29.24,
+   "sfx_cue": true,
+   "sfx_t": 29.6,
+   "note": "",
+   "t_out": 30.11,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C34",
+   "shots": [
+    "24"
+   ],
+   "sentence": 17,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যারের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যারের",
+       "t": 30.114,
+       "spoken_t": 30.114,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "চেম্বার লোকেশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "চেম্বার",
+       "t": 30.362,
+       "spoken_t": 30.362,
+       "colour": "#E10600"
+      },
+      {
+       "w": "লোকেশন",
+       "t": 30.66,
+       "spoken_t": 30.724,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 30.114,
+   "sfx_cue": true,
+   "sfx_t": 30.362,
+   "note": "",
+   "t_out": 31.01,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C35",
+   "shots": [
+    "25"
+   ],
+   "sentence": 18,
+   "zone": "phone_top",
+   "box": [
+    90,
+    295,
+    900,
+    160
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "মোবাইলে",
+     "font": "Hind Siliguri Bold",
+     "size_px": 84,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "মোবাইলে",
+       "t": 31.01,
+       "spoken_t": 31.01,
+       "colour": "#E10600"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "এই ওয়েবসাইট দেখতে কেমন?",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "এই",
+       "t": 31.6,
+       "spoken_t": 31.6,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "ওয়েবসাইট",
+       "t": 31.733,
+       "spoken_t": 31.733,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "দেখতে",
+       "t": 31.981,
+       "spoken_t": 31.981,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "কেমন?",
+       "t": 32.21,
+       "spoken_t": 32.21,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 31.01,
+   "sfx_cue": true,
+   "sfx_t": 31.01,
+   "note": "ei rokom (32.44) not shown: <0.36 s before cut",
+   "t_out": 32.8,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C36",
+   "shots": [
+    "26"
+   ],
+   "sentence": 19,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "ব্যাকেন্ডে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "ব্যাকেন্ডে",
+       "t": 32.8,
+       "spoken_t": 32.8,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "কী কী আছে?",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "কী",
+       "t": 33.371,
+       "spoken_t": 33.371,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "কী",
+       "t": 33.45,
+       "spoken_t": 33.476,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "আছে?",
+       "t": 33.45,
+       "spoken_t": 33.581,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 32.8,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "BACK-END headline (motion) top",
+   "t_out": 33.8,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C37",
+   "shots": [
+    "27"
+   ],
+   "sentence": 20,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "স্যার",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "স্যার",
+       "t": 33.848,
+       "spoken_t": 33.848,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ব্লগ লিখতে",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ব্লগ",
+       "t": 34.705,
+       "spoken_t": 34.705,
+       "colour": "#E10600"
+      },
+      {
+       "w": "লিখতে",
+       "t": 34.77,
+       "spoken_t": 34.933,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 33.848,
+   "sfx_cue": true,
+   "sfx_t": 34.705,
+   "note": "admin beat blog; trailing paren not shown (would be 0.3 s early)",
+   "t_out": 35.12,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C38",
+   "shots": [
+    "28"
+   ],
+   "sentence": 20,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "ছবি আপলোড",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ছবি",
+       "t": 35.219,
+       "spoken_t": 35.219,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "আপলোড",
+       "t": 35.505,
+       "spoken_t": 35.505,
+       "colour": "#E10600"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "করতে পারেন",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "করতে",
+       "t": 35.733,
+       "spoken_t": 35.733,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "পারেন",
+       "t": 35.76,
+       "spoken_t": 35.905,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 35.219,
+   "sfx_cue": true,
+   "sfx_t": 35.219,
+   "note": "admin beat upload",
+   "t_out": 36.11,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C39",
+   "shots": [
+    "29"
+   ],
+   "sentence": 20,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "পাবলিকেশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "পাবলিকেশন",
+       "t": 36.21,
+       "spoken_t": 36.21,
+       "colour": "#E10600"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "এড করতে পারেন",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "এড",
+       "t": 36.762,
+       "spoken_t": 36.762,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "করতে",
+       "t": 36.914,
+       "spoken_t": 36.914,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "পারেন",
+       "t": 37.0,
+       "spoken_t": 37.067,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 36.21,
+   "sfx_cue": true,
+   "sfx_t": 36.21,
+   "note": "admin beat publication",
+   "t_out": 37.35,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C40",
+   "shots": [
+    "30"
+   ],
+   "sentence": 20,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "নিজের",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "নিজের",
+       "t": 37.448,
+       "spoken_t": 37.448,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ইনফরমেশন",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ইনফরমেশন",
+       "t": 37.81,
+       "spoken_t": 37.81,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 37.448,
+   "sfx_cue": true,
+   "sfx_t": 37.81,
+   "note": "admin beat profile",
+   "t_out": 38.324,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C41",
+   "shots": [
+    "30"
+   ],
+   "sentence": 20,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "আপডেট",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "আপডেট",
+       "t": 38.324,
+       "spoken_t": 38.324,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "small",
+     "text": "করতে পারেন",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "করতে",
+       "t": 38.724,
+       "spoken_t": 38.724,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "পারেন",
+       "t": 38.85,
+       "spoken_t": 38.876,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 38.324,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 39.2,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C42",
+   "shots": [
+    "31"
+   ],
+   "sentence": 21,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "small",
+     "text": "এইভাবে",
+     "font": "Hind Siliguri SemiBold",
+     "size_px": 46,
+     "line_height": 1.35,
+     "words": [
+      {
+       "w": "এইভাবে",
+       "t": 39.257,
+       "spoken_t": 39.257,
+       "colour": "#FFFFFF"
+      }
+     ]
+    },
+    {
+     "tier": "big",
+     "text": "ডাক্তারের ওয়েবসাইট",
+     "font": "Hind Siliguri Bold",
+     "size_px": 90,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "ডাক্তারের",
+       "t": 39.714,
+       "spoken_t": 39.714,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "ওয়েবসাইট",
+       "t": 40.019,
+       "spoken_t": 40.019,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 39.257,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 40.457,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C43",
+   "shots": [
+    "31"
+   ],
+   "sentence": 21,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1180,
+    810,
+    300
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "বানিয়ে দেই",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "বানিয়ে",
+       "t": 40.457,
+       "spoken_t": 40.457,
+       "colour": "#FFFFFF"
+      },
+      {
+       "w": "দেই",
+       "t": 40.705,
+       "spoken_t": 40.705,
+       "colour": "#FFFFFF"
+      }
+     ]
+    }
+   ],
+   "t_in": 40.457,
+   "sfx_cue": false,
+   "sfx_t": null,
+   "note": "",
+   "t_out": 41.14,
+   "style": "C3",
+   "plate": "rgba(8,10,12,0.62) radius 22, pad 16/28, behind the whole block (no blur)",
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": null,
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  },
+  {
+   "id": "C44",
+   "shots": [
+    "32"
+   ],
+   "sentence": 22,
+   "zone": "subtitle",
+   "box": [
+    90,
+    1330,
+    810,
+    210
+   ],
+   "lines": [
+    {
+     "tier": "big",
+     "text": "আমি",
+     "font": "Hind Siliguri Bold",
+     "size_px": 100,
+     "line_height": 1.22,
+     "words": [
+      {
+       "w": "আমি",
+       "t": 41.2,
+       "spoken_t": 41.2,
+       "colour": "#E10600"
+      }
+     ]
+    }
+   ],
+   "t_in": 41.2,
+   "sfx_cue": true,
+   "sfx_t": 41.2,
+   "note": "final slam on face, lower third above at y1180",
+   "t_out": 41.97,
+   "style": "C1",
+   "plate": null,
+   "shadow": "0 4px 18px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.8)",
+   "accent_stroke": "6px #0B0E10 outer stroke (paint-order: stroke) on accent/grey words - red over shirt/hair/books fails contrast without it",
+   "align": "centre of box, lines stacked in listed order, block vertically centred in box",
+   "animation": {
+    "small": "each word pops at its t: opacity 0->1, y 12->0, 4 frames",
+    "big": "each word pops at its t: scale 1.18->1.0, 4 frames ease-out-back",
+    "exit": "hard clear at t_out on a cut; 3-frame fade when the next unit is in the same shot"
+   }
+  }
+ ],
+ "end_card": {
+  "t_in": 41.97,
+  "t_out": 44.47,
+  "status": "WORDING PENDING GATE 1 (Shadly)",
+  "box": [
+   90,
+   700,
+   900,
+   520
+  ],
+  "lines": [
+   {
+    "text": "Website চাই?",
+    "font": "Hind Siliguri Bold",
+    "size_px": 120,
+    "colour": "#FFFFFF"
+   },
+   {
+    "text": "DM করুন",
+    "font": "Hind Siliguri Bold",
+    "size_px": 150,
+    "colour": "#E10600"
+   },
+   {
+    "text": "@handle TBD",
+    "font": "Hind Siliguri SemiBold",
+    "size_px": 52,
+    "colour": "#B8B8B8"
+   }
+  ],
+  "sfx_cue": true,
+  "sfx_t": 42.2
+ },
+ "log": [
+  "clamp মেন্টর spoken 5.943 -> 5.92 (0.023 s early)",
+  "clamp রকম spoken 7.714 -> 7.69 (0.024 s early)",
+  "clamp বিবরণ spoken 10.362 -> 10.32 (0.042 s early)",
+  "clamp location spoken 11.257 -> 11.23 (0.027 s early)",
+  "clamp নিলেন spoken 13.105 -> 13.04 (0.065 s early)",
+  "clamp আছে? spoken 14.229 -> 14.22 (0.009 s early)",
+  "clamp সেকশন spoken 15.714 -> 15.65 (0.064 s early)",
+  "clamp কপি spoken 21.314 -> 21.25 (0.064 s early)",
+  "clamp সেকশন spoken 22.305 -> 22.3 (0.005 s early)",
+  "clamp নেন spoken 24.852 -> 24.75 (0.102 s early)",
+  "clamp আর্টিকেল spoken 29.771 -> 29.76 (0.011 s early)",
+  "clamp লোকেশন spoken 30.724 -> 30.66 (0.064 s early)",
+  "clamp কী spoken 33.476 -> 33.45 (0.026 s early)",
+  "clamp আছে? spoken 33.581 -> 33.45 (0.131 s early)",
+  "clamp লিখতে spoken 34.933 -> 34.77 (0.163 s early)",
+  "clamp পারেন spoken 35.905 -> 35.76 (0.145 s early)",
+  "clamp পারেন spoken 37.067 -> 37.0 (0.067 s early)",
+  "clamp পারেন spoken 38.876 -> 38.85 (0.026 s early)"
+ ]
+}

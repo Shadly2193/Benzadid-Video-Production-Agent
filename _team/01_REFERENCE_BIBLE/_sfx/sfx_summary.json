@@ -1,0 +1,12 @@
+{
+ "E16": {
+  "camera flash": 3,
+  "heartbeat": 3,
+  "cash register": 4,
+  "mouse click": 2,
+  "applause": 5,
+  "ding bell": 1,
+  "swipe ui": 1,
+  "glitch digital noise": 5
+ }
+}

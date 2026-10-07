@@ -1,0 +1,107 @@
+[
+ {
+  "t": 0.04,
+  "type": "cash register",
+  "conf": 0.56,
+  "rms_db": -43.1,
+  "clip": "E11_000.04_cash_register.wav"
+ },
+ {
+  "t": 0.43,
+  "type": "heartbeat",
+  "conf": 0.28,
+  "rms_db": -44.1,
+  "clip": "E11_000.43_heartbeat.wav"
+ },
+ {
+  "t": 2.97,
+  "type": "camera flash",
+  "conf": 0.36,
+  "rms_db": -26.6,
+  "clip": "E11_002.97_camera_flash.wav"
+ },
+ {
+  "t": 3.74,
+  "type": "cash register",
+  "conf": 0.52,
+  "rms_db": -35.0,
+  "clip": "E11_003.74_cash_register.wav"
+ },
+ {
+  "t": 3.86,
+  "type": "ding bell",
+  "conf": 0.39,
+  "rms_db": -33.4,
+  "clip": "E11_003.86_ding_bell.wav"
+ },
+ {
+  "t": 4.8,
+  "type": "cash register",
+  "conf": 0.36,
+  "rms_db": -26.3,
+  "clip": "E11_004.80_cash_register.wav"
+ },
+ {
+  "t": 6.12,
+  "type": "camera flash",
+  "conf": 0.29,
+  "rms_db": -34.4,
+  "clip": "E11_006.12_camera_flash.wav"
+ },
+ {
+  "t": 22.55,
+  "type": "mouse click",
+  "conf": 0.42,
+  "rms_db": -30.6,
+  "clip": "E11_022.55_mouse_click.wav"
+ },
+ {
+  "t": 22.69,
+  "type": "cash register",
+  "conf": 0.32,
+  "rms_db": -31.3,
+  "clip": "E11_022.69_cash_register.wav"
+ },
+ {
+  "t": 23.18,
+  "type": "camera flash",
+  "conf": 0.31,
+  "rms_db": -32.7,
+  "clip": "E11_023.18_camera_flash.wav"
+ },
+ {
+  "t": 23.33,
+  "type": "cash register",
+  "conf": 0.37,
+  "rms_db": -34.4,
+  "clip": "E11_023.33_cash_register.wav"
+ },
+ {
+  "t": 34.61,
+  "type": "pop",
+  "conf": 0.89,
+  "rms_db": -25.1,
+  "clip": "E11_034.61_pop.wav"
+ },
+ {
+  "t": 38.34,
+  "type": "swoosh",
+  "conf": 0.88,
+  "rms_db": -31.7,
+  "clip": "E11_038.34_swoosh.wav"
+ },
+ {
+  "t": 45.05,
+  "type": "heartbeat",
+  "conf": 0.71,
+  "rms_db": -27.4,
+  "clip": "E11_045.05_heartbeat.wav"
+ },
+ {
+  "t": 48.34,
+  "type": "pop",
+  "conf": 0.85,
+  "rms_db": -27.8,
+  "clip": "E11_048.34_pop.wav"
+ }
+]

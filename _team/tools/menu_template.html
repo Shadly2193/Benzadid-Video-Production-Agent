@@ -1,0 +1,110 @@
+<title>Reel Style Menu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Anton&display=swap">
+<style>
+/* Layout: single reading column of picture cards, sticky pick bar at bottom */
+:root{
+  --bg:#F3F6F6; --surface:#FFFFFF; --fg:#13201F; --muted:#5B6B6A; --line:#D9E2E1;
+  --teal:#0FB5A6; --teal-ink:#08786F; --pick:#E6F7F5; --red:#D93A3A;
+  --font:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif; --display:"Anton","Impact",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1515; --surface:#162120; --fg:#E7EFEE; --muted:#93A5A3; --line:#263533; --teal:#2CCFBF; --teal-ink:#7FE6DC; --pick:#123532; --red:#F06A6A; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1515; --surface:#162120; --fg:#E7EFEE; --muted:#93A5A3; --line:#263533; --teal:#2CCFBF; --teal-ink:#7FE6DC; --pick:#123532; --red:#F06A6A; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.6;padding:24px 16px 120px}
+.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,7vw,52px);letter-spacing:.5px;line-height:1.05;margin:0}
+header h1 span{color:var(--teal)}
+header p{color:var(--muted);margin:10px 0 0;max-width:60ch}
+.how{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:4px}
+.how b{color:var(--teal-ink)}
+section h2{font-size:22px;margin:0 0 4px;text-wrap:balance}
+section .sub{color:var(--muted);margin:0 0 16px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;font:inherit;color:inherit;padding:0;min-width:0}
+.card:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.card.on{border-color:var(--teal);background:var(--pick)}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#000}
+.thumbs img,.one img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+.one{background:#000}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px}
+.tag{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.id{font-family:var(--display);font-size:18px;color:var(--teal-ink);letter-spacing:.5px}
+.tick{width:24px;height:24px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font-size:14px;color:transparent}
+.card.on .tick{background:var(--teal);border-color:var(--teal);color:#fff}
+.name{font-weight:700;font-size:17px;line-height:1.35}
+.what{font-size:14.5px;color:var(--muted)}
+.use{font-size:13px;color:var(--teal-ink);font-weight:600}
+.grid.small{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.grid.small .name{font-size:14.5px;font-weight:600}
+.sounds{display:grid;gap:10px}
+.snd{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.snd button{flex:none;width:46px;height:46px;border-radius:50%;border:none;background:var(--teal);color:#fff;font-size:18px;cursor:pointer}
+.snd button:focus-visible{outline:3px solid var(--fg)}
+.snd .t{min-width:0}.snd .t b{display:block}.snd .t span{color:var(--muted);font-size:14px}
+.bar{height:6px;border-radius:3px;background:var(--teal);opacity:.85}
+.ladder{display:flex;align-items:flex-end;gap:6px;height:70px;margin:6px 0 14px}
+.ladder div{flex:1;background:var(--teal);border-radius:4px 4px 0 0;display:flex;align-items:flex-end;justify-content:center;font-size:11px;color:#fff;padding-bottom:3px}
+.colors{display:flex;gap:12px;flex-wrap:wrap}
+.sw{flex:1 1 200px;border:2px solid var(--line);border-radius:14px;padding:14px;background:var(--surface);cursor:pointer;font:inherit;color:inherit;text-align:left}
+.sw.on{border-color:var(--teal);background:var(--pick)}
+.chips{display:flex;gap:6px;margin-bottom:8px}.chips i{width:34px;height:34px;border-radius:8px;display:block;border:1px solid var(--line)}
+.pickbar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:12px;align-items:center;justify-content:center;z-index:5}
+.pickbar .sum{font-size:14px;min-width:0;flex:1;max-width:620px;overflow-wrap:anywhere}
+.pickbar button{flex:none;background:var(--teal);color:#fff;border:none;border-radius:10px;padding:10px 16px;font:inherit;font-weight:700;cursor:pointer}
+.ref{font-size:12px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>আপনার Reel-এর <span>মেনু</span></h1>
+    <p>১৬টা reference video থেকে বের করা সব style, ছবি দিয়ে। যেটা ভালো লাগে তাতে চাপ দিন — নিচে আপনার পছন্দ জমা হবে, তারপর "কপি" করে আমাকে পাঠিয়ে দিন।</p>
+  </header>
+  <div class="how">
+    <div><b>১.</b> Format থেকে ২–৩টা বাছুন (সবচেয়ে জরুরি)</div>
+    <div><b>২.</b> Hook, Caption, Transition-এ যেগুলো ভালো লাগে সেগুলো বাছুন</div>
+    <div><b>৩.</b> Sound-গুলো ▶ চেপে শুনুন, রঙ বাছুন → নিচে "কপি" → আমাকে পেস্ট</div>
+  </div>
+
+  <section><h2>১. Video-র ধরন (Format)</h2><p class="sub">প্রতিটায় ৩টা ছবি = reference video-র আসল frame।</p><div class="grid" id="formats"></div></section>
+  <section><h2>২. শুরুর ৩ সেকেন্ড (Hook)</h2><p class="sub">দর্শক যাতে scroll না করে — প্রথম ৩ সেকেন্ডে কী ঘটবে।</p><div class="grid small" id="hooks"></div></section>
+  <section><h2>৩. লেখা কীভাবে আসবে (Caption)</h2><p class="sub">Subtitle-এর ধরন।</p><div class="grid small" id="caps"></div></section>
+  <section><h2>৪. এক দৃশ্য থেকে আরেক দৃশ্যে (Transition)</h2><p class="sub">Punch-in zoom (কথার মাঝে হালকা zoom) সব format-এ থাকবেই।</p><div class="grid small" id="trans"></div></section>
+  <section><h2>৫. Sound — কোনটা কখন</h2>
+    <p class="sub">নিয়ম: যত বড় মুহূর্ত, তত বড় শব্দ। শব্দ বসে লেখা/বস্তু/camera-র মুহূর্তে — music-এর তালে না।</p>
+    <div class="ladder" aria-hidden="true"><div style="height:18%">tick</div><div style="height:32%">pop</div><div style="height:50%">whoosh</div><div style="height:72%">riser</div><div style="height:100%">boom</div></div>
+    <div class="sounds" id="sounds"></div>
+  </section>
+  <section><h2>৬. রঙ</h2><p class="sub">প্রতি video-তে একটাই accent রঙ, এক লাইনে একটা শব্দেই।</p>
+    <div class="colors" id="colors">
+      <button class="sw" data-c="teal"><div class="chips"><i style="background:#0FB5A6"></i><i style="background:#13201F"></i><i style="background:#fff"></i><i style="background:#D93A3A"></i></div><b>Teal (প্রস্তাবিত)</b><div class="what">Benzadid brand; "ভুল/নেতিবাচক" শব্দে লাল</div></button>
+      <button class="sw" data-c="video"><div class="chips"><i style="background:#FFD400"></i><i style="background:#E01A1A"></i><i style="background:#B9A0E6"></i></div><b>Video অনুযায়ী বদলাবে</b><div class="what">প্রতিটা video-র বিষয় দেখে আলাদা রঙ</div></button>
+    </div>
+  </section>
+</div>
+<div class="pickbar"><div class="sum" id="sum">এখনো কিছু বাছা হয়নি</div><button id="copy">কপি</button></div>
+
+<script>
+/*DATA*/
+const KEY="reelMenuPicks"; let picks=new Set(); let color="";
+try{const s=JSON.parse(localStorage.getItem(KEY)||"{}");picks=new Set(s.p||[]);color=s.c||"";}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({p:[...picks],c:color}))}catch(e){}}
+function card(it,big){
+  const b=document.createElement("button");b.className="card"+(picks.has(it.id)?" on":"");b.setAttribute("aria-pressed",picks.has(it.id));
+  b.innerHTML=(big?`<div class="thumbs">${it.imgs.map(s=>`<img src="${s}" alt="">`).join("")}</div>`:`<div class="one"><img src="${it.img}" alt=""></div>`)+
+  `<div class="body"><div class="tag"><span class="id">${it.id}</span><span class="tick">✓</span></div><div class="name">${it.name}</div>`+
+  (big?`<div class="what">${it.what}</div><div class="use">কাজে লাগবে: ${it.use}</div><div class="ref">Reference: ${it.refs}</div>`:`<div class="ref">Reference: ${it.ref}</div>`)+`</div>`;
+  b.onclick=()=>{picks.has(it.id)?picks.delete(it.id):picks.add(it.id);b.classList.toggle("on");b.setAttribute("aria-pressed",picks.has(it.id));save();sum();};
+  return b;}
+DATA.formats.forEach(f=>formats.append(card(f,true)));
+DATA.hooks.forEach(f=>hooks.append(card(f)));DATA.caps.forEach(f=>caps.append(card(f)));DATA.trans.forEach(f=>trans.append(card(f)));
+DATA.sounds.forEach(s=>{const d=document.createElement("div");d.className="snd";const a=new Audio(s.src);
+  d.innerHTML=`<button aria-label="${s.name} শুনুন">▶</button><div class="t"><b>${s.name}</b><span>${s.when}</span></div>`;
+  d.querySelector("button").onclick=()=>{a.currentTime=0;a.play().catch(()=>{});};sounds.append(d);});
+document.querySelectorAll(".sw").forEach(b=>{if(b.dataset.c===color)b.classList.add("on");b.onclick=()=>{color=b.dataset.c;document.querySelectorAll(".sw").forEach(x=>x.classList.toggle("on",x===b));save();sum();};});
+function text(){const order=[...DATA.formats,...DATA.hooks,...DATA.caps,...DATA.trans].map(x=>x.id).filter(i=>picks.has(i));
+  return "আমার পছন্দ: "+(order.join(", ")||"—")+" | রঙ: "+(color==="teal"?"Teal":color==="video"?"Video অনুযায়ী":"—");}
+function sum(){document.getElementById("sum").textContent=picks.size||color?text():"এখনো কিছু বাছা হয়নি";}
+sum();
+copy.onclick=()=>{const t=text();navigator.clipboard.writeText(t).then(()=>{copy.textContent="কপি হয়েছে ✓";setTimeout(()=>copy.textContent="কপি",1800)}).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById("sum"));const s=getSelection();s.removeAllRanges();s.addRange(r);});};
+</script>

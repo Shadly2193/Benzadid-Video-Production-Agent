@@ -1,0 +1,100 @@
+[
+ {
+  "t": 0.03,
+  "type": "swoosh",
+  "conf": 0.35,
+  "rms_db": -23.2,
+  "clip": "E05_000.03_swoosh.wav"
+ },
+ {
+  "t": 0.48,
+  "type": "heartbeat",
+  "conf": 0.58,
+  "rms_db": -14.9,
+  "clip": "E05_000.48_heartbeat.wav"
+ },
+ {
+  "t": 1.15,
+  "type": "heartbeat",
+  "conf": 0.4,
+  "rms_db": -9.6,
+  "clip": "E05_001.15_heartbeat.wav"
+ },
+ {
+  "t": 1.6,
+  "type": "heartbeat",
+  "conf": 0.29,
+  "rms_db": -10.0,
+  "clip": "E05_001.60_heartbeat.wav"
+ },
+ {
+  "t": 5.15,
+  "type": "cash register",
+  "conf": 0.56,
+  "rms_db": -27.4,
+  "clip": "E05_005.15_cash_register.wav"
+ },
+ {
+  "t": 5.55,
+  "type": "camera flash",
+  "conf": 0.45,
+  "rms_db": -24.2,
+  "clip": "E05_005.55_camera_flash.wav"
+ },
+ {
+  "t": 5.81,
+  "type": "ding bell",
+  "conf": 0.42,
+  "rms_db": -23.8,
+  "clip": "E05_005.81_ding_bell.wav"
+ },
+ {
+  "t": 11.1,
+  "type": "camera flash",
+  "conf": 0.29,
+  "rms_db": -25.9,
+  "clip": "E05_011.10_camera_flash.wav"
+ },
+ {
+  "t": 12.66,
+  "type": "ding bell",
+  "conf": 0.37,
+  "rms_db": -21.3,
+  "clip": "E05_012.66_ding_bell.wav"
+ },
+ {
+  "t": 12.9,
+  "type": "ding bell",
+  "conf": 0.37,
+  "rms_db": -22.0,
+  "clip": "E05_012.90_ding_bell.wav"
+ },
+ {
+  "t": 19.34,
+  "type": "cash register",
+  "conf": 0.35,
+  "rms_db": -19.8,
+  "clip": "E05_019.34_cash_register.wav"
+ },
+ {
+  "t": 19.55,
+  "type": "cash register",
+  "conf": 0.41,
+  "rms_db": -21.0,
+  "clip": "E05_019.55_cash_register.wav"
+ },
+ {
+  "t": 39.11,
+  "type": "swipe ui",
+  "conf": 0.39,
+  "rms_db": -34.0,
+  "clip": "E05_039.11_swipe_ui.wav"
+ },
+ {
+  "t": 39.55,
+  "type": "swipe ui",
+  "conf": 0.43,
+  "rms_db": -39.7,
+  "clip": "E05_039.55_swipe_ui.wav"
+ }
+]

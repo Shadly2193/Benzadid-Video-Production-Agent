@@ -1,0 +1,79 @@
+[
+ {
+  "t": 0.03,
+  "type": "sub bass drop",
+  "conf": 0.46,
+  "rms_db": -21.4,
+  "clip": "E10_000.03_sub_bass_drop.wav"
+ },
+ {
+  "t": 24.01,
+  "type": "cash register",
+  "conf": 0.64,
+  "rms_db": -28.8,
+  "clip": "E10_024.01_cash_register.wav"
+ },
+ {
+  "t": 24.28,
+  "type": "laugh",
+  "conf": 0.38,
+  "rms_db": -33.1,
+  "clip": "E10_024.28_laugh.wav"
+ },
+ {
+  "t": 48.62,
+  "type": "mouse click",
+  "conf": 0.4,
+  "rms_db": -29.6,
+  "clip": "E10_048.62_mouse_click.wav"
+ },
+ {
+  "t": 48.75,
+  "type": "mouse click",
+  "conf": 0.54,
+  "rms_db": -30.6,
+  "clip": "E10_048.75_mouse_click.wav"
+ },
+ {
+  "t": 48.85,
+  "type": "mouse click",
+  "conf": 0.48,
+  "rms_db": -31.2,
+  "clip": "E10_048.85_mouse_click.wav"
+ },
+ {
+  "t": 49.03,
+  "type": "mouse click",
+  "conf": 0.4,
+  "rms_db": -32.5,
+  "clip": "E10_049.03_mouse_click.wav"
+ },
+ {
+  "t": 49.17,
+  "type": "mouse click",
+  "conf": 0.49,
+  "rms_db": -33.8,
+  "clip": "E10_049.17_mouse_click.wav"
+ },
+ {
+  "t": 49.37,
+  "type": "mouse click",
+  "conf": 0.31,
+  "rms_db": -35.8,
+  "clip": "E10_049.37_mouse_click.wav"
+ },
+ {
+  "t": 49.49,
+  "type": "mouse click",
+  "conf": 0.43,
+  "rms_db": -37.5,
+  "clip": "E10_049.49_mouse_click.wav"
+ },
+ {
+  "t": 49.62,
+  "type": "camera flash",
+  "conf": 0.26,
+  "rms_db": -39.9,
+  "clip": "E10_049.62_camera_flash.wav"
+ }
+]

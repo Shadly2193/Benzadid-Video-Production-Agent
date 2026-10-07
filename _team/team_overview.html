@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Benzadid Team Map</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Anton&display=swap">
+<style>
+:root{--bg:#F2F6F5;--card:#fff;--fg:#14211F;--muted:#5E6E6C;--line:#D8E2E0;--teal:#0E9E91;--tealbg:#E3F5F2;--amber:#B7791F;--amberbg:#FBF1DF;--font:"Hind Siliguri",system-ui,sans-serif;--disp:"Anton",Impact,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1716;--card:#172220;--fg:#E5EEEC;--muted:#97A8A5;--line:#283634;--teal:#36CDBE;--tealbg:#123430;--amber:#E9B55B;--amberbg:#33280F}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);line-height:1.55;padding:22px 16px 40px}
+.wrap{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(30px,6vw,46px);margin:0;line-height:1.05}h1 span{color:var(--teal)}
+.lead{color:var(--muted);margin:6px 0 0}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px}
+.flow b{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-weight:600}
+.flow i{color:var(--muted);font-style:normal}
+h2{font-size:21px;margin:0 0 4px}.sub{color:var(--muted);margin:0 0 12px;font-size:15px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.ag{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.ag.lead{border:2px solid var(--teal)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.n{font-family:var(--disp);font-size:15px;color:var(--teal);letter-spacing:.5px}
+.name{font-weight:700;font-size:18px;line-height:1.25}
+.st{font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px;white-space:nowrap}
+.ok{background:var(--tealbg);color:var(--teal)}.todo{background:var(--amberbg);color:var(--amber)}
+.ag ul{margin:0;padding-left:18px;font-size:14.5px}.ag li{margin:2px 0}
+.out{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:6px}
+.you{background:var(--card);border-left:4px solid var(--teal);border-radius:8px;padding:12px 14px;font-size:15px}
+</style></head><body><div class="wrap">
+<header><h1>আপনার <span>Agent Team</span></h1>
+<p class="lead">১ জন leader + ২টা team। প্রতিটা card-এ সেই agent-এর কাজ। সবুজ = লেখা হয়ে গেছে, হলুদ = এখন লেখা হবে।</p></header>
+
+<div class="you"><b>আপনি যা করবেন:</b> শুধু ৩টা — (১) সকালে/দুপুরে Assistant-এর প্রশ্নের উত্তর, (২) record করে folder-এ raw video রাখা, (৩) Storyboard-এ "ok" আর শেষ video-তে feedback। বাকি সব team।</div>
+
+<section><h2>কাজ কীভাবে এক জনের হাত থেকে আরেক জনের কাছে যায়</h2>
+<div class="flow"><b>Assistant</b><i>→ idea/script →</i><b>আপনি record</b><i>→</i><b>Director</b><i>→</i><b>Analyst</b><i>→</i><b>Editor</b><i>→</i><b>Performance Judge</b><i>→</i><b>B-roll</b><i>→</i><b>Motion</b><i>→</i><b>Sound</b><i>→ আপনার "ok" (Storyboard) →</i><b>Finisher-QA</b><i>→ video আপনার phone-এ</i></div></section>
+
+<section><h2>👑 Leader</h2><div class="grid">
+<div class="ag lead"><div class="top"><div><div class="n">L1</div><div class="name">Assistant (ব্যক্তিগত সহকারী)</div></div><span class="st todo">লেখা হবে</span></div>
+<ul><li>রোজ ১১টা ও ৩টায় phone-এ জিজ্ঞেস করবে: "আজ record করতে পারবেন? fresh আছেন?"</li><li>"না" বললে সহজ বিকল্প দিয়ে উৎসাহ দেবে — দিনে সর্বোচ্চ ২–৩ বার</li><li>"হ্যাঁ" বললে topic জিজ্ঞেস করবে বা ৩টা idea দেবে</li><li>Content team চালাবে, calendar রাখবে</li><li>Raw video আসলে Production team-কে কাজ দেবে</li></ul>
+<div class="out">চালু হবে: <b>/checkin</b> (নিজে থেকে) আর <b>/content-plan</b></div></div>
+<div class="ag lead"><div class="top"><div><div class="n">L2</div><div class="name">Director (Production প্রধান)</div></div><span class="st todo">লেখা হবে</span></div>
+<ul><li>Raw folder পড়ে video-র ধরন ঠিক করে (F1–F9)</li><li>৭ জন production agent-কে পালা করে চালায়</li><li>আপনাকে Storyboard দেখায়, "ok" ছাড়া render করে না</li><li>আপনার প্রতিটা feedback নিয়মের খাতায় লেখে</li><li>নতুন reference video এলে বিশ্লেষণ করায়</li></ul>
+<div class="out">চালু হবে: <b>/reel-edit "folder"</b>, <b>/analyze-reference</b></div></div>
+</div></section>
+
+<section><h2>🎬 Production team (video বানায়)</h2><div class="grid">
+<div class="ag"><div class="top"><div><div class="n">P1</div><div class="name">Analyst</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>প্রতিটা file মাপে: দৈর্ঘ্য, HDR, ঘোরানো, শব্দের মান, noise</li><li>মুখ আছে কি না, আলো, ফ্রেমিং সমস্যা</li><li>কতজন কথা বলছে, duplicate file</li><li>কোন format সবচেয়ে ভালো — প্রস্তাব দেয়</li></ul><div class="out">ফল: 01_analysis</div></div>
+<div class="ag"><div class="top"><div><div class="n">P2</div><div class="name">Editor (কাটার মানুষ)</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>বাংলা/ইংরেজি transcript, নাম-বানান ঠিক করে</li><li>একই কথা দুবার বললে একটা রাখে</li><li>নীরবতা, "উম", ভুল শুরু কাটে</li><li>৫–৬ মিনিট থেকে সেরা ৩০–৬০ সেকেন্ডের গল্প বানায় — hook দিয়ে শুরু</li></ul><div class="out">ফল: transcript + কাটার তালিকা</div></div>
+<div class="ag"><div class="top"><div><div class="n">P3</div><div class="name">Performance Judge</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>প্রতিটা take-এ চোখ ক্যামেরায় কি না, চোখ খোলা, হাসি, শক্তি, আটকানো মাপে</li><li>সেরা take বাছে; কাছাকাছি হলে আপনাকে দুটো দেখায়</li><li>দুর্বল অংশ B-roll দিয়ে ঢাকতে বলে</li></ul><div class="out">ফল: সেরা take-এর তালিকা</div></div>
+<div class="ag"><div class="top"><div><div class="n">P4</div><div class="name">B-roll Researcher</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>আপনি যা বলেন তা পর্দায় দেখানোর জিনিস জোগাড় করে</li><li>Website নিজে খুলে scroll record, screenshot</li><li>পরিসংখ্যানের আসল উৎস খোঁজে — না পেলে সংখ্যা দেখায় না</li><li>দাঁত, scalpel-এর মতো বস্তুর cut-out ছবি</li></ul><div class="out">ফল: B-roll folder + উৎসের তালিকা</div></div>
+<div class="ag"><div class="top"><div><div class="n">P5</div><div class="name">Motion Designer</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>প্রতি বাক্যের visual plan: hook, caption, zoom, transition</li><li>প্রথম ৩ সেকেন্ডে ≥৪টা পরিবর্তন; প্রতি ১.৫–৩ সেকেন্ডে কিছু বদলায়</li><li>লেখা-মাথার-পেছনে, tracking shot, focus zoom, 3D</li><li>Color grading (উষ্ণ, স্বাভাবিক) — Remotion/HyperFrames-এ বানায়</li></ul><div class="out">ফল: visual plan + ছবির render</div></div>
+<div class="ag"><div class="top"><div><div class="n">P6</div><div class="name">Sound Designer</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>Voice পরিষ্কার করে — গলা না বদলে</li><li>Music বাছে, কথার সময় নিচে নামায়</li><li>প্রতিটা দৃশ্যে অর্থ মিলিয়ে শব্দ (৫৭৫ পরিস্থিতির তালিকা + ১০১০টা শব্দ)</li><li>সব এক ঘরে মিশিয়ে mix, −14 LUFS</li></ul><div class="out">ফল: sound plan + চূড়ান্ত mix</div></div>
+<div class="ag"><div class="top"><div><div class="n">P7</div><div class="name">Finisher & QA</div></div><span class="st ok">লেখা হয়েছে</span></div>
+<ul><li>ছবি + শব্দ জুড়ে চূড়ান্ত video, phone copy, cover ছবি</li><li>১৫টা পাস/ফেল পরীক্ষা: লেখা কাটা? safe zone? শব্দ জোর? রঙ?</li><li>পুরনো version কখনো মোছে না (v1, v2…)</li></ul><div class="out">ফল: Edited Videos-এ video + QA রিপোর্ট</div></div>
+</div></section>
+
+<section><h2>✍️ Content team (কী বানাবো, কী বলবো)</h2><p class="sub">Assistant এদের চালাবে। সব হলুদ = এখন লেখা হবে।</p><div class="grid">
+<div class="ag"><div class="top"><div><div class="n">C1</div><div class="name">Strategist</div></div><span class="st todo">লেখা হবে</span></div><ul><li>মাসের content calendar</li><li>ভাগ: website promotion (বেশি), আগের কাজ দেখানো, screen recording, শিক্ষামূলক (মাসে ২–৪টা)</li><li>অন্য প্রতিষ্ঠানের কাজ এলে আলাদা brand ধরে</li></ul></div>
+<div class="ag"><div class="top"><div><div class="n">C2</div><div class="name">Researcher</div></div><span class="st todo">লেখা হবে</span></div><ul><li>ডাক্তারদের সমস্যা, trending বিষয়</li><li>প্রতিযোগী কী বানাচ্ছে</li><li>Script-এর জন্য আসল তথ্য ও উৎস</li></ul></div>
+<div class="ag"><div class="top"><div><div class="n">C3</div><div class="name">Scriptwriter</div></div><span class="st todo">লেখা হবে</span></div><ul><li>বাংলা/ইংরেজি ৩০–৬০ সেকেন্ডের script</li><li>প্রতিটায় ৩টা hook বিকল্প</li><li>কোন লাইনে কী দেখানো হবে তার ইঙ্গিত</li></ul></div>
+<div class="ag"><div class="top"><div><div class="n">C4</div><div class="name">Recording Coach</div></div><span class="st todo">লেখা হবে</span></div><ul><li>Teleprompter-এর মতো script, shot list</li><li>আলো, ক্যামেরা, মাথার উপরে জায়গা, HDR বন্ধ</li><li>"আজ এই ৩টা record করুন" — ছোট checklist</li></ul></div>
+<div class="ag"><div class="top"><div><div class="n">C5</div><div class="name">Visual Designer</div></div><span class="st todo">লেখা হবে</span></div><ul><li>Cover/thumbnail ছবি</li><li>Carousel ও শিক্ষামূলক ছবি পোস্ট</li><li>দরকারি বস্তুর ছবি বানানোর prompt</li></ul></div>
+<div class="ag"><div class="top"><div><div class="n">C6</div><div class="name">Publisher</div></div><span class="st todo">লেখা হবে</span></div><ul><li>Caption, hashtag, কোন platform-এ কখন</li><li>Facebook, Instagram, YouTube Shorts, TikTok package</li><li>আপনার অনুমতি ছাড়া কিছু post করে না</li></ul></div>
+<div class="ag"><div class="top"><div><div class="n">C7</div><div class="name">Analyst</div></div><span class="st todo">লেখা হবে</span></div><ul><li>মাসে একবার আপনার দেওয়া screenshot দেখে কী কাজ করল বিশ্লেষণ</li><li>পরের মাসের পরিকল্পনা ঠিক করে</li></ul></div>
+</div></section>
+</div></body></html>

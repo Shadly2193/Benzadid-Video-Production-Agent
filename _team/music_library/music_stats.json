@@ -1,0 +1,424 @@
+{
+ "E01": {
+  "bpm": 129,
+  "key": "G major",
+  "voice_over_bed_db": 14.4,
+  "percussive_pct": 38,
+  "bands_pct": {
+   "sub<80": 51.8,
+   "bass80-250": 40.1,
+   "mid250-2k": 6.3,
+   "high2k+": 1.9
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   11.5,
+   15.1
+  ],
+  "centroid_hz": 1054
+ },
+ "E02": {
+  "bpm": 129,
+  "key": "C minor",
+  "voice_over_bed_db": 11.4,
+  "percussive_pct": 29,
+  "bands_pct": {
+   "sub<80": 47.6,
+   "bass80-250": 45.5,
+   "mid250-2k": 3.7,
+   "high2k+": 3.2
+  },
+  "music_stops_at_s": [
+   20.1,
+   26.6,
+   33.3,
+   37.8,
+   39.3,
+   42.4,
+   43.7,
+   45.2,
+   46.0,
+   48.8,
+   55.9,
+   59.6
+  ],
+  "hits_or_drops_at_s": [
+   13.1,
+   14.8,
+   18.5,
+   23.9,
+   25.0,
+   27.0,
+   38.2,
+   40.2,
+   42.0,
+   43.1,
+   44.2,
+   45.7
+  ],
+  "centroid_hz": 1781
+ },
+ "E03": {
+  "bpm": 117,
+  "key": "C major",
+  "voice_over_bed_db": 1.7,
+  "percussive_pct": 23,
+  "bands_pct": {
+   "sub<80": 80.9,
+   "bass80-250": 17.2,
+   "mid250-2k": 1.4,
+   "high2k+": 0.5
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   0.6,
+   1.7,
+   2.7,
+   5.2,
+   8.0,
+   9.5,
+   14.0,
+   22.0,
+   30.0,
+   37.8
+  ],
+  "centroid_hz": 870
+ },
+ "E04": {
+  "bpm": 185,
+  "key": "G minor",
+  "voice_over_bed_db": 3.2,
+  "percussive_pct": 9,
+  "bands_pct": {
+   "sub<80": 48.9,
+   "bass80-250": 39.5,
+   "mid250-2k": 8.5,
+   "high2k+": 3.1
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [],
+  "centroid_hz": 954
+ },
+ "E05": {
+  "bpm": 136,
+  "key": "G# major",
+  "voice_over_bed_db": 6.5,
+  "percussive_pct": 4,
+  "bands_pct": {
+   "sub<80": 73.3,
+   "bass80-250": 18.9,
+   "mid250-2k": 4.0,
+   "high2k+": 3.8
+  },
+  "music_stops_at_s": [
+   0.6,
+   5.4
+  ],
+  "hits_or_drops_at_s": [
+   1.1,
+   5.9,
+   18.4,
+   21.3,
+   31.1,
+   40.1
+  ],
+  "centroid_hz": 1071
+ },
+ "E06": {
+  "bpm": 92,
+  "key": "A# major",
+  "voice_over_bed_db": 7.8,
+  "percussive_pct": 27,
+  "bands_pct": {
+   "sub<80": 84.9,
+   "bass80-250": 11.2,
+   "mid250-2k": 2.5,
+   "high2k+": 1.4
+  },
+  "music_stops_at_s": [
+   2.3,
+   3.6,
+   10.7,
+   14.0,
+   20.6,
+   25.4,
+   28.3,
+   30.9,
+   31.7,
+   34.4,
+   40.9,
+   44.0
+  ],
+  "hits_or_drops_at_s": [
+   2.0,
+   3.1,
+   4.2,
+   8.3,
+   11.8,
+   14.9,
+   16.0,
+   21.3,
+   24.1,
+   25.8,
+   26.9,
+   28.8
+  ],
+  "centroid_hz": 685
+ },
+ "E07": {
+  "bpm": 117,
+  "key": "A# minor",
+  "voice_over_bed_db": 13.5,
+  "percussive_pct": 49,
+  "bands_pct": {
+   "sub<80": 58.9,
+   "bass80-250": 28.4,
+   "mid250-2k": 11.6,
+   "high2k+": 1.1
+  },
+  "music_stops_at_s": [
+   1.3,
+   2.9,
+   3.4,
+   17.6,
+   18.1,
+   18.8,
+   19.8,
+   22.8,
+   24.3,
+   24.9,
+   30.6,
+   33.2
+  ],
+  "hits_or_drops_at_s": [
+   1.8,
+   4.1,
+   11.5,
+   20.5,
+   23.3,
+   25.4,
+   30.0,
+   31.1,
+   37.9,
+   40.0,
+   50.7
+  ],
+  "centroid_hz": 731
+ },
+ "E08": {
+  "bpm": 136,
+  "key": "E major",
+  "voice_over_bed_db": 6.4,
+  "percussive_pct": 6,
+  "bands_pct": {
+   "sub<80": 38.2,
+   "bass80-250": 28.9,
+   "mid250-2k": 32.9,
+   "high2k+": 0.0
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [],
+  "centroid_hz": 385
+ },
+ "E09": {
+  "bpm": 112,
+  "key": "G minor",
+  "voice_over_bed_db": -3.8,
+  "percussive_pct": 16,
+  "bands_pct": {
+   "sub<80": 79.4,
+   "bass80-250": 12.7,
+   "mid250-2k": 5.1,
+   "high2k+": 2.8
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   2.5,
+   7.3,
+   11.7,
+   15.7,
+   19.3
+  ],
+  "centroid_hz": 1236
+ },
+ "E10": {
+  "bpm": 117,
+  "key": "E minor",
+  "voice_over_bed_db": 7.8,
+  "percussive_pct": 7,
+  "bands_pct": {
+   "sub<80": 60.4,
+   "bass80-250": 26.4,
+   "mid250-2k": 11.9,
+   "high2k+": 1.3
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   26.3,
+   35.6,
+   44.9
+  ],
+  "centroid_hz": 571
+ },
+ "E11": {
+  "bpm": 129,
+  "key": "C major",
+  "voice_over_bed_db": 19.1,
+  "percussive_pct": 42,
+  "bands_pct": {
+   "sub<80": 16.9,
+   "bass80-250": 26.9,
+   "mid250-2k": 20.7,
+   "high2k+": 35.5
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   3.1,
+   4.8,
+   25.3,
+   27.3,
+   30.6,
+   33.5,
+   35.4,
+   38.1,
+   39.8,
+   45.4,
+   53.7
+  ],
+  "centroid_hz": 1372
+ },
+ "E12": {
+  "bpm": 103,
+  "key": "D# major",
+  "voice_over_bed_db": 16.1,
+  "percussive_pct": 38,
+  "bands_pct": {
+   "sub<80": 72.5,
+   "bass80-250": 17.8,
+   "mid250-2k": 9.0,
+   "high2k+": 0.7
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   0.7,
+   1.8,
+   3.0,
+   7.7,
+   12.2,
+   16.7,
+   17.9,
+   20.2,
+   21.5,
+   22.6,
+   24.8,
+   25.9
+  ],
+  "centroid_hz": 808
+ },
+ "E13": {
+  "bpm": 92,
+  "key": "A# major",
+  "voice_over_bed_db": 9.1,
+  "percussive_pct": 18,
+  "bands_pct": {
+   "sub<80": 73.2,
+   "bass80-250": 5.7,
+   "mid250-2k": 14.0,
+   "high2k+": 7.2
+  },
+  "music_stops_at_s": [
+   25.1,
+   28.3
+  ],
+  "hits_or_drops_at_s": [
+   0.6,
+   3.3,
+   5.1,
+   9.2,
+   11.0,
+   15.0,
+   17.3,
+   19.2,
+   20.6,
+   22.2,
+   24.5,
+   25.9
+  ],
+  "centroid_hz": 1373
+ },
+ "E14": {
+  "bpm": 117,
+  "key": "F minor",
+  "voice_over_bed_db": 4.8,
+  "percussive_pct": 8,
+  "bands_pct": {
+   "sub<80": 93.0,
+   "bass80-250": 5.1,
+   "mid250-2k": 1.4,
+   "high2k+": 0.6
+  },
+  "music_stops_at_s": [
+   29.6,
+   49.6
+  ],
+  "hits_or_drops_at_s": [
+   1.2,
+   4.6,
+   6.0,
+   9.4,
+   11.6,
+   13.4,
+   18.0,
+   19.7,
+   21.4,
+   22.5,
+   23.7,
+   25.4
+  ],
+  "centroid_hz": 862
+ },
+ "E15": {
+  "bpm": 92,
+  "key": "G minor",
+  "voice_over_bed_db": 6.5,
+  "percussive_pct": 24,
+  "bands_pct": {
+   "sub<80": 59.9,
+   "bass80-250": 31.8,
+   "mid250-2k": 7.0,
+   "high2k+": 1.3
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   1.0,
+   3.7,
+   10.7,
+   15.0,
+   16.1,
+   17.9,
+   21.2
+  ],
+  "centroid_hz": 1244
+ },
+ "E16": {
+  "bpm": 99,
+  "key": "G# minor",
+  "voice_over_bed_db": 10.5,
+  "percussive_pct": 24,
+  "bands_pct": {
+   "sub<80": 46.5,
+   "bass80-250": 30.8,
+   "mid250-2k": 14.4,
+   "high2k+": 8.3
+  },
+  "music_stops_at_s": [],
+  "hits_or_drops_at_s": [
+   1.2,
+   18.2,
+   25.5,
+   35.2,
+   36.9
+  ],
+  "centroid_hz": 1711
+ }
+}

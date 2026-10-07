@@ -1,0 +1,461 @@
+{
+ "job": "TRIAL-004",
+ "author": "caption-specialist",
+ "timeline": "cut (0-9.00 s), map from 05_visual_plan.timeline_map_raw_to_cut",
+ "canvas": [
+  1080,
+  1920
+ ],
+ "decisions": {
+  "style": "C2 bold keyword pop, centred chest band y 900-1150 (STYLE_RULES)",
+  "accent": "#FF6A00 (D-003): গুগলে, আজকে, ওয়েবসাইট(S7)",
+  "negative_red": "#E10600: অন্য, নেই",
+  "one_language": "Bangla only, as spoken (D-004)",
+  "legibility": "light UI shots S2/S3/S5/S7 -> dark Midnight-Magma plate; face shots -> stroke+shadow only",
+  "payoff_8.32-9.00": "no caption (silent graphic payoff)",
+  "bangla_font": "Hind Siliguri; no English fallback; conjuncts to check: প্রত্যেক, যাচ্ছেন, পাচ্ছেন, কিন্তু, ডাক্তারকে, সুতরাং"
+ },
+ "flags": [
+  "নেই and থেকেই medium-confidence: Shadly ear-check at GATE 1",
+  "থেকেই spoken 6.64, cut 6.90 (0.26 s) and নেই 5.64/cut 5.94 (0.30 s) violate the 0.35 s rule; solved by instant word pop (no typing) - Director to accept or ask motion to extend shot by ~0.1 s",
+  "Sample-frame render self-check NOT done (no Bangla-shaping renderer verified; nothing installed) - motion/QA must zoom-check conjuncts on first render"
+ ],
+ "units": [
+  {
+   "id": "C01",
+   "t_in": 0.06,
+   "t_out": 0.82,
+   "shot": "S1",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "প্রত্যেক",
+     "t": 0.06,
+     "t_end_spoken": 0.48,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    },
+    {
+     "w": "দিন",
+     "t": 0.5,
+     "t_end_spoken": 0.78,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "6px stroke #0A0603 + soft shadow 0 4 16 rgba(0,0,0,.55), no plate",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": []
+  },
+  {
+   "id": "C02",
+   "t_in": 0.82,
+   "t_out": 1.44,
+   "shot": "S1",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "রোগী",
+     "t": 0.82,
+     "t_end_spoken": 1.38,
+     "colour": "#FFFFFF",
+     "sfx_cue": true
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "6px stroke #0A0603 + soft shadow 0 4 16 rgba(0,0,0,.55), no plate",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    0.82
+   ]
+  },
+  {
+   "id": "C03",
+   "t_in": 1.44,
+   "t_out": 2.28,
+   "shot": "S2",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "যাচ্ছেন",
+     "t": 1.44,
+     "t_end_spoken": 1.72,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    },
+    {
+     "w": "গুগলে",
+     "t": 1.74,
+     "t_end_spoken": 2.18,
+     "colour": "#FF6A00",
+     "sfx_cue": true
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "dark plate rgba(10,6,3,0.82), radius 28, pad 28x16, soft shadow 0 8 24 rgba(0,0,0,.35)",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    1.74
+   ]
+  },
+  {
+   "id": "C04",
+   "t_in": 2.28,
+   "t_out": 2.86,
+   "shot": "S3",
+   "tier": "small_big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "কিন্তু",
+     "t": 2.28,
+     "t_end_spoken": 2.52,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    },
+    {
+     "w": "পাচ্ছেন",
+     "t": 2.58,
+     "t_end_spoken": 2.84,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "dark plate rgba(10,6,3,0.82), radius 28, pad 28x16, soft shadow 0 8 24 rgba(0,0,0,.35)",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": []
+  },
+  {
+   "id": "C05",
+   "t_in": 2.86,
+   "t_out": 3.76,
+   "shot": "S3",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "অন্য",
+     "t": 2.86,
+     "t_end_spoken": 3.06,
+     "colour": "#E10600",
+     "sfx_cue": true
+    },
+    {
+     "w": "ডাক্তারকে",
+     "t": 3.08,
+     "t_end_spoken": 3.7,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "dark plate rgba(10,6,3,0.82), radius 28, pad 28x16, soft shadow 0 8 24 rgba(0,0,0,.35)",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    2.86
+   ]
+  },
+  {
+   "id": "C06",
+   "t_in": 3.82,
+   "t_out": 4.26,
+   "shot": "S4",
+   "tier": "headline",
+   "style": "C2",
+   "words": [
+    {
+     "w": "কারণ",
+     "t": 3.82,
+     "t_end_spoken": 4.2,
+     "colour": "#FFFFFF",
+     "sfx_cue": true
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 124,
+   "legibility": "6px stroke #0A0603 + soft shadow 0 4 16 rgba(0,0,0,.55), no plate",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    3.82
+   ]
+  },
+  {
+   "id": "C07",
+   "t_in": 4.32,
+   "t_out": 5.36,
+   "shot": "S5",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "গুগলে",
+     "t": 4.32,
+     "t_end_spoken": 4.88,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    },
+    {
+     "w": "আপনার",
+     "t": 4.92,
+     "t_end_spoken": 5.34,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "dark plate rgba(10,6,3,0.82), radius 28, pad 28x16, soft shadow 0 8 24 rgba(0,0,0,.35)",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": []
+  },
+  {
+   "id": "C08",
+   "t_in": 5.36,
+   "t_out": 5.94,
+   "shot": "S5",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "ওয়েবসাইট",
+     "t": 5.36,
+     "t_end_spoken": 5.62,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    },
+    {
+     "w": "নেই",
+     "t": 5.64,
+     "t_end_spoken": 5.88,
+     "colour": "#E10600",
+     "sfx_cue": true
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "dark plate rgba(10,6,3,0.82), radius 28, pad 28x16, soft shadow 0 8 24 rgba(0,0,0,.35)",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    5.64
+   ]
+  },
+  {
+   "id": "C09",
+   "t_in": 6.0,
+   "t_out": 6.42,
+   "shot": "S6",
+   "tier": "headline",
+   "style": "C2",
+   "words": [
+    {
+     "w": "সুতরাং",
+     "t": 6.0,
+     "t_end_spoken": 6.34,
+     "colour": "#FFFFFF",
+     "sfx_cue": true
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 124,
+   "legibility": "6px stroke #0A0603 + soft shadow 0 4 16 rgba(0,0,0,.55), no plate",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    6.0
+   ]
+  },
+  {
+   "id": "C10",
+   "t_in": 6.42,
+   "t_out": 6.9,
+   "shot": "S6",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "আজকে",
+     "t": 6.42,
+     "t_end_spoken": 6.62,
+     "colour": "#FF6A00",
+     "sfx_cue": true
+    },
+    {
+     "w": "থেকেই",
+     "t": 6.64,
+     "t_end_spoken": 6.88,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "6px stroke #0A0603 + soft shadow 0 4 16 rgba(0,0,0,.55), no plate",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    6.42
+   ]
+  },
+  {
+   "id": "C11",
+   "t_in": 6.9,
+   "t_out": 7.92,
+   "shot": "S7",
+   "tier": "big",
+   "style": "C2",
+   "words": [
+    {
+     "w": "ওয়েবসাইট",
+     "t": 6.9,
+     "t_end_spoken": 7.42,
+     "colour": "#FF6A00",
+     "sfx_cue": true
+    },
+    {
+     "w": "ডেভেলপ",
+     "t": 7.44,
+     "t_end_spoken": 7.88,
+     "colour": "#FFFFFF",
+     "sfx_cue": false
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 104,
+   "legibility": "dark plate rgba(10,6,3,0.82), radius 28, pad 28x16, soft shadow 0 8 24 rgba(0,0,0,.35)",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    6.9
+   ]
+  },
+  {
+   "id": "C12",
+   "t_in": 8.0,
+   "t_out": 8.32,
+   "shot": "S8",
+   "tier": "headline",
+   "style": "C2",
+   "words": [
+    {
+     "w": "করুন",
+     "t": 8.0,
+     "t_end_spoken": 8.26,
+     "colour": "#FFFFFF",
+     "sfx_cue": true
+    }
+   ],
+   "zone": "chest",
+   "x": 540,
+   "y": 1025,
+   "anchor": "center",
+   "w_max": 900,
+   "font": "Hind Siliguri Bold 700 (fallback Noto Sans Bengali Bold)",
+   "size_px": 124,
+   "legibility": "6px stroke #0A0603 + soft shadow 0 4 16 rgba(0,0,0,.55), no plate",
+   "animation": "word pop at spoken time: scale 0.85->1.06->1.0 over 4 frames, no typing; hard clear at t_out (shot change)",
+   "sfx_cue_times": [
+    8.0
+   ]
+  }
+ ],
+ "sfx_cues": [
+  {
+   "t": 0.82,
+   "unit": "C02"
+  },
+  {
+   "t": 1.74,
+   "unit": "C03"
+  },
+  {
+   "t": 2.86,
+   "unit": "C05"
+  },
+  {
+   "t": 3.82,
+   "unit": "C06"
+  },
+  {
+   "t": 5.64,
+   "unit": "C08"
+  },
+  {
+   "t": 6.0,
+   "unit": "C09"
+  },
+  {
+   "t": 6.42,
+   "unit": "C10"
+  },
+  {
+   "t": 6.9,
+   "unit": "C11"
+  },
+  {
+   "t": 8.0,
+   "unit": "C12"
+  }
+ ]
+}

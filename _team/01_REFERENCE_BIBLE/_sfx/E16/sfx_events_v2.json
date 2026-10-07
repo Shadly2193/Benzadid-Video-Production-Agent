@@ -1,0 +1,574 @@
+{
+ "video": "E16",
+ "tempo": 100.4,
+ "visual_events": 81,
+ "sfx": [
+  {
+   "t": 0.03,
+   "match": "swoosh_fast",
+   "sim": 0.57,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -32.5,
+   "clip": "E16_000.03.wav"
+  },
+  {
+   "t": 0.7,
+   "match": "impact_cool",
+   "sim": 0.67,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.1,
+   "clip": "E16_000.70.wav"
+  },
+  {
+   "t": 1.37,
+   "match": "impact_cool",
+   "sim": 0.57,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -31.1,
+   "clip": "E16_001.37.wav"
+  },
+  {
+   "t": 1.6,
+   "match": "impact_cool",
+   "sim": 0.54,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -35.2,
+   "clip": "E16_001.60.wav"
+  },
+  {
+   "t": 2.14,
+   "match": "ding_bell",
+   "sim": 0.47,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -38.3,
+   "clip": "E16_002.14.wav"
+  },
+  {
+   "t": 3.17,
+   "match": "riser_trailer",
+   "sim": 0.51,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -36.1,
+   "clip": "E16_003.17.wav"
+  },
+  {
+   "t": 3.37,
+   "match": "typing_laptop",
+   "sim": 0.46,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -35.4,
+   "clip": "E16_003.37.wav"
+  },
+  {
+   "t": 3.49,
+   "match": "riser_trailer",
+   "sim": 0.52,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -35.6,
+   "clip": "E16_003.49.wav"
+  },
+  {
+   "t": 4.31,
+   "match": "typing_laptop",
+   "sim": 0.59,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -32.0,
+   "clip": "E16_004.31.wav"
+  },
+  {
+   "t": 4.77,
+   "match": "riser_trailer",
+   "sim": 0.61,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -33.3,
+   "clip": "E16_004.77.wav"
+  },
+  {
+   "t": 7.23,
+   "match": "impact_cool",
+   "sim": 0.68,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -20.0,
+   "clip": "E16_007.23.wav"
+  },
+  {
+   "t": 8.43,
+   "match": "page_turn_chime",
+   "sim": 0.61,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -29.1,
+   "clip": "E16_008.43.wav"
+  },
+  {
+   "t": 9.02,
+   "match": "impact_cool",
+   "sim": 0.56,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -29.7,
+   "clip": "E16_009.02.wav"
+  },
+  {
+   "t": 10.34,
+   "match": "riser_trailer",
+   "sim": 0.54,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.8,
+   "clip": "E16_010.34.wav"
+  },
+  {
+   "t": 10.42,
+   "match": "page_turn_chime",
+   "sim": 0.58,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.1,
+   "clip": "E16_010.42.wav"
+  },
+  {
+   "t": 10.72,
+   "match": "impact_cool",
+   "sim": 0.53,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.0,
+   "clip": "E16_010.72.wav"
+  },
+  {
+   "t": 11.15,
+   "match": "impact_cool",
+   "sim": 0.58,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.1,
+   "clip": "E16_011.15.wav"
+  },
+  {
+   "t": 11.63,
+   "match": "glitch_text",
+   "sim": 0.6,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.4,
+   "clip": "E16_011.63.wav"
+  },
+  {
+   "t": 12.03,
+   "match": "glitch_text",
+   "sim": 0.63,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.8,
+   "clip": "E16_012.03.wav"
+  },
+  {
+   "t": 12.62,
+   "match": "impact_big",
+   "sim": 0.52,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.2,
+   "clip": "E16_012.62.wav"
+  },
+  {
+   "t": 13.16,
+   "match": "ding_bell",
+   "sim": 0.51,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.1,
+   "clip": "E16_013.16.wav"
+  },
+  {
+   "t": 13.27,
+   "match": "impact_cool",
+   "sim": 0.51,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.2,
+   "clip": "E16_013.27.wav"
+  },
+  {
+   "t": 13.37,
+   "match": "ding_bell",
+   "sim": 0.54,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.2,
+   "clip": "E16_013.37.wav"
+  },
+  {
+   "t": 13.62,
+   "match": "impact_cool",
+   "sim": 0.55,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.5,
+   "clip": "E16_013.62.wav"
+  },
+  {
+   "t": 14.3,
+   "match": "camera_shutter",
+   "sim": 0.51,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -26.7,
+   "clip": "E16_014.30.wav"
+  },
+  {
+   "t": 14.82,
+   "match": "page_turn_chime",
+   "sim": 0.56,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.3,
+   "clip": "E16_014.82.wav"
+  },
+  {
+   "t": 15.11,
+   "match": "page_turn_chime",
+   "sim": 0.57,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -29.5,
+   "clip": "E16_015.11.wav"
+  },
+  {
+   "t": 15.38,
+   "match": "glitch_text",
+   "sim": 0.52,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.4,
+   "clip": "E16_015.38.wav"
+  },
+  {
+   "t": 16.17,
+   "match": "glitch_text",
+   "sim": 0.68,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -22.5,
+   "clip": "E16_016.17.wav"
+  },
+  {
+   "t": 16.27,
+   "match": "glitch_text",
+   "sim": 0.65,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -22.7,
+   "clip": "E16_016.27.wav"
+  },
+  {
+   "t": 16.46,
+   "match": "glitch_text",
+   "sim": 0.65,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -22.7,
+   "clip": "E16_016.46.wav"
+  },
+  {
+   "t": 18.02,
+   "match": "page_turn_chime",
+   "sim": 0.59,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -29.7,
+   "clip": "E16_018.02.wav"
+  },
+  {
+   "t": 18.74,
+   "match": "impact_cool",
+   "sim": 0.55,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.5,
+   "clip": "E16_018.74.wav"
+  },
+  {
+   "t": 19.18,
+   "match": "glitch_text",
+   "sim": 0.62,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -25.5,
+   "clip": "E16_019.18.wav"
+  },
+  {
+   "t": 19.65,
+   "match": "glitch_text",
+   "sim": 0.64,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -25.7,
+   "clip": "E16_019.65.wav"
+  },
+  {
+   "t": 19.83,
+   "match": "page_turn_chime",
+   "sim": 0.58,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -25.8,
+   "clip": "E16_019.83.wav"
+  },
+  {
+   "t": 20.07,
+   "match": "glitch_text",
+   "sim": 0.65,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -25.6,
+   "clip": "E16_020.07.wav"
+  },
+  {
+   "t": 20.42,
+   "match": "page_turn_chime",
+   "sim": 0.54,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -26.8,
+   "clip": "E16_020.42.wav"
+  },
+  {
+   "t": 20.69,
+   "match": "glitch_text",
+   "sim": 0.64,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -22.7,
+   "clip": "E16_020.69.wav"
+  },
+  {
+   "t": 21.81,
+   "match": "impact_cool",
+   "sim": 0.55,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -30.7,
+   "clip": "E16_021.81.wav"
+  },
+  {
+   "t": 23.22,
+   "match": "page_turn_chime",
+   "sim": 0.6,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -27.6,
+   "clip": "E16_023.22.wav"
+  },
+  {
+   "t": 24.22,
+   "match": "impact_cool",
+   "sim": 0.61,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -30.2,
+   "clip": "E16_024.22.wav"
+  },
+  {
+   "t": 24.82,
+   "match": "page_turn_chime",
+   "sim": 0.55,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.9,
+   "clip": "E16_024.82.wav"
+  },
+  {
+   "t": 25.02,
+   "match": "page_turn_chime",
+   "sim": 0.61,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -28.1,
+   "clip": "E16_025.02.wav"
+  },
+  {
+   "t": 25.21,
+   "match": "ding_bell",
+   "sim": 0.58,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -27.4,
+   "clip": "E16_025.21.wav"
+  },
+  {
+   "t": 26.22,
+   "match": "page_turn_chime",
+   "sim": 0.55,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -27.4,
+   "clip": "E16_026.22.wav"
+  },
+  {
+   "t": 26.42,
+   "match": "page_turn_chime",
+   "sim": 0.56,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -27.8,
+   "clip": "E16_026.42.wav"
+  },
+  {
+   "t": 27.24,
+   "match": "page_turn_chime",
+   "sim": 0.63,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -31.2,
+   "clip": "E16_027.24.wav"
+  },
+  {
+   "t": 27.34,
+   "match": "page_turn_chime",
+   "sim": 0.65,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -31.9,
+   "clip": "E16_027.34.wav"
+  },
+  {
+   "t": 27.46,
+   "match": "page_turn_chime",
+   "sim": 0.61,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -32.3,
+   "clip": "E16_027.46.wav"
+  },
+  {
+   "t": 27.54,
+   "match": "page_turn_chime",
+   "sim": 0.6,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -32.6,
+   "clip": "E16_027.54.wav"
+  },
+  {
+   "t": 27.63,
+   "match": "page_turn_chime",
+   "sim": 0.57,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -33.4,
+   "clip": "E16_027.63.wav"
+  },
+  {
+   "t": 27.71,
+   "match": "page_turn_chime",
+   "sim": 0.6,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -34.1,
+   "clip": "E16_027.71.wav"
+  },
+  {
+   "t": 27.83,
+   "match": "page_turn_chime",
+   "sim": 0.58,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -33.2,
+   "clip": "E16_027.83.wav"
+  },
+  {
+   "t": 28.02,
+   "match": "impact_cool",
+   "sim": 0.57,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -30.9,
+   "clip": "E16_028.02.wav"
+  },
+  {
+   "t": 28.21,
+   "match": "page_turn_chime",
+   "sim": 0.55,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -29.6,
+   "clip": "E16_028.21.wav"
+  },
+  {
+   "t": 28.43,
+   "match": "impact_cool",
+   "sim": 0.61,
+   "on_visual": true,
+   "on_beat": false,
+   "rms_db": -28.4,
+   "clip": "E16_028.43.wav"
+  },
+  {
+   "t": 29.62,
+   "match": "page_turn_chime",
+   "sim": 0.56,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.2,
+   "clip": "E16_029.62.wav"
+  },
+  {
+   "t": 30.51,
+   "match": "glitch_text",
+   "sim": 0.6,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -28.1,
+   "clip": "E16_030.51.wav"
+  },
+  {
+   "t": 30.82,
+   "match": "impact_cool",
+   "sim": 0.52,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.7,
+   "clip": "E16_030.82.wav"
+  },
+  {
+   "t": 30.9,
+   "match": "page_turn_chime",
+   "sim": 0.5,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.9,
+   "clip": "E16_030.90.wav"
+  },
+  {
+   "t": 31.42,
+   "match": "page_turn_chime",
+   "sim": 0.61,
+   "on_visual": false,
+   "on_beat": false,
+   "rms_db": -27.4,
+   "clip": "E16_031.42.wav"
+  },
+  {
+   "t": 31.83,
+   "match": "dagger_woosh",
+   "sim": 0.67,
+   "on_visual": true,
+   "on_beat": true,
+   "rms_db": -27.1,
+   "clip": "E16_031.83.wav"
+  }
+ ]
+}

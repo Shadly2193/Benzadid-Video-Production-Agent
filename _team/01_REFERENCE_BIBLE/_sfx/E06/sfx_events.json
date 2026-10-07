@@ -1,0 +1,443 @@
+[
+ {
+  "t": 2.28,
+  "type": "sub bass drop",
+  "conf": 0.29,
+  "rms_db": -23.7,
+  "clip": "E06_002.28_sub_bass_drop.wav"
+ },
+ {
+  "t": 2.91,
+  "type": "mouse click",
+  "conf": 0.26,
+  "rms_db": -23.8,
+  "clip": "E06_002.91_mouse_click.wav"
+ },
+ {
+  "t": 9.16,
+  "type": "heartbeat",
+  "conf": 0.59,
+  "rms_db": -37.8,
+  "clip": "E06_009.16_heartbeat.wav"
+ },
+ {
+  "t": 9.81,
+  "type": "pop",
+  "conf": 0.51,
+  "rms_db": -34.5,
+  "clip": "E06_009.81_pop.wav"
+ },
+ {
+  "t": 12.62,
+  "type": "pop",
+  "conf": 0.28,
+  "rms_db": -35.7,
+  "clip": "E06_012.62_pop.wav"
+ },
+ {
+  "t": 13.26,
+  "type": "swipe ui",
+  "conf": 0.46,
+  "rms_db": -42.1,
+  "clip": "E06_013.26_swipe_ui.wav"
+ },
+ {
+  "t": 14.35,
+  "type": "heartbeat",
+  "conf": 0.63,
+  "rms_db": -34.2,
+  "clip": "E06_014.35_heartbeat.wav"
+ },
+ {
+  "t": 14.78,
+  "type": "heartbeat",
+  "conf": 0.45,
+  "rms_db": -25.7,
+  "clip": "E06_014.78_heartbeat.wav"
+ },
+ {
+  "t": 15.0,
+  "type": "heartbeat",
+  "conf": 0.54,
+  "rms_db": -23.6,
+  "clip": "E06_015.00_heartbeat.wav"
+ },
+ {
+  "t": 15.42,
+  "type": "heartbeat",
+  "conf": 0.64,
+  "rms_db": -19.9,
+  "clip": "E06_015.42_heartbeat.wav"
+ },
+ {
+  "t": 16.07,
+  "type": "heartbeat",
+  "conf": 0.54,
+  "rms_db": -15.4,
+  "clip": "E06_016.07_heartbeat.wav"
+ },
+ {
+  "t": 19.52,
+  "type": "heartbeat",
+  "conf": 0.29,
+  "rms_db": -35.9,
+  "clip": "E06_019.52_heartbeat.wav"
+ },
+ {
+  "t": 22.34,
+  "type": "heartbeat",
+  "conf": 0.59,
+  "rms_db": -30.6,
+  "clip": "E06_022.34_heartbeat.wav"
+ },
+ {
+  "t": 23.63,
+  "type": "heartbeat",
+  "conf": 0.28,
+  "rms_db": -23.4,
+  "clip": "E06_023.63_heartbeat.wav"
+ },
+ {
+  "t": 24.05,
+  "type": "heartbeat",
+  "conf": 0.48,
+  "rms_db": -23.4,
+  "clip": "E06_024.05_heartbeat.wav"
+ },
+ {
+  "t": 24.7,
+  "type": "cash register",
+  "conf": 0.53,
+  "rms_db": -40.0,
+  "clip": "E06_024.70_cash_register.wav"
+ },
+ {
+  "t": 25.35,
+  "type": "cash register",
+  "conf": 0.78,
+  "rms_db": -27.5,
+  "clip": "E06_025.35_cash_register.wav"
+ },
+ {
+  "t": 25.87,
+  "type": "cash register",
+  "conf": 0.43,
+  "rms_db": -26.4,
+  "clip": "E06_025.87_cash_register.wav"
+ },
+ {
+  "t": 28.16,
+  "type": "heartbeat",
+  "conf": 0.5,
+  "rms_db": -31.4,
+  "clip": "E06_028.16_heartbeat.wav"
+ },
+ {
+  "t": 29.24,
+  "type": "heartbeat",
+  "conf": 0.61,
+  "rms_db": -30.3,
+  "clip": "E06_029.24_heartbeat.wav"
+ },
+ {
+  "t": 31.61,
+  "type": "heartbeat",
+  "conf": 0.54,
+  "rms_db": -22.3,
+  "clip": "E06_031.61_heartbeat.wav"
+ },
+ {
+  "t": 32.04,
+  "type": "heartbeat",
+  "conf": 0.36,
+  "rms_db": -21.7,
+  "clip": "E06_032.04_heartbeat.wav"
+ },
+ {
+  "t": 32.26,
+  "type": "sub bass drop",
+  "conf": 0.41,
+  "rms_db": -21.9,
+  "clip": "E06_032.26_sub_bass_drop.wav"
+ },
+ {
+  "t": 32.69,
+  "type": "heartbeat",
+  "conf": 0.39,
+  "rms_db": -29.8,
+  "clip": "E06_032.69_heartbeat.wav"
+ },
+ {
+  "t": 33.33,
+  "type": "pop",
+  "conf": 0.72,
+  "rms_db": -32.9,
+  "clip": "E06_033.33_pop.wav"
+ },
+ {
+  "t": 33.8,
+  "type": "pop",
+  "conf": 0.86,
+  "rms_db": -34.6,
+  "clip": "E06_033.80_pop.wav"
+ },
+ {
+  "t": 36.79,
+  "type": "cash register",
+  "conf": 0.27,
+  "rms_db": -34.3,
+  "clip": "E06_036.79_cash_register.wav"
+ },
+ {
+  "t": 37.45,
+  "type": "camera flash",
+  "conf": 0.44,
+  "rms_db": -43.3,
+  "clip": "E06_037.45_camera_flash.wav"
+ },
+ {
+  "t": 38.52,
+  "type": "swipe ui",
+  "conf": 0.35,
+  "rms_db": -23.2,
+  "clip": "E06_038.52_swipe_ui.wav"
+ },
+ {
+  "t": 39.61,
+  "type": "heartbeat",
+  "conf": 0.27,
+  "rms_db": -28.3,
+  "clip": "E06_039.61_heartbeat.wav"
+ },
+ {
+  "t": 41.66,
+  "type": "heartbeat",
+  "conf": 0.72,
+  "rms_db": -23.1,
+  "clip": "E06_041.66_heartbeat.wav"
+ },
+ {
+  "t": 41.97,
+  "type": "heartbeat",
+  "conf": 0.79,
+  "rms_db": -22.7,
+  "clip": "E06_041.97_heartbeat.wav"
+ },
+ {
+  "t": 43.05,
+  "type": "heartbeat",
+  "conf": 0.38,
+  "rms_db": -29.9,
+  "clip": "E06_043.05_heartbeat.wav"
+ },
+ {
+  "t": 44.34,
+  "type": "camera flash",
+  "conf": 0.26,
+  "rms_db": -42.3,
+  "clip": "E06_044.34_camera_flash.wav"
+ },
+ {
+  "t": 45.43,
+  "type": "heartbeat",
+  "conf": 0.44,
+  "rms_db": -22.8,
+  "clip": "E06_045.43_heartbeat.wav"
+ },
+ {
+  "t": 46.51,
+  "type": "heartbeat",
+  "conf": 0.6,
+  "rms_db": -28.1,
+  "clip": "E06_046.51_heartbeat.wav"
+ },
+ {
+  "t": 47.15,
+  "type": "heartbeat",
+  "conf": 0.67,
+  "rms_db": -36.3,
+  "clip": "E06_047.15_heartbeat.wav"
+ },
+ {
+  "t": 47.79,
+  "type": "heartbeat",
+  "conf": 0.4,
+  "rms_db": -42.0,
+  "clip": "E06_047.79_heartbeat.wav"
+ },
+ {
+  "t": 48.87,
+  "type": "heartbeat",
+  "conf": 0.61,
+  "rms_db": -22.9,
+  "clip": "E06_048.87_heartbeat.wav"
+ },
+ {
+  "t": 49.1,
+  "type": "heartbeat",
+  "conf": 0.44,
+  "rms_db": -22.5,
+  "clip": "E06_049.10_heartbeat.wav"
+ },
+ {
+  "t": 51.48,
+  "type": "heartbeat",
+  "conf": 0.32,
+  "rms_db": -28.5,
+  "clip": "E06_051.48_heartbeat.wav"
+ },
+ {
+  "t": 51.69,
+  "type": "heartbeat",
+  "conf": 0.47,
+  "rms_db": -29.7,
+  "clip": "E06_051.69_heartbeat.wav"
+ },
+ {
+  "t": 52.33,
+  "type": "heartbeat",
+  "conf": 0.34,
+  "rms_db": -24.2,
+  "clip": "E06_052.33_heartbeat.wav"
+ },
+ {
+  "t": 55.79,
+  "type": "heartbeat",
+  "conf": 0.43,
+  "rms_db": -22.7,
+  "clip": "E06_055.79_heartbeat.wav"
+ },
+ {
+  "t": 60.32,
+  "type": "heartbeat",
+  "conf": 0.53,
+  "rms_db": -28.3,
+  "clip": "E06_060.32_heartbeat.wav"
+ },
+ {
+  "t": 61.6,
+  "type": "pop",
+  "conf": 0.49,
+  "rms_db": -47.6,
+  "clip": "E06_061.60_pop.wav"
+ },
+ {
+  "t": 62.69,
+  "type": "pop",
+  "conf": 0.53,
+  "rms_db": -45.0,
+  "clip": "E06_062.69_pop.wav"
+ },
+ {
+  "t": 63.14,
+  "type": "heartbeat",
+  "conf": 0.74,
+  "rms_db": -31.4,
+  "clip": "E06_063.14_heartbeat.wav"
+ },
+ {
+  "t": 63.34,
+  "type": "heartbeat",
+  "conf": 0.64,
+  "rms_db": -31.0,
+  "clip": "E06_063.34_heartbeat.wav"
+ },
+ {
+  "t": 63.78,
+  "type": "sub bass drop",
+  "conf": 0.5,
+  "rms_db": -30.5,
+  "clip": "E06_063.78_sub_bass_drop.wav"
+ },
+ {
+  "t": 67.01,
+  "type": "heartbeat",
+  "conf": 0.63,
+  "rms_db": -23.1,
+  "clip": "E06_067.01_heartbeat.wav"
+ },
+ {
+  "t": 67.22,
+  "type": "heartbeat",
+  "conf": 0.78,
+  "rms_db": -22.5,
+  "clip": "E06_067.22_heartbeat.wav"
+ },
+ {
+  "t": 67.87,
+  "type": "heartbeat",
+  "conf": 0.34,
+  "rms_db": -23.2,
+  "clip": "E06_067.87_heartbeat.wav"
+ },
+ {
+  "t": 68.51,
+  "type": "heartbeat",
+  "conf": 0.29,
+  "rms_db": -23.6,
+  "clip": "E06_068.51_heartbeat.wav"
+ },
+ {
+  "t": 70.25,
+  "type": "heartbeat",
+  "conf": 0.36,
+  "rms_db": -28.1,
+  "clip": "E06_070.25_heartbeat.wav"
+ },
+ {
+  "t": 71.97,
+  "type": "heartbeat",
+  "conf": 0.38,
+  "rms_db": -23.5,
+  "clip": "E06_071.97_heartbeat.wav"
+ },
+ {
+  "t": 73.05,
+  "type": "heartbeat",
+  "conf": 0.46,
+  "rms_db": -34.0,
+  "clip": "E06_073.05_heartbeat.wav"
+ },
+ {
+  "t": 73.7,
+  "type": "heartbeat",
+  "conf": 0.65,
+  "rms_db": -29.1,
+  "clip": "E06_073.70_heartbeat.wav"
+ },
+ {
+  "t": 74.13,
+  "type": "heartbeat",
+  "conf": 0.59,
+  "rms_db": -29.8,
+  "clip": "E06_074.13_heartbeat.wav"
+ },
+ {
+  "t": 74.46,
+  "type": "heartbeat",
+  "conf": 0.38,
+  "rms_db": -33.1,
+  "clip": "E06_074.46_heartbeat.wav"
+ },
+ {
+  "t": 74.77,
+  "type": "heartbeat",
+  "conf": 0.41,
+  "rms_db": -35.9,
+  "clip": "E06_074.77_heartbeat.wav"
+ },
+ {
+  "t": 75.42,
+  "type": "cash register",
+  "conf": 0.33,
+  "rms_db": -37.2,
+  "clip": "E06_075.42_cash_register.wav"
+ },
+ {
+  "t": 77.59,
+  "type": "heartbeat",
+  "conf": 0.45,
+  "rms_db": -30.8,
+  "clip": "E06_077.59_heartbeat.wav"
+ }
+]

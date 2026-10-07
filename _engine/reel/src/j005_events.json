@@ -1,0 +1,452 @@
+[
+{
+"t": 0.0,
+"type": "flash_impact",
+"label": "hook open: flash + title punch-in",
+"id": "hook"
+},
+{
+"t": 0.4,
+"type": "title_punch",
+"label": "hook title \"MY AI STACK\"",
+"id": "title"
+},
+{
+"t": 0.6,
+"type": "frame_in",
+"label": "hook phone mock floats in left",
+"id": "hookphone"
+},
+{
+"t": 2.0,
+"type": "logo_pop",
+"label": "hook chip ChatGPT",
+"id": "hk0"
+},
+{
+"t": 2.2,
+"type": "logo_pop",
+"label": "hook chip Gemini",
+"id": "hk1"
+},
+{
+"t": 2.4,
+"type": "logo_pop",
+"label": "hook chip Claude",
+"id": "hk2"
+},
+{
+"t": 2.6,
+"type": "logo_pop",
+"label": "hook chip Flow",
+"id": "hk3"
+},
+{
+"t": 2.8,
+"type": "logo_pop",
+"label": "hook chip Supabase",
+"id": "hk4"
+},
+{
+"t": 3.0,
+"type": "logo_pop",
+"label": "hook chip Vercel",
+"id": "hk5"
+},
+{
+"t": 3.5,
+"type": "whoosh_out",
+"label": "hook chips + title leave",
+"id": "hookout"
+},
+{
+"t": 4.0,
+"type": "badge_in",
+"label": "01 PLAN badge",
+"id": "badge1"
+},
+{
+"t": 5.1,
+"type": "node_pop",
+"label": "System design node",
+"id": "n_sys"
+},
+{
+"t": 6.5,
+"type": "node_pop",
+"label": "Planning node",
+"id": "n_plan"
+},
+{
+"t": 8.6,
+"type": "node_pop",
+"label": "Specialty tag",
+"id": "n_spec"
+},
+{
+"t": 9.4,
+"type": "node_pop",
+"label": "Content tag",
+"id": "n_cont"
+},
+{
+"t": 10.4,
+"type": "node_pop",
+"label": "Structure tag",
+"id": "n_struct"
+},
+{
+"t": 10.9,
+"type": "ui_pop",
+"label": "sitemap page Home",
+"id": "pg0"
+},
+{
+"t": 11.08,
+"type": "ui_pop",
+"label": "sitemap page Services",
+"id": "pg1"
+},
+{
+"t": 11.26,
+"type": "ui_pop",
+"label": "sitemap page About",
+"id": "pg2"
+},
+{
+"t": 11.44,
+"type": "ui_pop",
+"label": "sitemap page Contact",
+"id": "pg3"
+},
+{
+"t": 11.9,
+"type": "check_ding",
+"label": "plan complete check",
+"id": "plancheck"
+},
+{
+"t": 12.4,
+"type": "whoosh_out",
+"label": "plan panel out",
+"id": "planout"
+},
+{
+"t": 14.5,
+"type": "logo_pop",
+"label": "ChatGPT logo chip",
+"id": "chatgpt"
+},
+{
+"t": 15.3,
+"type": "logo_pop",
+"label": "Gemini logo chip",
+"id": "gemini"
+},
+{
+"t": 16.5,
+"type": "logo_pop",
+"label": "Claude logo chip",
+"id": "claude1"
+},
+{
+"t": 18.7,
+"type": "stamp_thud",
+"label": "PAID stamp",
+"id": "paid"
+},
+{
+"t": 19.6,
+"type": "whoosh_out",
+"label": "logo stack out",
+"id": "stackout"
+},
+{
+"t": 21.3,
+"type": "badge_in",
+"label": "02 HERO VISUAL badge",
+"id": "badge2"
+},
+{
+"t": 21.7,
+"type": "line_draw",
+"label": "hero wireframe draws",
+"id": "wire"
+},
+{
+"t": 24.7,
+"type": "frame_in",
+"label": "ClientB mobile hero phone frame (left, parallax)",
+"id": "h1"
+},
+{
+"t": 28.0,
+"type": "frame_in",
+"label": "ClientC desktop hero frame (left)",
+"id": "h2"
+},
+{
+"t": 31.0,
+"type": "fullframe_in",
+"label": "Client-D doctor 9:16 hero full-frame insert",
+"id": "ClientD"
+},
+{
+"t": 32.9,
+"type": "frame_in",
+"label": "ClientB desktop + ClientC mobile frames (left)",
+"id": "h3"
+},
+{
+"t": 35.4,
+"type": "whoosh_out",
+"label": "hero frames out",
+"id": "hout"
+},
+{
+"t": 35.6,
+"type": "logo_pop",
+"label": "Claude logo chip (hero tools)",
+"id": "claude2"
+},
+{
+"t": 36.3,
+"type": "logo_pop",
+"label": "Google Flow logo chip (EST)",
+"id": "flow"
+},
+{
+"t": 36.8,
+"type": "logo_pop",
+"label": "ChatGPT logo chip (EST)",
+"id": "chatgpt2"
+},
+{
+"t": 38.0,
+"type": "whoosh_out",
+"label": "hero tool chips out",
+"id": "tool2out"
+},
+{
+"t": 39.3,
+"type": "window_in",
+"label": "code window in (left)",
+"id": "code"
+},
+{
+"t": 39.8,
+"type": "typing",
+"label": "code typing burst",
+"id": "typ0"
+},
+{
+"t": 40.35,
+"type": "typing",
+"label": "code typing burst",
+"id": "typ1"
+},
+{
+"t": 40.9,
+"type": "typing",
+"label": "code typing burst",
+"id": "typ2"
+},
+{
+"t": 41.45,
+"type": "typing",
+"label": "code typing burst",
+"id": "typ3"
+},
+{
+"t": 42.0,
+"type": "typing",
+"label": "code typing burst",
+"id": "typ4"
+},
+{
+"t": 42.55,
+"type": "typing",
+"label": "code typing burst",
+"id": "typ5"
+},
+{
+"t": 43.4,
+"type": "logo_pop",
+"label": "Claude logo chip (code)",
+"id": "claude3"
+},
+{
+"t": 45.5,
+"type": "ui_pop",
+"label": "question mark pop",
+"id": "q"
+},
+{
+"t": 47.0,
+"type": "x_mark",
+"label": "NO - red X",
+"id": "xmark"
+},
+{
+"t": 47.9,
+"type": "counter_in",
+"label": "try counter card in",
+"id": "counter"
+},
+{
+"t": 47.9,
+"type": "tick",
+"label": "counter x1",
+"id": "ct0"
+},
+{
+"t": 48.1,
+"type": "tick",
+"label": "counter x2",
+"id": "ct1"
+},
+{
+"t": 48.3,
+"type": "tick",
+"label": "counter x3",
+"id": "ct2"
+},
+{
+"t": 48.5,
+"type": "tick",
+"label": "counter x4",
+"id": "ct3"
+},
+{
+"t": 48.7,
+"type": "tick",
+"label": "counter x5",
+"id": "ct4"
+},
+{
+"t": 48.9,
+"type": "tick",
+"label": "counter x6",
+"id": "ct5"
+},
+{
+"t": 49.1,
+"type": "tick",
+"label": "counter x7",
+"id": "ct6"
+},
+{
+"t": 49.3,
+"type": "tick",
+"label": "counter x8",
+"id": "ct7"
+},
+{
+"t": 49.5,
+"type": "tick",
+"label": "counter x9",
+"id": "ct8"
+},
+{
+"t": 49.7,
+"type": "tick",
+"label": "counter x10",
+"id": "ct9"
+},
+{
+"t": 49.9,
+"type": "tick",
+"label": "counter x11",
+"id": "ct10"
+},
+{
+"t": 50.1,
+"type": "tick",
+"label": "counter x12",
+"id": "ct11"
+},
+{
+"t": 50.3,
+"type": "tick",
+"label": "counter x13",
+"id": "ct12"
+},
+{
+"t": 50.5,
+"type": "tick",
+"label": "counter x14",
+"id": "ct13"
+},
+{
+"t": 50.7,
+"type": "tick",
+"label": "counter x15",
+"id": "ct14"
+},
+{
+"t": 51.0,
+"type": "check_ding",
+"label": "counter done check",
+"id": "cdone"
+},
+{
+"t": 52.8,
+"type": "card_in",
+"label": "FRONTEND card",
+"id": "front"
+},
+{
+"t": 55.7,
+"type": "card_in",
+"label": "BACKEND card",
+"id": "back"
+},
+{
+"t": 57.3,
+"type": "whoosh_out",
+"label": "cards out",
+"id": "cardsout"
+},
+{
+"t": 59.9,
+"type": "logo_pop",
+"label": "Supabase logo chip + database icon",
+"id": "supabase"
+},
+{
+"t": 62.8,
+"type": "logo_pop",
+"label": "GitHub logo chip + repo icon",
+"id": "github"
+},
+{
+"t": 65.3,
+"type": "logo_pop",
+"label": "Vercel logo chip (EST)",
+"id": "vercel"
+},
+{
+"t": 65.9,
+"type": "notify_ding",
+"label": "LIVE dot lights",
+"id": "live"
+},
+{
+"t": 70.4,
+"type": "impact_punchin",
+"label": "\"\u0986\u09ae\u09bf\" punch-in zoom + flash",
+"id": "punch"
+},
+{
+"t": 70.6,
+"type": "lower_third",
+"label": "lower-third name + title sweep in",
+"id": "lt"
+},
+{
+"t": 71.5,
+"type": "logo_wall",
+"label": "tool logo wall pops during wave",
+"id": "wall"
+}
+]
